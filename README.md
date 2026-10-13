@@ -3,16 +3,48 @@
 Provincial capacity expansion and dispatch model for South Korea's power
 sector, built on MacroEnergy.jl.
 
-Last updated **2026-10-12**. This file supersedes the per-case
-`README1.md` and `README2_update.txt`, which contain several statements
-that are no longer true (noted in §9).
+Last updated **2026-10-13**. 
+
+This is the single README for the repository. It documents the model, not
+one case, and lives at the repo root; it replaces the duplicate copies that
+previously sat in `Ref/` and `NDC/`.
+
+Paths below are written relative to this file. `<case>/` means either
+`Ref/` or `NDC/`, and where a path is the same in both cases the `<case>/`
+prefix is dropped for readability.
+
+---
+
+## 0. Repository layout
+
+```
+README.md                    this file, the only one
+Ref/ , NDC/                  the two run directories
+  assets/assets_<year>/      technology inputs, 7 periods
+                             (byte-identical between the two cases)
+  system/                    demand, fuel prices, availability, CO2 cap,
+                             nodes_<year>.json  <- the only case difference
+  settings/                  case_settings.json
+  user_additions/
+  run_NZK_della.slurm
+Post-processing files/        input-building scripts
+  Transmission/              ITL derivation, 418 -> 171 -> 109.5 -> 99.1 GW
+  Demand/                    GCAM to MACRO demand builder
+  2021_Provincial_CF/        provincial capacity factors
+ref_result/ , NDC_Result/     downloaded run outputs
+20251205 BNEF Korea data .xlsx
+```
+
+Only `assets/`, `system/`, `settings/`, `user_additions/` and the slurm
+file are read by the model. Everything else is provenance.
 
 ---
 
 ## 1. Cases
 
-Two cases are maintained. They share identical `assets/`; only the
-scenario definition in `system/nodes_<year>.json` differs.
+Two cases are maintained. They share **byte-identical `assets/`**; the
+cases differ only in `system/`, where the demand file and the scenario
+definition in `nodes_<year>.json` change.
 
 | folder | demand | domestic CO2 cap | delivered fuel prices | 2050 demand |
 |---|---|---|---|---|
@@ -23,8 +55,11 @@ Demand, fuel prices and the CO2 budget all come from GCAM; see
 `<case>/input.xlsx`. The CO2 cap trajectory is 207 / 92 / 48 / 36 / 27 /
 20.7 Mt for 2025–2050.
 
-Run with `sbatch run_NZK_della.slurm` (Della, Gurobi 13.0.2 +
-Julia 1.12.1, 24 cores / 128 GB / 24 h).
+Run with `sbatch <case>/run_NZK_della.slurm` (Della, `gurobi/13.0.0` +
+`julia/1.12.1`, 24 cores / 192 GB / 24 h). The two slurm files differ only
+in `--job-name` and the `CASE` path. Submit the two jobs at least five
+minutes apart: simultaneous submission makes them collide on the Julia
+precompile pidfile.
 
 ---
 
@@ -64,18 +99,28 @@ CO2Captured, Steam, Hydrogen. Only the electricity chain is active.
 §9). Commitment variables are continuous, which is why the solve is an LP
 and shadow prices exist.
 
-All five thermal technologies now carry the same constraint set,
-harmonised 2026-10-12 (§7.1). Every constraint is stated explicitly in the
-asset CSVs rather than relying on MacroEnergy's implicit defaults.
+All five thermal technologies carry `uc = TRUE` and an explicitly declared
+constraint set, harmonised 2026-10-12 (§7.1). Values below were read back
+from the asset CSVs on 2026-10-13.
 
 | | `uc` | MinUpTime | MinDownTime | MinFlow | Ramping | MustRun |
 |---|---|---|---|---|---|---|
 | Coal | ✓ | ✓ 6 h | ✓ 6 h | ✓ 0.40 | ✓ 25%/h | — |
-| Coal CCS | ✓ | ✓ 4 h | ✓ 4 h | ✓ 0.50 | ✓ 100%/h | — |
+| Coal CCS | ✓ | ✓ 4 h | ✓ 4 h | **off** (0.50) | ✓ 100%/h | — |
 | Gas CCGT | ✓ | ✓ 4 h | ✓ 2 h | ✓ 0.30 | ✓ 64%/h | — |
-| Gas CCS | ✓ | ✓ 4 h | ✓ 4 h | ✓ 0.50 | ✓ 100%/h | — |
-| Nuclear | ✓ | ✓ 36 h | ✓ 36 h | ✓ 0.40 | ✓ 25%/h | ✓ |
+| Gas CCS | ✓ | ✓ 4 h | ✓ 4 h | **off** (0.50) | ✓ 100%/h | — |
+| Nuclear | ✓ | ✓ 36 h | ✓ 36 h | **off** (0.40) | ✓ 25%/h | ✓ |
 | Hydro | — | — | — | — | ✓ 8.3%/h | ✓ (+ min storage 30%) |
+
+**`MinFlowConstraint` is deliberately off for Coal CCS, Gas CCS and
+nuclear.** Declaring it on all five grew the model from 13.60M to 14.05M
+rows and the job ran out of memory at 128 GB (§7.1). It was removed from
+those three (38 files) and kept on coal and gas CCGT, which are the two
+technologies where a minimum stable output actually changes dispatch. The
+`min_flow_fraction` values are still present in the CSVs, shown in
+parentheses above, but are **inert** while the constraint is not declared —
+do not read them as active. Nuclear is held at high output by
+`MustRunConstraint` instead, so the omission has little effect there.
 
 Startup costs are also applied: coal \$150/MW-start, gas CCGT \$69.34,
 CCS \$97, nuclear \$0.
@@ -120,15 +165,11 @@ falls 57% while BNEF holds coal and gas flat from 2025**, and the steepest
 single step is **2025→2030 (−30%)**. Solar crosses below coal on an LCOE
 basis around 2030.
 
-Note: 2021 values do **not** follow the 0.870 deflator (ratios 0.61–0.84)
-and appear to come from a different source. This does not affect results
-because 2021 is the calibrated base year with `can_expand = FALSE`.
-
 Units are **\$/MW** throughout (and \$/MWh for storage energy), not ₩.
 
 ### Units and currency conventions
 
-MacroEnergy is **energy-unit based throughout — MWh, never MMBtu**:
+MacroEnergy is **energy-unit based throughout — MWh:
 
 | field | unit |
 |---|---|
@@ -208,7 +249,7 @@ The correction changed the outcome by almost nothing (see §8).
 ## 4. Transmission
 
 **Current model input: 99.1 GW across 32 bidirectional corridors**, set in
-`assets/assets_2021/transmission_v2_2021.csv`. Later periods inherit by
+`<case>/assets/assets_2021/transmission_v2_2021.csv`. Later periods inherit by
 carry-forward, but **cost and loss parameters are set in every period's
 file** and must be kept consistent.
 
@@ -293,7 +334,7 @@ offshore wind (124.5 MW in JNB/JNA/JEJ).
 ### Provincial VRE capacity factors
 
 ERA5 hourly, 2021, KST, per province, from `Post-processing files/
-2021_Provincial_CF/`. 51 columns added to `system/availability.csv`.
+2021_Provincial_CF/`. 51 columns added to `<case>/system/availability.csv`.
 Solar CF averages about 13–14%.
 
 Gyeongbuk/Daegu is split into GNB and TAE with identical CF. Inland
@@ -312,7 +353,12 @@ provinces.
 
 ---
 
-## 7. Changes made 2026-10-12
+## 7. Changes made 2026-10-12 and 2026-10-13
+
+Each change below was taken with a local backup of the files it touched.
+Those backup folders have since been deleted to keep the repo clean, so
+**the only record of the previous values is this document**. Where a
+previous value matters it is quoted inline.
 
 ### 7.1 Unit commitment harmonised across all thermal technologies
 
@@ -338,43 +384,25 @@ Checked before applying: nuclear carries `MustRunConstraint` and its
 availability profile is constant at 0.85 with zero hourly variation, so
 adding a 25%/h ramp limit cannot conflict with it.
 
-Backups in `_backup_uc/{Ref,NDC}/assets_<year>/`.
+**Partially reverted the same day — `MinFlowConstraint` is off for three
+technologies.** Declaring it on all five grew the model from 13.60M to
+14.05M rows, and the jobs were killed for exceeding memory (slurm 15441886
+and 15441901). Two changes resolved it: `MinFlowConstraint` was removed
+again from `nuclear`, `coalpowerCCS` and `NaturalGasPowerCCS` (38 files),
+and `--mem` was raised from 128G to 192G. It is kept on `coalpower` and
+`NaturalGasPower`, the two technologies where a minimum stable output
+actually changes dispatch.
 
-Expected effect: small. Nuclear is already pinned by MustRun at a constant
-availability, so its new MinFlow and ramp limits are unlikely to bind. CCS
-does not currently deploy at all, so its constraints only matter if a
-future input change makes it economic. The point of the change is that the
-model is now internally consistent and the configuration no longer depends
-on undeclared defaults.
+So the final state is **not** "the same constraint set on all five": it is
+`uc = TRUE` plus MinUp, MinDown and Ramping on all five, with MinFlow on
+two of them. The `min_flow_fraction` parameters remain in the CSVs for the
+other three but are inert. §2 gives the configuration as read back from the
+files; trust that table over the narrative here.
 
-### 7.2 Case settings cleaned
+The `coalpowerCCS` `uc = FALSE → TRUE` change was **not** reverted and
+stands.
 
-`settings/case_settings.json` carried a `Not_usingMyopicSettings` block
-containing `StopAfterPeriod: 4` and a restart pointing at `results_009`.
-The key prefix meant it was never read, but removing the prefix would have
-silently truncated a run at period 4. Replaced with an explicit minimal
-file: 7 period lengths, discount rate, Myopic, and `Restart.enabled:
-false`. `StopAfterPeriod` is omitted so the default (unlimited) applies
-and all 7 periods run.
-
-Backups in `_backup_settings/`.
-
-### 7.3 File hygiene
-
-- **Stale demand files removed.** Each case folder carried a copy of the
-  *other* case's demand file, and those copies were outdated (2050 at
-  618.3 / 629.4 TWh, flat after 2035, versus the live 669.5 / 742.3).
-  Each case now keeps only the file it actually references. Backups in
-  `_removed_stale_demand/`. Also removed: `demand_backup.csv`,
-  `demand_fulldecimal.csv`, `demand_downsized.csv` (unreferenced).
-  `demand.csv` was kept — the demand pipeline scripts use it.
-- **Stale transmission file renamed** to
-  `transmission_v2_2021_OLD_sum_of_ratings_418GW.csv`. It previously
-  carried the same filename as the model input, making an accidental
-  2.4× over-capacity copy easy.
-- Transmission backups in `_backup_transmission_171GW/`.
-
-### The free-fuel bug (historical, resolved)
+## 7.2 The free-fuel bug (historical, resolved)
 
 Runs before 2026-09-19 silently priced **all fuel at zero**. The fuel
 price node schema changed from `{"id": ..., "price": ...}` to
@@ -393,7 +421,7 @@ growth met by gas: with free fuel, existing thermal beats new solar.
 
 ---
 
-### 7.4 Coal efficiency corrected to Korean values (2026-10-13)
+### 7.3 Coal efficiency corrected to Korean values (2026-10-13)
 
 `transforms--fuel_consumption` for coal was 3.825 MWh_fuel/MWh_e, i.e.
 **26.1% net efficiency** and an emission factor of 1.3024 tCO2/MWh. Both
@@ -428,8 +456,7 @@ unabated coal (1.255×) is preserved. `emission_rate` (0.3405 tCO2/MWh of
 fuel) is the carbon content of the fuel, matches published values, and was
 **not** changed.
 
-Applied to 26 files (both cases, all 7 periods). Backups in
-`_backup_coaleff/`.
+Applied to 26 files (both cases, all 7 periods).
 
 Expected effect: coal LCOE in 2050 falls from about \$80 to \$61/MWh,
 narrowing the gap to solar (\$38) from \$43 to \$24. In the Ref case coal
@@ -439,7 +466,7 @@ retirement.
 
 ---
 
-### 7.5 Solar build-rate limit (2026-10-13)
+### 7.4 Solar build-rate limit (2026-10-13)
 
 The model previously added solar faster than Korea has ever built it:
 up to 9.3 GW/yr nationally in Ref and **26.5 GW/yr in NDC (2025–30)**,
@@ -463,8 +490,7 @@ the per-province value or upgrade MacroEnergy.
 
 Wind is left unconstrained; onshore wind stops at 4.1 GW in Ref on its own.
 
-Applied to 14 files (both cases, all 7 periods). Backups in
-`_backup_buildrate/`.
+Applied to 14 files (both cases, all 7 periods).
 
 **Tightened to 6,000 MW per province per period on 2026-10-13** after the
 first run with the limit in place; see §7.6.4 for the measurement that
@@ -479,14 +505,13 @@ prompted it.
 
 ---
 
-## 7.6 Changes made 2026-10-13 (after the first full run)
+### 7.6 Changes made 2026-10-13 (after the first full run)
 
 The run of 2026-10-13 (Ref `results_004`, NDC `results_003`) was the first
 to complete with §7.1–7.5 all in place. It confirmed those fixes and
-exposed four further problems, fixed below. Backups in
-`_backup_20261013_fix4/`.
+exposed four further problems, fixed below.
 
-### What the run confirmed
+#### What the run confirmed
 
 | fix | evidence from the run |
 |---|---|
@@ -502,7 +527,7 @@ reaches 105.6 GW (Ref) / 103.9 GW (NDC) by 2050. Electricity non-served
 demand is effectively zero in both cases (under 25 GWh against
 550–740 TWh of load).
 
-### 7.6.1 Transmission variable O&M was being paid out, not charged
+#### 7.6.1 Transmission variable O&M was being paid out, not charged
 
 `variable_om_cost = 1 $/MWh` was set on every corridor, but a
 `TransmissionLink` is a `BidirectionalEdge` whose flow variable is
@@ -537,7 +562,7 @@ that is not expressible in the CSV. If a per-MWh transmission cost is
 wanted later, either confirm that the MacroEnergy version in use charges
 `|flow|`, or split each corridor into two unidirectional edges.
 
-### 7.6.2 New coal was allowed, and the efficiency fix made it economic
+#### 7.6.2 New coal was allowed, and the efficiency fix made it economic
 
 `coalpower_<year>.csv` had `can_expand = TRUE` in 16 of 17 provinces for
 2025–2050, at `investment_cost = 1,164,761 $/MW`. This had never bound,
@@ -557,7 +582,7 @@ retirement are unaffected. `coalpowerCCS` is deliberately left expandable:
 it is a retrofit/abatement technology, not a new unabated coal unit, and
 it never deploys anyway.
 
-### 7.6.3 (not applied) Nuclear has no build-rate or siting limit
+#### 7.6.3 (not applied) Nuclear has no build-rate or siting limit
 
 Recorded here because it was considered and deferred, not fixed. Nuclear
 carries no `max_capacity` and no `MaxNewCapacityConstraint`, and
@@ -568,7 +593,7 @@ carbon price. In NDC it builds 38 GW, including **14.9 GW in the single
 (Shin-Hanul 3 and 4 are roughly a decade per pair). A limit of about
 2–3 GW per period is the obvious next step; it is in §10.
 
-### 7.6.4 Solar build rate tightened to 6,000 MW per province per period
+#### 7.6.4 Solar build rate tightened to 6,000 MW per province per period
 
 With the 7,500 MW limit the national new-build total was still above
 target:
@@ -592,7 +617,7 @@ This remains a per-asset limit, not a national one, for the reason given in
 its CO2 cap forces the build, and that is a defensible result rather than
 an artifact.
 
-### 7.6.5 The stale `system/demand.csv` removed from both cases
+#### 7.6.5 The stale `system/demand.csv` removed from both cases
 
 `Ref/system/demand.csv` and `NDC/system/demand.csv` were byte-identical and
 **neither was read by the model**: all 14 `nodes_<year>.json` files point at
