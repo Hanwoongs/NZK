@@ -1,0 +1,13 @@
+Set parameter LicenseID to value 197246
+Set parameter GURO_PAR_SPECIAL
+Set parameter TokenServer to value "license.rc.princeton.edu"
+Set parameter Method to value 2
+Set parameter Crossover to value 0
+Set parameter BarConvTol to value 0.001
+Set parameter Threads to value 22
+Set parameter BarHomogeneous to value 1
+Set parameter Method to value 2
+Set parameter BarHomogeneous to value 1
+Set parameter Crossover to value 0
+Set parameter Threads to value 22
+Set parameter BarConvTol to value 0.001

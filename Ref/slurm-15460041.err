@@ -1,0 +1,110 @@
+Precompiling packages...
+   1179.9 ms  ✓ LaTeXStrings
+   1144.1 ms  ✓ ChunkCodecCore
+   1128.1 ms  ✓ IntegerMathUtils
+   1107.0 ms  ✓ Statistics
+    841.0 ms  ✓ CodecZlib
+    934.8 ms  ✓ URIs
+    835.8 ms  ✓ LogExpFunctions
+   1077.9 ms  ✓ InlineStrings
+    660.7 ms  ✓ Preferences
+   1486.2 ms  ✓ FillArrays
+    918.1 ms  ✓ StructUtils
+    459.8 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1155.5 ms  ✓ Tables
+    558.3 ms  ✓ ChunkCodecLibZlib
+    605.8 ms  ✓ Primes
+    664.9 ms  ✓ Statistics → SparseArraysExt
+    493.8 ms  ✓ PrecompileTools
+    508.4 ms  ✓ FillArrays → FillArraysStatisticsExt
+    488.4 ms  ✓ StructUtils → StructUtilsStaticArraysCoreExt
+    592.0 ms  ✓ JLLWrappers
+    486.9 ms  ✓ StructUtils → StructUtilsTablesExt
+    685.3 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    562.9 ms  ✓ BangBang → BangBangTablesExt
+    731.5 ms  ✓ TableOperations
+    657.2 ms  ✓ Thrift2
+    919.9 ms  ✓ DistributedArrays
+    681.0 ms  ✓ Bzip2_jll
+    663.1 ms  ✓ libsodium_jll
+    706.4 ms  ✓ Gurobi_jll
+    730.1 ms  ✓ Lz4_jll
+    663.4 ms  ✓ snappy_jll
+    725.1 ms  ✓ brotli_jll
+    958.0 ms  ✓ StringManipulation
+    726.1 ms  ✓ MbedTLS_jll
+    690.8 ms  ✓ DuckDB_jll
+    510.9 ms  ✓ DistributedArrays → StatisticsExt
+    691.3 ms  ✓ Zstd_jll
+    681.1 ms  ✓ DecFP_jll
+    679.7 ms  ✓ DistributedArrays → SparseArraysExt
+    699.3 ms  ✓ HiGHS_jll
+    554.6 ms  ✓ CodecBzip2
+    700.5 ms  ✓ OpenBLAS32_jll
+   1521.0 ms  ✓ Parsers
+    723.5 ms  ✓ Libiconv_jll
+    531.8 ms  ✓ SodiumSeal
+    682.5 ms  ✓ OpenSpecFun_jll
+    488.0 ms  ✓ ChunkCodecLibSnappy
+    718.3 ms  ✓ ChunkCodecLibLz4
+    647.4 ms  ✓ ChunkCodecLibBrotli
+    624.2 ms  ✓ ChunkCodecLibZstd
+    495.5 ms  ✓ InlineStrings → ParsersExt
+    544.7 ms  ✓ StringEncodings
+    920.5 ms  ✓ FixedPointDecimals
+   1077.6 ms  ✓ MbedTLS
+    830.5 ms  ✓ WeakRefStrings
+   1514.4 ms  ✓ JSON3
+   1516.1 ms  ✓ JSON
+   4239.3 ms  ✓ MutableArithmetics
+   3209.3 ms  ✓ StaticArrays
+   2348.6 ms  ✓ Transducers
+   1152.4 ms  ✓ YAML
+   3530.0 ms  ✓ Reseau
+    611.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    633.0 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    629.5 ms  ✓ FillArrays → FillArraysStaticArraysExt
+    656.4 ms  ✓ Accessors → StaticArraysExt
+    668.2 ms  ✓ BangBang → BangBangStaticArraysExt
+   2240.2 ms  ✓ SpecialFunctions
+   5737.2 ms  ✓ JuliaInterpreter
+   1574.9 ms  ✓ BenchmarkTools
+   3580.9 ms  ✓ PrettyTables
+   2144.6 ms  ✓ DuckDB
+   1359.5 ms  ✓ DecFP
+   2614.2 ms  ✓ ForwardDiff
+   1294.4 ms  ✓ LightBSON
+    668.4 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+    818.1 ms  ✓ LightBSON → LightBSONFixedPointDecimalsExt
+   4588.0 ms  ✓ HTTP
+   3167.0 ms  ✓ DataFrames
+   1044.8 ms  ✓ Transducers → TransducersDataFramesExt
+   1256.0 ms  ✓ BangBang → BangBangDataFramesExt
+   1942.6 ms  ✓ GitHub
+   5616.8 ms  ✓ LoweredCodeUtils
+   8571.9 ms  ✓ CSV
+   9395.3 ms  ✓ ArrayLayouts
+   1062.8 ms  ✓ ArrayLayouts → ArrayLayoutsSparseArraysExt
+   2294.9 ms  ✓ LazyArrays
+   1254.8 ms  ✓ LazyArrays → LazyArraysStaticArraysExt
+   7843.8 ms  ✓ Revise
+   1701.5 ms  ✓ Transducers → TransducersLazyArraysExt
+    824.6 ms  ✓ Revise → DistributedExt
+   2977.1 ms  ✓ Parquet2
+  15129.8 ms  ✓ MathOptInterface
+   1436.9 ms  ✓ MathOptInterface → MathOptInterfaceBenchmarkToolsExt
+   1460.9 ms  ✓ MathOptIIS
+   2125.3 ms  ✓ Gurobi
+   3023.0 ms  ✓ JuMP
+   2004.2 ms  ✓ HiGHS
+   2930.6 ms  ✓ MacroEnergyScaling
+   3821.9 ms  ✓ MacroEnergySolvers
+  10164.8 ms  ✓ MacroEnergy
+  101 dependencies successfully precompiled in 43 seconds. 97 already precompiled.
+
+ERROR: LoadError: The following 1 direct dependency failed to precompile:
+
+MacroEnergyGurobiExt 
+
+Error: Missing source file for Base.PkgId(Base.UUID("7648d1ff-660e-51ee-8f05-bd0e12b09409"), "MacroEnergyGurobiExt"
+in expression starting at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/run_v1_BNEF.jl:1

@@ -1,0 +1,4 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS: invalid
+/var/spool/slurmd/job15441886/slurm_script: line 22: 3179809 Killed                  julia --project="$REPO" run_v1_BNEF.jl
+[2026-10-12T21:50:46.256] error: Detected 1 oom_kill event in StepId=15441886.batch. Some of the step tasks have been OOM Killed.

@@ -1,0 +1,227 @@
+Set parameter LicenseID to value 197246
+Set parameter GURO_PAR_SPECIAL
+Set parameter TokenServer to value "license.rc.princeton.edu"
+Set parameter Method to value 2
+Set parameter Crossover to value 0
+Set parameter BarConvTol to value 0.001
+Set parameter Threads to value 22
+Set parameter BarHomogeneous to value 1
+Set parameter Method to value 2
+Set parameter BarHomogeneous to value 1
+Set parameter Crossover to value 0
+Set parameter Threads to value 22
+Set parameter BarConvTol to value 0.001
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Red Hat Enterprise Linux 9.8 (Plow)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 22 threads
+
+Non-default parameters:
+Method  2
+BarConvTol  0.001
+BarHomogeneous  1
+Crossover  0
+Threads  22
+
+Optimize a model with 919800 rows, 324121 columns and 1217640 nonzeros (Min)
+Model fingerprint: 0xc6cdf79d
+Model has 175200 linear objective coefficients
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+04]
+  Objective range  [2e+01, 4e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+01, 2e+04]
+
+Presolve removed 324120 rows and 324121 columns
+Presolve time: 0.10s
+
+Barrier solved model in 0 iterations and 0.10 seconds (0.11 work units)
+Model is infeasible
+
+User-callback calls 28, time in user-callback 0.00 sec
+[ Info: 2026-10-12 23:30:18 Running case at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref
+[ Info: 2026-10-12 23:30:19  ++ Loading user additions from user_additions
+[ Info: 2026-10-12 23:30:19  ++ Added user assets: 0
+[ Info: 2026-10-12 23:30:19 Loading case from /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/system_data.json
+[ Info: 2026-10-12 23:30:19 Loading system data
+┌ Warning: 2026-10-12 23:30:20 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:32:00 Could not find: "assets/assets_2021", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/assets/assets_2021
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:32:00 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:33:39 Could not find: "assets/assets_2025", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/assets/assets_2025
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:33:39 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:35:17 Could not find: "assets/assets_2030", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/assets/assets_2030
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:35:17 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:36:56 Could not find: "assets/assets_2035", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/assets/assets_2035
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:36:56 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:39:16 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:40:54 Could not find: "assets/assets_2045", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/assets/assets_2045
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:40:54 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 23:42:32 Could not find: "assets/assets_2050", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/assets/assets_2050
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+[ Info: 2026-10-12 23:42:32 Done loading system data. It took 733.33 seconds
+[ Info: 2026-10-12 23:42:32 Done loading case data. It took 733.33 seconds
+[ Info: 2026-10-12 23:42:32 *** Generating case ***
+[ Info: 2026-10-12 23:42:33 Configuring case
+[ Info: 2026-10-12 23:42:33  -- Setting solution algorithm
+[ Info: 2026-10-12 23:42:33  -- Solution algorithm set to MacroEnergy.Myopic()
+┌ Warning: 2026-10-12 23:42:33 No myopic settings specified, using default settings
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/config/case_settings.jl:184
+[ Info: 2026-10-12 23:42:33 Configuring myopic
+[ Info: 2026-10-12 23:42:33 Generating systems
+[ Info: 2026-10-12 23:42:33 Generating system
+[ Info: 2026-10-12 23:42:35  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:36 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:36 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:36 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:36 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:36 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:37 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:37 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:42 Done generating system. It took 8.43 seconds
+[ Info: 2026-10-12 23:42:42 Generating system
+[ Info: 2026-10-12 23:42:43  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:43 Done generating system. It took 0.71 seconds
+[ Info: 2026-10-12 23:42:43 Generating system
+[ Info: 2026-10-12 23:42:43  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:43 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:43 Done generating system. It took 0.67 seconds
+[ Info: 2026-10-12 23:42:43 Generating system
+[ Info: 2026-10-12 23:42:44  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:44 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:44 Done generating system. It took 0.66 seconds
+[ Info: 2026-10-12 23:42:44 Generating system
+[ Info: 2026-10-12 23:42:45  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:45 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:53 Done generating system. It took 8.94 seconds
+[ Info: 2026-10-12 23:42:53 Generating system
+[ Info: 2026-10-12 23:42:54  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:54 Done generating system. It took 0.73 seconds
+[ Info: 2026-10-12 23:42:54 Generating system
+[ Info: 2026-10-12 23:42:54  ++ Added user commodities: 0 top-level, 0 subcommodities
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+┌ Warning: 2026-10-12 23:42:54 Using default weights = 1 as no period map provided and each period maps to itself
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_time_data.jl:199
+[ Info: 2026-10-12 23:42:54 Done generating system. It took 0.67 seconds
+[ Info: 2026-10-12 23:42:55  -- Discounting fixed costs for period 1
+[ Info: 2026-10-12 23:42:55  -- Computing retirement case for period 1
+[ Info: 2026-10-12 23:42:55  -- Discounting fixed costs for period 2
+[ Info: 2026-10-12 23:42:55  -- Computing retirement case for period 2
+[ Info: 2026-10-12 23:42:55  -- Discounting fixed costs for period 3
+[ Info: 2026-10-12 23:42:55  -- Computing retirement case for period 3
+[ Info: 2026-10-12 23:42:55  -- Discounting fixed costs for period 4
+[ Info: 2026-10-12 23:42:55  -- Computing retirement case for period 4
+[ Info: 2026-10-12 23:42:55  -- Discounting fixed costs for period 5
+[ Info: 2026-10-12 23:42:55  -- Computing retirement case for period 5
+[ Info: 2026-10-12 23:42:56  -- Discounting fixed costs for period 6
+[ Info: 2026-10-12 23:42:56  -- Computing retirement case for period 6
+[ Info: 2026-10-12 23:42:56  -- Discounting fixed costs for period 7
+[ Info: 2026-10-12 23:42:56  -- Computing retirement case for period 7
+[ Info: 2026-10-12 23:42:56 *** Done generating case. It took 22.39 seconds ***
+[ Info: 2026-10-12 23:42:56 *** Running simulation with myopic iteration ***
+[ Info: 2026-10-12 23:42:56  -- Generating model for period 1
+[ Info: 2026-10-12 23:42:57  -- Adding linking variables
+[ Info: 2026-10-12 23:42:57  -- Defining available capacity
+[ Info: 2026-10-12 23:42:57  -- Generating planning model
+[ Info: 2026-10-12 23:42:58  -- Including age-based retirements
+[ Info: 2026-10-12 23:42:58  -- Generating operational model
+[ Info: 2026-10-12 23:43:04 Scaling constraints and RHS
+[ Info: 2026-10-12 23:43:10  -- Final capacity in period 1 is being carried over to period 2
+[ Info: 2026-10-12 23:43:10  -- Writing outputs for period 1
+[ Info: 2026-10-12 23:43:13 Writing capacity results to /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/results_002/results_period_1/capacity.csv

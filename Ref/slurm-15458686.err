@@ -1,0 +1,1104 @@
+Precompiling packages...
+    Compiler Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Compiler/DqelA_ohvyt.ji.pidfile)
+    LaTeXStrings Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/LaTeXStrings/H4HGh_ohvyt.ji.pidfile)
+    IteratorInterfaceExtensions Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/IteratorInterfaceExtensions/N0h8q_ohvyt.ji.pidfile)
+    WorkerUtilities Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/WorkerUtilities/8EFUg_ohvyt.ji.pidfile)
+    ChunkCodecCore Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ChunkCodecCore/54tFi_ohvyt.ji.pidfile)
+    InitialValues Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/InitialValues/djxcV_ohvyt.ji.pidfile)
+    UnsafeArrays Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/UnsafeArrays/EnCWc_ohvyt.ji.pidfile)
+    FillArrays Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/FillArrays/2Dg1l_ohvyt.ji.pidfile)
+    IntegerMathUtils Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/IntegerMathUtils/WLcRF_ohvyt.ji.pidfile)
+    InverseFunctions Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/InverseFunctions/PkVmn_ohvyt.ji.pidfile)
+    Statistics Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Statistics/ERcPL_ohvyt.ji.pidfile)
+    Reexport Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Reexport/bTpYr_ohvyt.ji.pidfile)
+    InlineStrings Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/InlineStrings/prmY3_ohvyt.ji.pidfile)
+    IrrationalConstants Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/IrrationalConstants/ukdUG_ohvyt.ji.pidfile)
+    BitIntegers Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/BitIntegers/UNY4L_ohvyt.ji.pidfile)
+    CompositionsBase Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/CompositionsBase/KqDTx_ohvyt.ji.pidfile)
+   1598.7 ms  ✓ DataValueInterfaces
+   1746.8 ms  ✓ ArgCheck
+   1612.7 ms  ✓ EnumX
+   1416.3 ms  ✓ DefineSingletons
+   1411.4 ms  ✓ DBInterface
+   1395.6 ms  ✓ FNVHash
+   1387.9 ms  ✓ InvertedIndices
+   1359.1 ms  ✓ ConstructionBase
+   1406.6 ms  ✓ SlurmClusterManager
+   1478.2 ms  ✓ DocStringExtensions
+   1401.8 ms  ✓ NaNMath
+   1463.5 ms  ✓ URIs
+   1470.7 ms  ✓ AbstractTrees
+   1625.3 ms  ✓ OrderedCollections
+   1423.6 ms  ✓ TranscodingStreams
+   1832.6 ms  ✓ IteratorInterfaceExtensions
+   1860.7 ms  ✓ LaTeXStrings
+   1043.4 ms  ✓ DataAPI
+   2818.9 ms  ✓ WorkerUtilities
+   2814.9 ms  ✓ ChunkCodecCore
+   2811.3 ms  ✓ UnsafeArrays
+   2805.3 ms  ✓ IntegerMathUtils
+   2800.3 ms  ✓ InverseFunctions
+   2529.6 ms  ✓ Reexport
+   2478.9 ms  ✓ CompositionsBase
+   3008.8 ms  ✓ Compiler
+   2797.5 ms  ✓ Statistics
+   2502.4 ms  ✓ BitIntegers
+   2518.2 ms  ✓ InlineStrings
+   2815.3 ms  ✓ InitialValues
+   2808.0 ms  ✓ FillArrays
+    DataStructures Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/DataStructures/xKiwJ_ohvyt.ji.pidfile)
+   1166.6 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   2676.3 ms  ✓ IrrationalConstants
+   1233.3 ms  ✓ StaticArraysCore
+    Missings Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Missings/wLfgT_ohvyt.ji.pidfile)
+   1251.2 ms  ✓ CodecZlib
+    Primes Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Primes/TX3XQ_ohvyt.ji.pidfile)
+    InverseFunctionsTestExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/InverseFunctionsTestExt/iqUmc_ohvyt.ji.pidfile)
+   2983.3 ms  ✓ MacroTools
+   1327.9 ms  ✓ Compat
+   1334.6 ms  ✓ LoggingExtras
+    SparseArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/SparseArraysExt/k0lPI_ohvyt.ji.pidfile)
+    FillArraysSparseArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/FillArraysSparseArraysExt/pkjPP_ohvyt.ji.pidfile)
+   1366.8 ms  ✓ GZip
+    ChunkCodecLibZlib Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ChunkCodecLibZlib/dbPpT_ohvyt.ji.pidfile)
+    CommonSubexpressions Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/CommonSubexpressions/VMTKN_ohvyt.ji.pidfile)
+   1523.2 ms  ✓ Preferences
+    LogExpFunctions Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/LogExpFunctions/cmCYR_ohvyt.ji.pidfile)
+   1551.5 ms  ✓ StructUtils
+    260.3 ms  ✓ Primes
+    260.2 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+    210.8 ms  ✓ Statistics → SparseArraysExt
+    PrecompileTools Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/PrecompileTools/AQ9Mk_ohvyt.ji.pidfile)
+    194.4 ms  ✓ ChunkCodecLibZlib
+   1606.5 ms  ✓ StructTypes
+    DistributedArrays Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/DistributedArrays/Gfdem_ohvyt.ji.pidfile)
+    729.1 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1827.7 ms  ✓ CodeTracking
+    725.5 ms  ✓ Missings
+    739.9 ms  ✓ DiffResults
+    835.5 ms  ✓ PooledArrays
+    722.1 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    744.0 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    697.8 ms  ✓ TableTraits
+    Tables Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Tables/Z804B_ohvyt.ji.pidfile)
+   2092.7 ms  ✓ Baselet
+    555.4 ms  ✓ LogExpFunctions
+    LogExpFunctionsInverseFunctionsExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/LogExpFunctionsInverseFunctionsExt/IXKft_ohvyt.ji.pidfile)
+    776.1 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    781.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    774.2 ms  ✓ CommonSubexpressions
+   2241.0 ms  ✓ Crayons
+    703.4 ms  ✓ PrecompileTools
+    703.2 ms  ✓ StructUtils → StructUtilsStaticArraysCoreExt
+    StaticArrays Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StaticArrays/yY9vm_ohvyt.ji.pidfile)
+    StringManipulation Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StringManipulation/4nJQd_ohvyt.ji.pidfile)
+    Reseau Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Reseau/vKBJ8_ohvyt.ji.pidfile)
+    Thrift2 Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Thrift2/XuqWb_ohvyt.ji.pidfile)
+   2368.6 ms  ✓ SentinelArrays
+    883.6 ms  ✓ JLLWrappers
+    libsodium_jll Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/libsodium_jll/clBYb_ohvyt.ji.pidfile)
+    snappy_jll Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/snappy_jll/HTFX8_ohvyt.ji.pidfile)
+    MbedTLS_jll Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/MbedTLS_jll/u5NEn_ohvyt.ji.pidfile)
+    Zstd_jll Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Zstd_jll/cFDJB_ohvyt.ji.pidfile)
+    Libiconv_jll Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Libiconv_jll/ujTCF_ohvyt.ji.pidfile)
+    HiGHS_jll Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/HiGHS_jll/zNX2T_ohvyt.ji.pidfile)
+    662.5 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1155.5 ms  ✓ DistributedArrays
+    StatisticsExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StatisticsExt/xHbbE_ohvyt.ji.pidfile)
+    SparseArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/SparseArraysExt/gQ9yq_ohvyt.ji.pidfile)
+   2009.2 ms  ✓ DataStructures
+    SortingAlgorithms Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/SortingAlgorithms/6dCmw_ohvyt.ji.pidfile)
+    952.7 ms  ✓ Thrift2
+   1980.9 ms  ✓ Setfield
+    710.5 ms  ✓ DistributedArrays → StatisticsExt
+   1183.3 ms  ✓ libsodium_jll
+   1199.7 ms  ✓ Bzip2_jll
+   1186.0 ms  ✓ snappy_jll
+    SodiumSeal Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/SodiumSeal/Yq7DD_ohvyt.ji.pidfile)
+   1193.9 ms  ✓ Zstd_jll
+   1196.6 ms  ✓ Libiconv_jll
+   1200.9 ms  ✓ DecFP_jll
+   1199.8 ms  ✓ OpenSpecFun_jll
+    CodecBzip2 Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/CodecBzip2/5pIlR_ohvyt.ji.pidfile)
+    ChunkCodecLibZstd Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ChunkCodecLibZstd/j9Tqa_ohvyt.ji.pidfile)
+   1218.0 ms  ✓ DuckDB_jll
+    ChunkCodecLibSnappy Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ChunkCodecLibSnappy/pDIbZ_ohvyt.ji.pidfile)
+    StringEncodings Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StringEncodings/ACjY3_ohvyt.ji.pidfile)
+   1206.9 ms  ✓ HiGHS_jll
+   1236.7 ms  ✓ Gurobi_jll
+   1235.9 ms  ✓ MbedTLS_jll
+    MbedTLS Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/MbedTLS/bf9T0_ohvyt.ji.pidfile)
+   1230.6 ms  ✓ OpenBLAS32_jll
+   1276.8 ms  ✓ Lz4_jll
+   1299.8 ms  ✓ brotli_jll
+    990.4 ms  ✓ DistributedArrays → SparseArraysExt
+    ChunkCodecLibBrotli Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ChunkCodecLibBrotli/4lGCT_ohvyt.ji.pidfile)
+   1627.0 ms  ✓ FilePathsBase
+    799.4 ms  ✓ SortingAlgorithms
+   1790.2 ms  ✓ Tables
+    StructUtilsTablesExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StructUtilsTablesExt/SRnPs_ohvyt.ji.pidfile)
+    TableOperations Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/TableOperations/5GGWt_ohvyt.ji.pidfile)
+    399.5 ms  ✓ StructUtils → StructUtilsTablesExt
+    642.1 ms  ✓ ChunkCodecLibSnappy
+    710.1 ms  ✓ SodiumSeal
+    789.2 ms  ✓ CodecBzip2
+    608.5 ms  ✓ TableOperations
+    831.5 ms  ✓ StringEncodings
+    YAML Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/YAML/LPCgu_ohvyt.ji.pidfile)
+    903.1 ms  ✓ ChunkCodecLibZstd
+    803.1 ms  ✓ FilePathsBase → FilePathsBaseMmapExt
+   2337.9 ms  ✓ StringManipulation
+    PrettyTables Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/PrettyTables/kRdcL_ohvyt.ji.pidfile)
+   2624.6 ms  ✓ Accessors
+   1008.1 ms  ✓ ChunkCodecLibBrotli
+   1072.6 ms  ✓ ChunkCodecLibLz4
+   1566.0 ms  ✓ SplittablesBase
+   1567.4 ms  ✓ MbedTLS
+   1675.6 ms  ✓ FilePathsBase → FilePathsBaseTestExt
+    775.1 ms  ✓ Accessors → LinearAlgebraExt
+    935.6 ms  ✓ Accessors → TestExt
+   1548.4 ms  ✓ YAML
+   6512.2 ms  ✓ MutableArithmetics
+   1094.7 ms  ✓ BangBang
+   3265.4 ms  ✓ SpecialFunctions
+    771.4 ms  ✓ BangBang → BangBangTablesExt
+    913.3 ms  ✓ MicroCollections
+    934.0 ms  ✓ DiffRules
+   6639.6 ms  ✓ Parsers
+    ParsersExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ParsersExt/cULGY_ohvyt.ji.pidfile)
+   2028.5 ms  ✓ DecFP
+   7332.0 ms  ✓ JuliaInterpreter
+    743.0 ms  ✓ InlineStrings → ParsersExt
+    WeakRefStrings Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/WeakRefStrings/muGbw_ohvyt.ji.pidfile)
+   7494.8 ms  ✓ StaticArrays
+    StaticArraysStatisticsExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StaticArraysStatisticsExt/EfhbW_ohvyt.ji.pidfile)
+    ConstructionBaseStaticArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ConstructionBaseStaticArraysExt/MmdaU_ohvyt.ji.pidfile)
+    FillArraysStaticArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/FillArraysStaticArraysExt/tgVPO_ohvyt.ji.pidfile)
+    StaticArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/StaticArraysExt/sIz4V_ohvyt.ji.pidfile)
+   1224.2 ms  ✓ FixedPointDecimals
+    863.6 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    884.0 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    898.1 ms  ✓ FillArrays → FillArraysStaticArraysExt
+    ArrayLayouts Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ArrayLayouts/QloHc_ohvyt.ji.pidfile)
+    930.2 ms  ✓ Accessors → StaticArraysExt
+    951.2 ms  ✓ BangBang → BangBangStaticArraysExt
+   1109.8 ms  ✓ WeakRefStrings
+    CSV Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/CSV/HHBkp_ohvyt.ji.pidfile)
+    DuckDB Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/DuckDB/89qwz_ohvyt.ji.pidfile)
+   3346.7 ms  ✓ Transducers
+   3714.8 ms  ✓ ForwardDiff
+    984.7 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+   3716.4 ms  ✓ JSON
+   2981.2 ms  ✓ DuckDB
+   5709.7 ms  ✓ JSON3
+   1946.2 ms  ✓ LightBSON
+   7908.2 ms  ✓ LoweredCodeUtils
+   1169.4 ms  ✓ LightBSON → LightBSONFixedPointDecimalsExt
+   6061.6 ms  ✓ BenchmarkTools
+  13278.8 ms  ✓ ArrayLayouts
+    ArrayLayoutsSparseArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/ArrayLayoutsSparseArraysExt/S7LmV_ohvyt.ji.pidfile)
+  13840.9 ms  ✓ CSV
+  20706.1 ms  ✓ PrettyTables
+    DataFrames Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/DataFrames/AR9oZ_ohvyt.ji.pidfile)
+   1942.0 ms  ✓ ArrayLayouts → ArrayLayoutsSparseArraysExt
+    LazyArrays Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/LazyArrays/h0pkJ_ohvyt.ji.pidfile)
+  11721.6 ms  ✓ Revise
+   3151.6 ms  ✓ LazyArrays
+    LazyArraysStaticArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/LazyArraysStaticArraysExt/t3AsQ_ohvyt.ji.pidfile)
+    TransducersLazyArraysExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/TransducersLazyArraysExt/j09U1_ohvyt.ji.pidfile)
+   1143.5 ms  ✓ Revise → DistributedExt
+   1827.3 ms  ✓ LazyArrays → LazyArraysStaticArraysExt
+   2264.4 ms  ✓ Transducers → TransducersLazyArraysExt
+    Parquet2 Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/Parquet2/D8yIO_ohvyt.ji.pidfile)
+              ✗ Reseau
+    HTTP Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/HTTP/zXWya_ohvyt.ji.pidfile)
+  39318.2 ms  ✓ MathOptInterface
+   2431.2 ms  ✓ MathOptIIS
+   2498.0 ms  ✓ MathOptInterface → MathOptInterfaceBenchmarkToolsExt
+  35763.8 ms  ✓ DataFrames
+    BangBangDataFramesExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/BangBangDataFramesExt/sNKPH_ohvyt.ji.pidfile)
+    TransducersDataFramesExt Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/TransducersDataFramesExt/u4UET_ohvyt.ji.pidfile)
+   9147.6 ms  ✓ Gurobi
+   1949.1 ms  ✓ Transducers → TransducersDataFramesExt
+   2204.6 ms  ✓ BangBang → BangBangDataFramesExt
+   9999.6 ms  ✓ HiGHS
+              ✗ HTTP
+    GitHub Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/GitHub/ks6Kg_ohvyt.ji.pidfile)
+  22795.8 ms  ✓ JuMP
+   2899.6 ms  ✓ MacroEnergyScaling
+   4152.2 ms  ✓ MacroEnergySolvers
+  50773.2 ms  ✓ Parquet2
+              ✗ GitHub
+    MacroEnergy Being precompiled by another process (pid: 133203, pidfile: /home/hk6264/.julia/compiled/v1.12/MacroEnergy/Gkjoy_ohvyt.ji.pidfile)
+Info Given MacroEnergy was explicitly requested, output will be shown live [0K
+[0KERROR: LoadError: tls handshake failed: tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024) [tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024)]
+[0KStacktrace:
+[0K  [1] handshake!(conn::Reseau.TLS.Conn)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1629
+[0K  [2] _connect_client(tcp::Reseau.TCP.Conn, config::Reseau.TLS.Config, deadline_ns::Int64)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2731
+[0K  [3] _connect_client
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2716 [inlined]
+[0K  [4] _connect
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2762 [inlined]
+[0K  [5] connect
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2786 [inlined]
+[0K  [6] _pc_run_tls_roundtrip_states!(server_config::Reseau.TLS.Config, client_config::Reseau.TLS.Config)
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:558
+[0K  [7] _pc_run_tls_roundtrip! (repeats 2 times)
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:588 [inlined]
+[0K  [8] _pc_run_tls_workload!()
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:629
+[0K  [9] _pc_run_selected_workloads!()
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:767
+[0K [10] _pc_run_precompile_workloads!()
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:774
+[0K [11] macro expansion
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:780 [inlined]
+[0K [12] macro expansion
+[0K    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+[0K [13] macro expansion
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:779 [inlined]
+[0K [14] macro expansion
+[0K    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:118 [inlined]
+[0K [15] top-level scope
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:115
+[0K [16] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:307
+[0K [17] top-level scope
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:19
+[0K [18] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+[0K    @ Base ./loading.jl:2996
+[0K [20] top-level scope
+[0K    @ stdin:5
+[0K [21] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2842
+[0K [23] include_string
+[0K    @ ./loading.jl:2852 [inlined]
+[0K [24] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [25] _start()
+[0K    @ Base ./client.jl:550
+[0Kin expression starting at /home/hk6264/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:778
+[0Kin expression starting at /home/hk6264/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:1
+[0Kin expression starting at stdin:5
+[0K
+[0Kcaused by: tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024)
+[0KStacktrace:
+[0K  [1] _tls_fail
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/record_common.jl:42 [inlined]
+[0K  [2] _tls_verify_peer_certificate_chain!(certificates::Vector{Vector{UInt8}}, store::Reseau.TLS._TLSTrustStore, purpose::String)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:558
+[0K  [3] _tls_verify_certificate_chain(certificates::Vector{Vector{UInt8}}; verify_peer::Bool, verify_hostname::Bool, ca_file::String, purpose::String, peer_name::String)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:602
+[0K  [4] _tls_verify_certificate_chain
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:585 [inlined]
+[0K  [5] #_tls13_verify_certificate_chain#116
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:695 [inlined]
+[0K  [6] _tls13_verify_certificate_chain
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:687 [inlined]
+[0K  [7] #_tls13_verify_server_certificate_chain#117
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:712 [inlined]
+[0K  [8] _tls13_verify_server_certificate_chain
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:705 [inlined]
+[0K  [9] _tls13_verify_server_certificates!
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:233 [inlined]
+[0K [10] _read_server_certificate!(state::Reseau.TLS._TLS13ClientHandshakeState, io::Reseau.TLS._TLS13HandshakeRecordIO)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:753
+[0K [11] _client_handshake_tls13_after_server_hello!(state::Reseau.TLS._TLS13ClientHandshakeState, io::Reseau.TLS._TLS13HandshakeRecordIO)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:868
+[0K [12] _native_tls_auto_client_handshake!(conn::Reseau.TLS.Conn)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1407
+[0K [13] (::Reseau.TLS.var"#handshake!##0#handshake!##1"{Reseau.TLS.Conn})()
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1591
+[0K [14] _with_handshake_deadline(f::Reseau.TLS.var"#handshake!##0#handshake!##1"{Reseau.TLS.Conn}, conn::Reseau.TLS.Conn)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1503
+[0K [15] handshake!(conn::Reseau.TLS.Conn)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1570
+[0K [16] _connect_client(tcp::Reseau.TCP.Conn, config::Reseau.TLS.Config, deadline_ns::Int64)
+[0K    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2731
+[0K [17] _connect_client
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2716 [inlined]
+[0K [18] _connect
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2762 [inlined]
+[0K [19] connect
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2786 [inlined]
+[0K [20] _pc_run_tls_roundtrip_states!(server_config::Reseau.TLS.Config, client_config::Reseau.TLS.Config)
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:558
+[0K [21] _pc_run_tls_roundtrip! (repeats 2 times)
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:588 [inlined]
+[0K [22] _pc_run_tls_workload!()
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:629
+[0K [23] _pc_run_selected_workloads!()
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:767
+[0K [24] _pc_run_precompile_workloads!()
+[0K    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:774
+[0K [25] macro expansion
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:780 [inlined]
+[0K [26] macro expansion
+[0K    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+[0K [27] macro expansion
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:779 [inlined]
+[0K [28] macro expansion
+[0K    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:118 [inlined]
+[0K [29] top-level scope
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:115
+[0K [30] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:307
+[0K [31] top-level scope
+[0K    @ ~/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:19
+[0K [32] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [33] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+[0K    @ Base ./loading.jl:2996
+[0K [34] top-level scope
+[0K    @ stdin:5
+[0K [35] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [36] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2842
+[0K [37] include_string
+[0K    @ ./loading.jl:2852 [inlined]
+[0K [38] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [39] _start()
+[0K    @ Base ./client.jl:550
+[0KERROR: LoadError: Failed to precompile Reseau [802f3686-a58f-41ce-bb0c-3c43c75bba36] to "/home/hk6264/.julia/compiled/v1.12/Reseau/jl_b7BZHh".
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:44
+[0K  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+[0K    @ Base ./loading.jl:3283
+[0K  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+[0K    @ Base ./loading.jl:2651
+[0K  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+[0K    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+[0K  [5] #mkpidlock#7
+[0K    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+[0K  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+[0K    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+[0K  [7] #invokelatest_gr#232
+[0K    @ ./reflection.jl:1282 [inlined]
+[0K  [8] invokelatest_gr
+[0K    @ ./reflection.jl:1274 [inlined]
+[0K  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+[0K    @ Base ./loading.jl:3854
+[0K [10] maybe_cachefile_lock
+[0K    @ ./loading.jl:3851 [inlined]
+[0K [11] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2637
+[0K [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2465
+[0K [13] macro expansion
+[0K    @ ./loading.jl:2393 [inlined]
+[0K [14] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K [15] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2358
+[0K [16] require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2334
+[0K [17] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:307
+[0K [18] top-level scope
+[0K    @ ~/.julia/packages/HTTP/zWQV0/src/HTTP.jl:34
+[0K [19] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [20] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+[0K    @ Base ./loading.jl:2996
+[0K [21] top-level scope
+[0K    @ stdin:5
+[0K [22] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [23] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2842
+[0K [24] include_string
+[0K    @ ./loading.jl:2852 [inlined]
+[0K [25] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [26] _start()
+[0K    @ Base ./client.jl:550
+[0Kin expression starting at /home/hk6264/.julia/packages/HTTP/zWQV0/src/http_core.jl:2
+[0Kin expression starting at /home/hk6264/.julia/packages/HTTP/zWQV0/src/HTTP.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Failed to precompile HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3] to "/home/hk6264/.julia/compiled/v1.12/HTTP/jl_1V7Dz7".
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:44
+[0K  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+[0K    @ Base ./loading.jl:3283
+[0K  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+[0K    @ Base ./loading.jl:2651
+[0K  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+[0K    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+[0K  [5] #mkpidlock#7
+[0K    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+[0K  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+[0K    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+[0K  [7] #invokelatest_gr#232
+[0K    @ ./reflection.jl:1282 [inlined]
+[0K  [8] invokelatest_gr
+[0K    @ ./reflection.jl:1274 [inlined]
+[0K  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+[0K    @ Base ./loading.jl:3854
+[0K [10] maybe_cachefile_lock
+[0K    @ ./loading.jl:3851 [inlined]
+[0K [11] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2637
+[0K [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2465
+[0K [13] macro expansion
+[0K    @ ./loading.jl:2393 [inlined]
+[0K [14] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K [15] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2358
+[0K [16] require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2334
+[0K [17] top-level scope
+[0K    @ ~/.julia/packages/GitHub/t7l7N/src/GitHub.jl:10
+[0K [18] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+[0K    @ Base ./loading.jl:2996
+[0K [20] top-level scope
+[0K    @ stdin:5
+[0K [21] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2842
+[0K [23] include_string
+[0K    @ ./loading.jl:2852 [inlined]
+[0K [24] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [25] _start()
+[0K    @ Base ./client.jl:550
+[0Kin expression starting at /home/hk6264/.julia/packages/GitHub/t7l7N/src/GitHub.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Failed to precompile GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26] to "/home/hk6264/.julia/compiled/v1.12/GitHub/jl_VozdiF".
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:44
+[0K  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+[0K    @ Base ./loading.jl:3283
+[0K  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+[0K    @ Base ./loading.jl:2651
+[0K  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+[0K    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+[0K  [5] #mkpidlock#7
+[0K    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+[0K  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+[0K    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+[0K  [7] #invokelatest_gr#232
+[0K    @ ./reflection.jl:1282 [inlined]
+[0K  [8] invokelatest_gr
+[0K    @ ./reflection.jl:1274 [inlined]
+[0K  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+[0K    @ Base ./loading.jl:3854
+[0K [10] maybe_cachefile_lock
+[0K    @ ./loading.jl:3851 [inlined]
+[0K [11] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2637
+[0K [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2465
+[0K [13] macro expansion
+[0K    @ ./loading.jl:2393 [inlined]
+[0K [14] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K [15] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2358
+[0K [16] require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2334
+[0K [17] top-level scope
+[0K    @ /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/MacroEnergy.jl:19
+[0K [18] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:2996
+[0K [20] top-level scope
+[0K    @ stdin:5
+[0K [21] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2842
+[0K [23] include_string
+[0K    @ ./loading.jl:2852 [inlined]
+[0K [24] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [25] _start()
+[0K    @ Base ./client.jl:550
+[0Kin expression starting at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/MacroEnergy.jl:1
+[0Kin expression starting at stdin:5
+              ✗ MacroEnergy
+  155 dependencies successfully precompiled in 160 seconds. 39 already precompiled.
+  1 dependency had output during precompilation:
+┌ Gurobi
+│  Set parameter LicenseID to value 197246
+│  Set parameter GURO_PAR_SPECIAL
+│  Set parameter TokenServer to value "license.rc.princeton.edu"
+└  
+
+ERROR: LoadError: The following 3 direct dependencies failed to precompile:
+
+MacroEnergyGurobiExt 
+
+Error: Missing source file for Base.PkgId(Base.UUID("7648d1ff-660e-51ee-8f05-bd0e12b09409"), "MacroEnergyGurobiExt")
+MacroEnergy 
+
+Failed to precompile MacroEnergy [260b7737-bf0e-4e84-9335-3af14438b1f5] to "/home/hk6264/.julia/compiled/v1.12/MacroEnergy/jl_XHLumk".
+ERROR: LoadError: tls handshake failed: tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024) [tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024)]
+Stacktrace:
+  [1] handshake!(conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1629
+  [2] _connect_client(tcp::Reseau.TCP.Conn, config::Reseau.TLS.Config, deadline_ns::Int64)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2731
+  [3] _connect_client
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2716 [inlined]
+  [4] _connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2762 [inlined]
+  [5] connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2786 [inlined]
+  [6] _pc_run_tls_roundtrip_states!(server_config::Reseau.TLS.Config, client_config::Reseau.TLS.Config)
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:558
+  [7] _pc_run_tls_roundtrip! (repeats 2 times)
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:588 [inlined]
+  [8] _pc_run_tls_workload!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:629
+  [9] _pc_run_selected_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:767
+ [10] _pc_run_precompile_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:774
+ [11] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:780 [inlined]
+ [12] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+ [13] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:779 [inlined]
+ [14] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:118 [inlined]
+ [15] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:115
+ [16] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [17] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:19
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [23] include_string
+    @ ./loading.jl:2852 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/hk6264/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:778
+in expression starting at /home/hk6264/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:1
+in expression starting at stdin:5
+
+caused by: tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024)
+Stacktrace:
+  [1] _tls_fail
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/record_common.jl:42 [inlined]
+  [2] _tls_verify_peer_certificate_chain!(certificates::Vector{Vector{UInt8}}, store::Reseau.TLS._TLSTrustStore, purpose::String)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:558
+  [3] _tls_verify_certificate_chain(certificates::Vector{Vector{UInt8}}; verify_peer::Bool, verify_hostname::Bool, ca_file::String, purpose::String, peer_name::String)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:602
+  [4] _tls_verify_certificate_chain
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:585 [inlined]
+  [5] #_tls13_verify_certificate_chain#116
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:695 [inlined]
+  [6] _tls13_verify_certificate_chain
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:687 [inlined]
+  [7] #_tls13_verify_server_certificate_chain#117
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:712 [inlined]
+  [8] _tls13_verify_server_certificate_chain
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:705 [inlined]
+  [9] _tls13_verify_server_certificates!
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:233 [inlined]
+ [10] _read_server_certificate!(state::Reseau.TLS._TLS13ClientHandshakeState, io::Reseau.TLS._TLS13HandshakeRecordIO)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:753
+ [11] _client_handshake_tls13_after_server_hello!(state::Reseau.TLS._TLS13ClientHandshakeState, io::Reseau.TLS._TLS13HandshakeRecordIO)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:868
+ [12] _native_tls_auto_client_handshake!(conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1407
+ [13] (::Reseau.TLS.var"#handshake!##0#handshake!##1"{Reseau.TLS.Conn})()
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1591
+ [14] _with_handshake_deadline(f::Reseau.TLS.var"#handshake!##0#handshake!##1"{Reseau.TLS.Conn}, conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1503
+ [15] handshake!(conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1570
+ [16] _connect_client(tcp::Reseau.TCP.Conn, config::Reseau.TLS.Config, deadline_ns::Int64)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2731
+ [17] _connect_client
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2716 [inlined]
+ [18] _connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2762 [inlined]
+ [19] connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2786 [inlined]
+ [20] _pc_run_tls_roundtrip_states!(server_config::Reseau.TLS.Config, client_config::Reseau.TLS.Config)
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:558
+ [21] _pc_run_tls_roundtrip! (repeats 2 times)
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:588 [inlined]
+ [22] _pc_run_tls_workload!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:629
+ [23] _pc_run_selected_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:767
+ [24] _pc_run_precompile_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:774
+ [25] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:780 [inlined]
+ [26] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+ [27] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:779 [inlined]
+ [28] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:118 [inlined]
+ [29] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:115
+ [30] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [31] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:19
+ [32] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [33] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [34] top-level scope
+    @ stdin:5
+ [35] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [36] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [37] include_string
+    @ ./loading.jl:2852 [inlined]
+ [38] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [39] _start()
+    @ Base ./client.jl:550
+ERROR: LoadError: Failed to precompile Reseau [802f3686-a58f-41ce-bb0c-3c43c75bba36] to "/home/hk6264/.julia/compiled/v1.12/Reseau/jl_b7BZHh".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3283
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2651
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3854
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3851 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2637
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2465
+ [13] macro expansion
+    @ ./loading.jl:2393 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2358
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2334
+ [17] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [18] top-level scope
+    @ ~/.julia/packages/HTTP/zWQV0/src/HTTP.jl:34
+ [19] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [20] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [21] top-level scope
+    @ stdin:5
+ [22] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [23] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [24] include_string
+    @ ./loading.jl:2852 [inlined]
+ [25] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [26] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/hk6264/.julia/packages/HTTP/zWQV0/src/http_core.jl:2
+in expression starting at /home/hk6264/.julia/packages/HTTP/zWQV0/src/HTTP.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3] to "/home/hk6264/.julia/compiled/v1.12/HTTP/jl_1V7Dz7".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3283
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2651
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3854
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3851 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2637
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2465
+ [13] macro expansion
+    @ ./loading.jl:2393 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2358
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2334
+ [17] top-level scope
+    @ ~/.julia/packages/GitHub/t7l7N/src/GitHub.jl:10
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [23] include_string
+    @ ./loading.jl:2852 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/hk6264/.julia/packages/GitHub/t7l7N/src/GitHub.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26] to "/home/hk6264/.julia/compiled/v1.12/GitHub/jl_VozdiF".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3283
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2651
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3854
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3851 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2637
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2465
+ [13] macro expansion
+    @ ./loading.jl:2393 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2358
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2334
+ [17] top-level scope
+    @ /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/MacroEnergy.jl:19
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2996
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [23] include_string
+    @ ./loading.jl:2852 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/MacroEnergy.jl:1
+in expression starting at stdin:5
+
+GitHub 
+
+Failed to precompile GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26] to "/home/hk6264/.julia/compiled/v1.12/GitHub/jl_3s46H1".
+ERROR: LoadError: tls handshake failed: tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024) [tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024)]
+Stacktrace:
+  [1] handshake!(conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1629
+  [2] _connect_client(tcp::Reseau.TCP.Conn, config::Reseau.TLS.Config, deadline_ns::Int64)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2731
+  [3] _connect_client
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2716 [inlined]
+  [4] _connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2762 [inlined]
+  [5] connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2786 [inlined]
+  [6] _pc_run_tls_roundtrip_states!(server_config::Reseau.TLS.Config, client_config::Reseau.TLS.Config)
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:558
+  [7] _pc_run_tls_roundtrip! (repeats 2 times)
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:588 [inlined]
+  [8] _pc_run_tls_workload!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:629
+  [9] _pc_run_selected_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:767
+ [10] _pc_run_precompile_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:774
+ [11] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:780 [inlined]
+ [12] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+ [13] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:779 [inlined]
+ [14] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:118 [inlined]
+ [15] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:115
+ [16] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [17] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:19
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [23] include_string
+    @ ./loading.jl:2852 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/hk6264/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:778
+in expression starting at /home/hk6264/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:1
+in expression starting at stdin:5
+
+caused by: tls: certificate has expired or is not yet valid (valid unix range 1714842424-1786036024)
+Stacktrace:
+  [1] _tls_fail
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/record_common.jl:42 [inlined]
+  [2] _tls_verify_peer_certificate_chain!(certificates::Vector{Vector{UInt8}}, store::Reseau.TLS._TLSTrustStore, purpose::String)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:558
+  [3] _tls_verify_certificate_chain(certificates::Vector{Vector{UInt8}}; verify_peer::Bool, verify_hostname::Bool, ca_file::String, purpose::String, peer_name::String)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:602
+  [4] _tls_verify_certificate_chain
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:585 [inlined]
+  [5] #_tls13_verify_certificate_chain#116
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:695 [inlined]
+  [6] _tls13_verify_certificate_chain
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:687 [inlined]
+  [7] #_tls13_verify_server_certificate_chain#117
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:712 [inlined]
+  [8] _tls13_verify_server_certificate_chain
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/x509_verify.jl:705 [inlined]
+  [9] _tls13_verify_server_certificates!
+    @ ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:233 [inlined]
+ [10] _read_server_certificate!(state::Reseau.TLS._TLS13ClientHandshakeState, io::Reseau.TLS._TLS13HandshakeRecordIO)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:753
+ [11] _client_handshake_tls13_after_server_hello!(state::Reseau.TLS._TLS13ClientHandshakeState, io::Reseau.TLS._TLS13HandshakeRecordIO)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/tls/handshake_client_tls13.jl:868
+ [12] _native_tls_auto_client_handshake!(conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1407
+ [13] (::Reseau.TLS.var"#handshake!##0#handshake!##1"{Reseau.TLS.Conn})()
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1591
+ [14] _with_handshake_deadline(f::Reseau.TLS.var"#handshake!##0#handshake!##1"{Reseau.TLS.Conn}, conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1503
+ [15] handshake!(conn::Reseau.TLS.Conn)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:1570
+ [16] _connect_client(tcp::Reseau.TCP.Conn, config::Reseau.TLS.Config, deadline_ns::Int64)
+    @ Reseau.TLS ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2731
+ [17] _connect_client
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2716 [inlined]
+ [18] _connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2762 [inlined]
+ [19] connect
+    @ ~/.julia/packages/Reseau/Mkbpx/src/5_tls.jl:2786 [inlined]
+ [20] _pc_run_tls_roundtrip_states!(server_config::Reseau.TLS.Config, client_config::Reseau.TLS.Config)
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:558
+ [21] _pc_run_tls_roundtrip! (repeats 2 times)
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:588 [inlined]
+ [22] _pc_run_tls_workload!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:629
+ [23] _pc_run_selected_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:767
+ [24] _pc_run_precompile_workloads!()
+    @ Reseau ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:774
+ [25] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:780 [inlined]
+ [26] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+ [27] macro expansion
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:779 [inlined]
+ [28] macro expansion
+    @ ~/.julia/packages/PrecompileTools/QUxvR/src/workloads.jl:118 [inlined]
+ [29] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/6_precompile_workload.jl:115
+ [30] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [31] top-level scope
+    @ ~/.julia/packages/Reseau/Mkbpx/src/Reseau.jl:19
+ [32] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [33] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [34] top-level scope
+    @ stdin:5
+ [35] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [36] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [37] include_string
+    @ ./loading.jl:2852 [inlined]
+ [38] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [39] _start()
+    @ Base ./client.jl:550
+ERROR: LoadError: Failed to precompile Reseau [802f3686-a58f-41ce-bb0c-3c43c75bba36] to "/home/hk6264/.julia/compiled/v1.12/Reseau/jl_0MjIFM".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3283
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2651
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3854
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3851 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2637
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2465
+ [13] macro expansion
+    @ ./loading.jl:2393 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2358
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2334
+ [17] include(mapexpr::Function, mod::Module, _path::String)
+    @ Base ./Base.jl:307
+ [18] top-level scope
+    @ ~/.julia/packages/HTTP/zWQV0/src/HTTP.jl:34
+ [19] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [20] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2996
+ [21] top-level scope
+    @ stdin:5
+ [22] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [23] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [24] include_string
+    @ ./loading.jl:2852 [inlined]
+ [25] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [26] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/hk6264/.julia/packages/HTTP/zWQV0/src/http_core.jl:2
+in expression starting at /home/hk6264/.julia/packages/HTTP/zWQV0/src/HTTP.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3] to "/home/hk6264/.julia/compiled/v1.12/HTTP/jl_rCsANa".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3283
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2651
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:93
+  [5] #mkpidlock#7
+    @ /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:88 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile /scratch/gpfs/LICENSED/x86_64/julia/1.12.1/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:114
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1282 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1274 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3854
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3851 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2637
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2465
+ [13] macro expansion
+    @ ./loading.jl:2393 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2358
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2334
+ [17] top-level scope
+    @ ~/.julia/packages/GitHub/t7l7N/src/GitHub.jl:10
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2996
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2842
+ [23] include_string
+    @ ./loading.jl:2852 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /home/hk6264/.julia/packages/GitHub/t7l7N/src/GitHub.jl:1
+in expression starting at stdin:5
+in expression starting at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/run_v1_BNEF.jl:1

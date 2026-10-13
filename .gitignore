@@ -58,3 +58,6 @@ results_*/
 
 *.log
 /examples
+old_runs/
+Post-processing files/
+LocalPreferences.toml

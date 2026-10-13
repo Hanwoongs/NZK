@@ -1,0 +1,26 @@
+[ Info: 2026-10-12 18:44:14 Running case at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC
+[ Info: 2026-10-12 18:44:14  ++ Loading user additions from user_additions
+[ Info: 2026-10-12 18:44:14  ++ Added user assets: 0
+[ Info: 2026-10-12 18:44:14 Loading case from /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/system_data.json
+[ Info: 2026-10-12 18:44:14 Loading system data
+┌ Warning: 2026-10-12 18:44:16 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 18:46:40 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 18:49:02 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 18:51:24 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 18:53:45 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 18:56:06 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+┌ Warning: 2026-10-12 18:58:28 Could not find: "locations", full path: /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/NDC/locations
+└ @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_json_inputs.jl:137
+[ Info: 2026-10-12 19:00:50 Done loading system data. It took 996.12 seconds
+[ Info: 2026-10-12 19:00:50 Done loading case data. It took 996.24 seconds
+[ Info: 2026-10-12 19:00:50 *** Generating case ***
+[ Info: 2026-10-12 19:00:52 Configuring case
+[ Info: 2026-10-12 19:00:52  -- Setting solution algorithm
+[ Info: 2026-10-12 19:00:52  -- Solution algorithm set to MacroEnergy.Myopic()
+[ Info: 2026-10-12 19:00:52 Configuring myopic

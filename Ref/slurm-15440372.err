@@ -1,0 +1,67 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS: invalid
+┌ Error: Error during loading of extension MacroEnergyGurobiExt of MacroEnergy, use `Base.retry_load_extensions()` to retry.
+│   exception =
+│    1-element ExceptionStack:
+│    ArgumentError: Package MacroEnergyGurobiExt [7648d1ff-660e-51ee-8f05-bd0e12b09409] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] __require_prelocked(pkg::Base.PkgId, env::Nothing)
+│        @ Base ./loading.jl:2587
+│      [2] _require_prelocked(uuidkey::Base.PkgId, env::Nothing)
+│        @ Base ./loading.jl:2465
+│      [3] _require_prelocked(uuidkey::Base.PkgId)
+│        @ Base ./loading.jl:2459
+│      [4] run_extension_callbacks(extid::Base.ExtensionId)
+│        @ Base ./loading.jl:1579
+│      [5] run_extension_callbacks(pkgid::Base.PkgId)
+│        @ Base ./loading.jl:1616
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1432
+│      [7] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:2473
+│      [8] macro expansion
+│        @ ./loading.jl:2393 [inlined]
+│      [9] macro expansion
+│        @ ./lock.jl:376 [inlined]
+│     [10] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:2358
+│     [11] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:2334
+│     [12] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [13] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [14] _start()
+│        @ Base ./client.jl:550
+└ @ Base loading.jl:1589
+ERROR: LoadError: KeyError: key :folder not found
+Stacktrace:
+  [1] getindex(h::Dict{Symbol, Any}, key::Symbol)
+    @ Base ./dict.jl:477
+  [2] validate_myopic_settings(myopic_settings::Dict{Symbol, Any})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/config/case_settings.jl:209
+  [3] configure_myopic!(case_settings::Dict{Symbol, Any})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/config/case_settings.jl:188
+  [4] configure_case(case_settings::Dict{Symbol, Any})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/config/case_settings.jl:135
+  [5] configure_case(case_settings::Dict{Symbol, Any}, rel_path::String)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/config/case_settings.jl:124
+  [6] generate_case(path::String, systems_data::Dict{Symbol, Any})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/model/case.jl:17
+  [7] load_case(path::String; lazy_load::Bool)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_stages_data.jl:40
+  [8] load_case
+    @ /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/load_inputs/load_stages_data.jl:24 [inlined]
+  [9] run_case(case_path::String; lazy_load::Bool, log_level::Base.CoreLogging.LogLevel, log_to_console::Bool, log_to_file::Bool, log_file_path::String, log_file_attribution::Bool, optimizer::DataType, optimizer_env::Nothing, optimizer_attributes::Tuple{Pair{String, Int64}, Pair{String, Int64}, Pair{String, Float64}, Pair{String, Int64}, Pair{String, Int64}}, planning_optimizer::DataType, subproblem_optimizer::DataType, planning_optimizer_attributes::Tuple{Pair{String, String}, Pair{String, String}, Pair{String, Float64}}, subproblem_optimizer_attributes::Tuple{Pair{String, String}, Pair{String, String}, Pair{String, Float64}})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/utilities/run_tools.jl:128
+ [10] top-level scope
+    @ /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/run_v1_BNEF.jl:13
+ [11] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [12] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [13] _start()
+    @ Base ./client.jl:550
+in expression starting at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/run_v1_BNEF.jl:13

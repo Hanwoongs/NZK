@@ -1,0 +1,71 @@
+┌ Error: Error during loading of extension MacroEnergyGurobiExt of MacroEnergy, use `Base.retry_load_extensions()` to retry.
+│   exception =
+│    1-element ExceptionStack:
+│    ArgumentError: Package MacroEnergyGurobiExt [7648d1ff-660e-51ee-8f05-bd0e12b09409] is required but does not seem to be installed:
+│     - Run `Pkg.instantiate()` to install all recorded dependencies.
+│    
+│    Stacktrace:
+│      [1] __require_prelocked(pkg::Base.PkgId, env::Nothing)
+│        @ Base ./loading.jl:2587
+│      [2] _require_prelocked(uuidkey::Base.PkgId, env::Nothing)
+│        @ Base ./loading.jl:2465
+│      [3] _require_prelocked(uuidkey::Base.PkgId)
+│        @ Base ./loading.jl:2459
+│      [4] run_extension_callbacks(extid::Base.ExtensionId)
+│        @ Base ./loading.jl:1579
+│      [5] run_extension_callbacks(pkgid::Base.PkgId)
+│        @ Base ./loading.jl:1616
+│      [6] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1432
+│      [7] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:2473
+│      [8] macro expansion
+│        @ ./loading.jl:2393 [inlined]
+│      [9] macro expansion
+│        @ ./lock.jl:376 [inlined]
+│     [10] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:2358
+│     [11] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:2334
+│     [12] include(mod::Module, _path::String)
+│        @ Base ./Base.jl:306
+│     [13] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:317
+│     [14] _start()
+│        @ Base ./client.jl:550
+└ @ Base loading.jl:1589
+ERROR: LoadError: ArgumentError: column name "commodity" not found in the data frame since it has no columns
+Stacktrace:
+  [1] lookupname
+    @ ~/.julia/packages/DataFrames/0Y1g5/src/other/index.jl:428 [inlined]
+  [2] getindex
+    @ ~/.julia/packages/DataFrames/0Y1g5/src/other/index.jl:440 [inlined]
+  [3] getindex(df::DataFrames.DataFrame, ::typeof(!), col_ind::Symbol)
+    @ DataFrames ~/.julia/packages/DataFrames/0Y1g5/src/dataframe/dataframe.jl:559
+  [4] getproperty
+    @ ~/.julia/packages/DataFrames/0Y1g5/src/abstractdataframe/abstractdataframe.jl:448 [inlined]
+  [5] write_capacity(file_path::String, system::MacroEnergy.System; scaling::Float64, drop_cols::Vector{String}, commodity::Nothing, asset_type::Nothing)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/write_outputs/write_capacity.jl:84
+  [6] write_capacity
+    @ /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/write_outputs/write_capacity.jl:60 [inlined]
+  [7] write_period_outputs(results_dir::String, period_idx::Int64, system::MacroEnergy.System, model::JuMP.Model, settings::@NamedTuple{MyopicSettings::@NamedTuple{StopAfterPeriod::Float64, WriteModelLP::Bool, Restart::@NamedTuple{folder::String, enabled::Bool, from_period::Int64}, ReturnModels::Bool}, PeriodLengths::Vector{Int64}, DiscountRate::Float64, WriteFullTimeseries::Bool, SolutionAlgorithm::MacroEnergy.Myopic})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/write_outputs/write_outputs.jl:166
+  [8] write_outputs_myopic(output_path::String, case::MacroEnergy.Case, model::JuMP.Model, system::MacroEnergy.System, period_idx::Int64)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/write_outputs/write_outputs.jl:41
+  [9] run_myopic_iteration!(case::MacroEnergy.Case, opt::MacroEnergy.Optimizer)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/model/myopic.jl:125
+ [10] solve_case(case::MacroEnergy.Case, opt::MacroEnergy.Optimizer, ::MacroEnergy.Myopic)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/model/solver.jl:28
+ [11] solve_case(case::MacroEnergy.Case, opt::MacroEnergy.Optimizer)
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/model/solver.jl:2
+ [12] run_case(case_path::String; lazy_load::Bool, log_level::Base.CoreLogging.LogLevel, log_to_console::Bool, log_to_file::Bool, log_file_path::String, log_file_attribution::Bool, optimizer::DataType, optimizer_env::Nothing, optimizer_attributes::Tuple{Pair{String, Int64}, Pair{String, Int64}, Pair{String, Float64}, Pair{String, Int64}, Pair{String, Int64}}, planning_optimizer::DataType, subproblem_optimizer::DataType, planning_optimizer_attributes::Tuple{Pair{String, String}, Pair{String, String}, Pair{String, Float64}}, subproblem_optimizer_attributes::Tuple{Pair{String, String}, Pair{String, String}, Pair{String, Float64}})
+    @ MacroEnergy /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/src/utilities/run_tools.jl:148
+ [13] top-level scope
+    @ /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/run_v1_BNEF.jl:13
+ [14] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [15] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [16] _start()
+    @ Base ./client.jl:550
+in expression starting at /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK/Ref/run_v1_BNEF.jl:13
