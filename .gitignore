@@ -51,3 +51,9 @@ output.log
 *.log
 /examples
 /benchmark/results/
+
+# NZK: run outputs and local caches
+results_*/
+Ref_re/
+NDC_Re/
+**/.DS_Store

@@ -1,0 +1,109 @@
+metric,technology_bnef,technology_model,scenario,year,bnef_value,bnef_unit,macro_value,macro_unit,gcam_value,gcam_unit,note
+Capex,Coal CCS (Japan),Coal CCS,Low,2025,2217.898,2024$ $/kW,1929571.2217,2021$ $/MW,382.851433,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Low,2030,1530.9384,2024$ $/kW,1331916.4185,2021$ $/MW,264.269131,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Low,2035,1530.9384,2024$ $/kW,1331916.4185,2021$ $/MW,264.269131,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Low,2040,1530.9384,2024$ $/kW,1331916.4185,2021$ $/MW,264.269131,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Low,2045,1530.9384,2024$ $/kW,1331916.4185,2021$ $/MW,264.269131,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Low,2050,1530.9384,2024$ $/kW,1331916.4185,2021$ $/MW,264.269131,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Mid,2025,2233.539,2024$ $/kW,1943178.9657,2021$ $/MW,385.551382,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Mid,2030,1541.7349,2024$ $/kW,1341309.3745,2021$ $/MW,266.132812,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Mid,2035,1541.7349,2024$ $/kW,1341309.3745,2021$ $/MW,266.132812,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Mid,2040,1541.7349,2024$ $/kW,1341309.3745,2021$ $/MW,266.132812,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Mid,2045,1541.7349,2024$ $/kW,1341309.3745,2021$ $/MW,266.132812,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,Mid,2050,1541.7349,2024$ $/kW,1341309.3745,2021$ $/MW,266.132812,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,High,2025,2772.3724,2024$ $/kW,2411964.0271,2021$ $/MW,478.564291,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,High,2030,1913.673,2024$ $/kW,1664895.5231,2021$ $/MW,330.336413,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,High,2035,1913.673,2024$ $/kW,1664895.5231,2021$ $/MW,330.336413,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,High,2040,1913.673,2024$ $/kW,1664895.5231,2021$ $/MW,330.336413,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,High,2045,1913.673,2024$ $/kW,1664895.5231,2021$ $/MW,330.336413,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,Coal CCS (Japan),Coal CCS,High,2050,1913.673,2024$ $/kW,1664895.5231,2021$ $/MW,330.336413,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Low,2025,57578.5115,2024$ $/MW/yr,50093.305,2021$ $/MW-yr,9.939148,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Low,2030,51182.6507,2024$ $/MW/yr,44528.9061,2021$ $/MW-yr,8.8351,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Low,2035,51182.6507,2024$ $/MW/yr,44528.9061,2021$ $/MW-yr,8.8351,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Low,2040,51182.6507,2024$ $/MW/yr,44528.9061,2021$ $/MW-yr,8.8351,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Low,2045,51182.6507,2024$ $/MW/yr,44528.9061,2021$ $/MW-yr,8.8351,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Low,2050,51182.6507,2024$ $/MW/yr,44528.9061,2021$ $/MW-yr,8.8351,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Mid,2025,60352.9599,2024$ $/MW/yr,52507.0751,2021$ $/MW-yr,10.41807,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Mid,2030,53648.9115,2024$ $/MW/yr,46674.553,2021$ $/MW-yr,9.260824,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Mid,2035,53648.9115,2024$ $/MW/yr,46674.553,2021$ $/MW-yr,9.260824,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Mid,2040,53648.9115,2024$ $/MW/yr,46674.553,2021$ $/MW-yr,9.260824,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Mid,2045,53648.9115,2024$ $/MW/yr,46674.553,2021$ $/MW-yr,9.260824,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,Mid,2050,53648.9115,2024$ $/MW/yr,46674.553,2021$ $/MW-yr,9.260824,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,High,2025,68258.3967,2024$ $/MW/yr,59384.8051,2021$ $/MW-yr,11.782699,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,High,2030,60676.2068,2024$ $/MW/yr,52788.2999,2021$ $/MW-yr,10.473869,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,High,2035,60676.2068,2024$ $/MW/yr,52788.2999,2021$ $/MW-yr,10.473869,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,High,2040,60676.2068,2024$ $/MW/yr,52788.2999,2021$ $/MW-yr,10.473869,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,High,2045,60676.2068,2024$ $/MW/yr,52788.2999,2021$ $/MW-yr,10.473869,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,Coal CCS (Japan),Coal CCS,High,2050,60676.2068,2024$ $/MW/yr,52788.2999,2021$ $/MW-yr,10.473869,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Low,2025,21.0656,2024$ $/MWh,18.327,2021$ $/MWh,1.010088,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Low,2030,20.7665,2024$ $/MWh,18.0668,2021$ $/MWh,0.995748,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Low,2035,20.7643,2024$ $/MWh,18.0649,2021$ $/MWh,0.995641,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Low,2040,20.7532,2024$ $/MWh,18.0553,2021$ $/MWh,0.995113,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Low,2045,20.7444,2024$ $/MWh,18.0477,2021$ $/MWh,0.994691,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Low,2050,20.7394,2024$ $/MWh,18.0433,2021$ $/MWh,0.99445,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Mid,2025,21.483,2024$ $/MWh,18.6902,2021$ $/MWh,1.030103,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Mid,2030,21.1485,2024$ $/MWh,18.3992,2021$ $/MWh,1.014066,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Mid,2035,21.1463,2024$ $/MWh,18.3973,2021$ $/MWh,1.013959,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Mid,2040,21.1353,2024$ $/MWh,18.3877,2021$ $/MWh,1.013431,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Mid,2045,21.1265,2024$ $/MWh,18.38,2021$ $/MWh,1.013009,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,Mid,2050,21.1215,2024$ $/MWh,18.3757,2021$ $/MWh,1.012769,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,High,2025,22.3178,2024$ $/MWh,19.4165,2021$ $/MWh,1.070133,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,High,2030,21.9126,2024$ $/MWh,19.064,2021$ $/MWh,1.050704,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,High,2035,21.9104,2024$ $/MWh,19.062,2021$ $/MWh,1.050597,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,High,2040,21.8994,2024$ $/MWh,19.0525,2021$ $/MWh,1.050069,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,High,2045,21.8906,2024$ $/MWh,19.0448,2021$ $/MWh,1.049647,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,Coal CCS (Japan),Coal CCS,High,2050,21.8855,2024$ $/MWh,19.0404,2021$ $/MWh,1.049406,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Low,2025,1800.0714,2024$ $/kW,1566062.1211,2021$ $/MW,310.726611,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Low,2030,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Low,2035,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Low,2040,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Low,2045,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Low,2050,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Mid,2025,1800.0714,2024$ $/kW,1566062.1211,2021$ $/MW,310.726611,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Mid,2030,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Mid,2035,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Mid,2040,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Mid,2045,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,Mid,2050,1242.5272,2024$ $/kW,1080998.6323,2021$ $/MW,214.483856,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,High,2025,2049.5754,2024$ $/kW,1783130.6011,2021$ $/MW,353.795754,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,High,2030,1414.7512,2024$ $/kW,1230833.5123,2021$ $/MW,244.212998,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,High,2035,1414.7512,2024$ $/kW,1230833.5123,2021$ $/MW,244.212998,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,High,2040,1414.7512,2024$ $/kW,1230833.5123,2021$ $/MW,244.212998,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,High,2045,1414.7512,2024$ $/kW,1230833.5123,2021$ $/MW,244.212998,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Capex,CCGT CCS (Japan),Gas CCS,High,2050,1414.7512,2024$ $/kW,1230833.5123,2021$ $/MW,244.212998,1975$ $/kW,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Low,2025,18818.211,2024$ $/MW/yr,16371.8435,2021$ $/MW-yr,3.248382,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Low,2030,16727.8711,2024$ $/MW/yr,14553.2479,2021$ $/MW-yr,2.887549,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Low,2035,16727.8711,2024$ $/MW/yr,14553.2479,2021$ $/MW-yr,2.887549,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Low,2040,16727.8711,2024$ $/MW/yr,14553.2479,2021$ $/MW-yr,2.887549,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Low,2045,16727.8711,2024$ $/MW/yr,14553.2479,2021$ $/MW-yr,2.887549,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Low,2050,16727.8711,2024$ $/MW/yr,14553.2479,2021$ $/MW-yr,2.887549,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Mid,2025,19772.1295,2024$ $/MW/yr,17201.7527,2021$ $/MW-yr,3.413046,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Mid,2030,17575.8277,2024$ $/MW/yr,15290.9701,2021$ $/MW-yr,3.033923,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Mid,2035,17575.8277,2024$ $/MW/yr,15290.9701,2021$ $/MW-yr,3.033923,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Mid,2040,17575.8277,2024$ $/MW/yr,15290.9701,2021$ $/MW-yr,3.033923,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Mid,2045,17575.8277,2024$ $/MW/yr,15290.9701,2021$ $/MW-yr,3.033923,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,Mid,2050,17575.8277,2024$ $/MW/yr,15290.9701,2021$ $/MW-yr,3.033923,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,High,2025,21090.2682,2024$ $/MW/yr,18348.5333,2021$ $/MW-yr,3.640582,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,High,2030,18747.5466,2024$ $/MW/yr,16310.3656,2021$ $/MW-yr,3.236184,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,High,2035,18747.5466,2024$ $/MW/yr,16310.3656,2021$ $/MW-yr,3.236184,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,High,2040,18747.5466,2024$ $/MW/yr,16310.3656,2021$ $/MW-yr,3.236184,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,High,2045,18747.5466,2024$ $/MW/yr,16310.3656,2021$ $/MW-yr,3.236184,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Fixed O&M,CCGT CCS (Japan),Gas CCS,High,2050,18747.5466,2024$ $/MW/yr,16310.3656,2021$ $/MW-yr,3.236184,1975$ $/kW/yr,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Low,2025,9.6436,2024$ $/MWh,8.3899,2021$ $/MWh,0.462408,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Low,2030,9.4531,2024$ $/MWh,8.2242,2021$ $/MWh,0.453275,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Low,2035,9.3764,2024$ $/MWh,8.1575,2021$ $/MWh,0.449595,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Low,2040,9.3205,2024$ $/MWh,8.1089,2021$ $/MWh,0.446917,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Low,2045,9.2798,2024$ $/MWh,8.0734,2021$ $/MWh,0.444964,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Low,2050,9.2501,2024$ $/MWh,8.0475,2021$ $/MWh,0.443538,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Mid,2025,9.6436,2024$ $/MWh,8.3899,2021$ $/MWh,0.462408,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Mid,2030,9.4531,2024$ $/MWh,8.2242,2021$ $/MWh,0.453275,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Mid,2035,9.3764,2024$ $/MWh,8.1575,2021$ $/MWh,0.449595,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Mid,2040,9.3205,2024$ $/MWh,8.1089,2021$ $/MWh,0.446917,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Mid,2045,9.2798,2024$ $/MWh,8.0734,2021$ $/MWh,0.444964,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,Mid,2050,9.2501,2024$ $/MWh,8.0475,2021$ $/MWh,0.443538,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,High,2025,9.6853,2024$ $/MWh,8.4262,2021$ $/MWh,0.464409,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,High,2030,9.4913,2024$ $/MWh,8.2575,2021$ $/MWh,0.455107,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,High,2035,9.4146,2024$ $/MWh,8.1907,2021$ $/MWh,0.451427,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,High,2040,9.3587,2024$ $/MWh,8.1421,2021$ $/MWh,0.448749,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,High,2045,9.318,2024$ $/MWh,8.1067,2021$ $/MWh,0.446797,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF
+Variable O&M,CCGT CCS (Japan),Gas CCS,High,2050,9.2883,2024$ $/MWh,8.0808,2021$ $/MWh,0.44537,1975$ $/GJ,Japan proxy; no Korean CCS data in BNEF

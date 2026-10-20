@@ -1,0 +1,133 @@
+macro_technology,gcam_subsector,gcam_technology,metric,gcam_parameter,unit_1975usd,year,gcam_current,proposed_korea,pct_change,xml_line
+Coal,coal,coal (conv pul),Capex,OCC,$/kW,2025,407.725,231.035,-43.3,256970
+Coal,coal,coal (conv pul),Capex,OCC,$/kW,2030,407.725,231.035,-43.3,256988
+Coal,coal,coal (conv pul),Capex,OCC,$/kW,2035,407.725,231.035,-43.3,257006
+Coal,coal,coal (conv pul),Capex,OCC,$/kW,2040,525.0,231.035,-56.0,257024
+Coal,coal,coal (conv pul),Capex,OCC,$/kW,2045,506.0,231.035,-54.3,257042
+Coal,coal,coal (conv pul),Capex,OCC,$/kW,2050,491.0,231.035,-52.9,257060
+Coal,coal,coal (conv pul),Fixed O&M,OM-fixed,$/kW/yr,2025,5.123,2.8005,-45.3,256974
+Coal,coal,coal (conv pul),Fixed O&M,OM-fixed,$/kW/yr,2030,4.919,2.7199,-44.7,256992
+Coal,coal,coal (conv pul),Fixed O&M,OM-fixed,$/kW/yr,2035,4.919,2.7199,-44.7,257010
+Coal,coal,coal (conv pul),Fixed O&M,OM-fixed,$/kW/yr,2040,17.66,2.7199,-84.6,257028
+Coal,coal,coal (conv pul),Fixed O&M,OM-fixed,$/kW/yr,2045,17.66,2.7199,-84.6,257046
+Coal,coal,coal (conv pul),Fixed O&M,OM-fixed,$/kW/yr,2050,17.66,2.7199,-84.6,257064
+Coal,coal,coal (conv pul),Variable O&M,OM-var,$/GJ,2025,0.0005,0.0721,15076.4,256977
+Coal,coal,coal (conv pul),Variable O&M,OM-var,$/GJ,2030,0.0005,0.0721,15076.4,256995
+Coal,coal,coal (conv pul),Variable O&M,OM-var,$/GJ,2035,0.0005,0.0721,15076.4,257013
+Coal,coal,coal (conv pul),Variable O&M,OM-var,$/GJ,2040,2.11,0.0721,-96.6,257031
+Coal,coal,coal (conv pul),Variable O&M,OM-var,$/GJ,2045,2.11,0.0721,-96.6,257049
+Coal,coal,coal (conv pul),Variable O&M,OM-var,$/GJ,2050,2.11,0.0721,-96.6,257067
+Gas CCGT,gas,gas (CC),Capex,OCC,$/kW,2025,274.13,137.9688,-49.7,258965
+Gas CCGT,gas,gas (CC),Capex,OCC,$/kW,2030,243.594,137.9688,-43.4,258983
+Gas CCGT,gas,gas (CC),Capex,OCC,$/kW,2035,243.594,137.9688,-43.4,259001
+Gas CCGT,gas,gas (CC),Capex,OCC,$/kW,2040,207.0,137.9688,-33.3,259019
+Gas CCGT,gas,gas (CC),Capex,OCC,$/kW,2045,204.0,137.9688,-32.4,259037
+Gas CCGT,gas,gas (CC),Capex,OCC,$/kW,2050,201.0,137.9688,-31.4,259055
+Gas CCGT,gas,gas (CC),Fixed O&M,OM-fixed,$/kW/yr,2025,5.4815,2.9747,-45.7,258969
+Gas CCGT,gas,gas (CC),Fixed O&M,OM-fixed,$/kW/yr,2030,5.2851,2.8891,-45.3,258987
+Gas CCGT,gas,gas (CC),Fixed O&M,OM-fixed,$/kW/yr,2035,5.2851,2.8891,-45.3,259005
+Gas CCGT,gas,gas (CC),Fixed O&M,OM-fixed,$/kW/yr,2040,7.39,2.8891,-60.9,259023
+Gas CCGT,gas,gas (CC),Fixed O&M,OM-fixed,$/kW/yr,2045,7.39,2.8891,-60.9,259041
+Gas CCGT,gas,gas (CC),Fixed O&M,OM-fixed,$/kW/yr,2050,7.39,2.8891,-60.9,259059
+Gas CCGT,gas,gas (CC),Variable O&M,OM-var,$/GJ,2025,0.0006,0.0856,14940.2,258972
+Gas CCGT,gas,gas (CC),Variable O&M,OM-var,$/GJ,2030,0.0006,0.0856,14940.2,258990
+Gas CCGT,gas,gas (CC),Variable O&M,OM-var,$/GJ,2035,0.0006,0.0856,14940.2,259008
+Gas CCGT,gas,gas (CC),Variable O&M,OM-var,$/GJ,2040,0.53,0.0856,-83.9,259026
+Gas CCGT,gas,gas (CC),Variable O&M,OM-var,$/GJ,2045,0.53,0.0856,-83.9,259044
+Gas CCGT,gas,gas (CC),Variable O&M,OM-var,$/GJ,2050,0.53,0.0856,-83.9,259062
+Solar PV,solar,PV,Capex,OCC,$/kW,2025,255.0,173.7485,-31.9,249679
+Solar PV,solar,PV,Capex,OCC,$/kW,2030,205.0,120.0101,-41.5,249706
+Solar PV,solar,PV,Capex,OCC,$/kW,2035,177.0,102.3472,-42.2,249733
+Solar PV,solar,PV,Capex,OCC,$/kW,2040,162.0,91.394,-43.6,249760
+Solar PV,solar,PV,Capex,OCC,$/kW,2045,153.0,82.7788,-45.9,249787
+Solar PV,solar,PV,Capex,OCC,$/kW,2050,148.0,75.3895,-49.1,249814
+Solar PV,solar,PV,Fixed O&M,OM-fixed,$/kW/yr,2025,4.74,3.7557,-20.8,249683
+Solar PV,solar,PV,Fixed O&M,OM-fixed,$/kW/yr,2030,4.08,3.5169,-13.8,249710
+Solar PV,solar,PV,Fixed O&M,OM-fixed,$/kW/yr,2035,3.74,3.3034,-11.7,249737
+Solar PV,solar,PV,Fixed O&M,OM-fixed,$/kW/yr,2040,3.55,3.1478,-11.3,249764
+Solar PV,solar,PV,Fixed O&M,OM-fixed,$/kW/yr,2045,3.46,3.0225,-12.6,249791
+Solar PV,solar,PV,Fixed O&M,OM-fixed,$/kW/yr,2050,3.41,2.9171,-14.5,249818
+Solar PV,solar,PV,Variable O&M,OM-var,$/GJ,2025,0.0,0.0,,249686
+Solar PV,solar,PV,Variable O&M,OM-var,$/GJ,2030,0.0,0.0,,249713
+Solar PV,solar,PV,Variable O&M,OM-var,$/GJ,2035,0.0,0.0,,249740
+Solar PV,solar,PV,Variable O&M,OM-var,$/GJ,2040,0.0,0.0,,249767
+Solar PV,solar,PV,Variable O&M,OM-var,$/GJ,2045,0.0,0.0,,249794
+Solar PV,solar,PV,Variable O&M,OM-var,$/GJ,2050,0.0,0.0,,249821
+Onshore wind,wind,wind,Capex,OCC,$/kW,2025,297.0,390.659,31.5,248078
+Onshore wind,wind,wind,Capex,OCC,$/kW,2030,250.0,315.319,26.1,248105
+Onshore wind,wind,wind,Capex,OCC,$/kW,2035,221.0,298.4307,35.0,248132
+Onshore wind,wind,wind,Capex,OCC,$/kW,2040,203.0,291.1143,43.4,248159
+Onshore wind,wind,wind,Capex,OCC,$/kW,2045,192.0,285.7148,48.8,248186
+Onshore wind,wind,wind,Capex,OCC,$/kW,2050,185.0,279.2034,50.9,248213
+Onshore wind,wind,wind,Fixed O&M,OM-fixed,$/kW/yr,2025,10.73,7.0489,-34.3,248082
+Onshore wind,wind,wind,Fixed O&M,OM-fixed,$/kW/yr,2030,10.26,6.4429,-37.2,248109
+Onshore wind,wind,wind,Fixed O&M,OM-fixed,$/kW/yr,2035,9.89,6.0775,-38.5,248136
+Onshore wind,wind,wind,Fixed O&M,OM-fixed,$/kW/yr,2040,9.61,5.9458,-38.1,248163
+Onshore wind,wind,wind,Fixed O&M,OM-fixed,$/kW/yr,2045,9.39,5.8289,-37.9,248190
+Onshore wind,wind,wind,Fixed O&M,OM-fixed,$/kW/yr,2050,9.22,5.6887,-38.3,248217
+Onshore wind,wind,wind,Variable O&M,OM-var,$/GJ,2025,0.0,0.0,,248085
+Onshore wind,wind,wind,Variable O&M,OM-var,$/GJ,2030,0.0,0.0,,248112
+Onshore wind,wind,wind,Variable O&M,OM-var,$/GJ,2035,0.0,0.0,,248139
+Onshore wind,wind,wind,Variable O&M,OM-var,$/GJ,2040,0.0,0.0,,248166
+Onshore wind,wind,wind,Variable O&M,OM-var,$/GJ,2045,0.0,0.0,,248193
+Onshore wind,wind,wind,Variable O&M,OM-var,$/GJ,2050,0.0,0.0,,248220
+Offshore wind,wind,wind_offshore,Capex,OCC,$/kW,2025,579.0,951.6583,64.4,248662
+Offshore wind,wind,wind_offshore,Capex,OCC,$/kW,2030,510.0,896.5049,75.8,248688
+Offshore wind,wind,wind_offshore,Capex,OCC,$/kW,2035,464.0,791.0482,70.5,248714
+Offshore wind,wind,wind_offshore,Capex,OCC,$/kW,2040,434.0,765.6776,76.4,248740
+Offshore wind,wind,wind_offshore,Capex,OCC,$/kW,2045,415.0,764.3902,84.2,248766
+Offshore wind,wind,wind_offshore,Capex,OCC,$/kW,2050,401.0,763.9733,90.5,248792
+Offshore wind,wind,wind_offshore,Fixed O&M,OM-fixed,$/kW/yr,2025,25.36,17.5258,-30.9,248666
+Offshore wind,wind,wind_offshore,Fixed O&M,OM-fixed,$/kW/yr,2030,22.62,15.2882,-32.4,248692
+Offshore wind,wind,wind_offshore,Fixed O&M,OM-fixed,$/kW/yr,2035,20.92,13.7038,-34.5,248718
+Offshore wind,wind,wind_offshore,Fixed O&M,OM-fixed,$/kW/yr,2040,19.85,12.541,-36.8,248744
+Offshore wind,wind,wind_offshore,Fixed O&M,OM-fixed,$/kW/yr,2045,19.18,11.6624,-39.2,248770
+Offshore wind,wind,wind_offshore,Fixed O&M,OM-fixed,$/kW/yr,2050,18.77,10.9825,-41.5,248796
+Offshore wind,wind,wind_offshore,Variable O&M,OM-var,$/GJ,2025,0.0,0.0,,248669
+Offshore wind,wind,wind_offshore,Variable O&M,OM-var,$/GJ,2030,0.0,0.0,,248695
+Offshore wind,wind,wind_offshore,Variable O&M,OM-var,$/GJ,2035,0.0,0.0,,248721
+Offshore wind,wind,wind_offshore,Variable O&M,OM-var,$/GJ,2040,0.0,0.0,,248747
+Offshore wind,wind,wind_offshore,Variable O&M,OM-var,$/GJ,2045,0.0,0.0,,248773
+Offshore wind,wind,wind_offshore,Variable O&M,OM-var,$/GJ,2050,0.0,0.0,,248799
+Nuclear,nuclear,Gen_III,Capex,OCC,$/kW,2025,1010.464,572.5782,-43.3,262960
+Nuclear,nuclear,Gen_III,Capex,OCC,$/kW,2030,992.42,562.2179,-43.3,262978
+Nuclear,nuclear,Gen_III,Capex,OCC,$/kW,2035,974.029,551.8575,-43.3,262996
+Nuclear,nuclear,Gen_III,Capex,OCC,$/kW,2040,1443.0,541.4973,-62.5,263014
+Nuclear,nuclear,Gen_III,Capex,OCC,$/kW,2045,1398.0,531.137,-62.0,263032
+Nuclear,nuclear,Gen_III,Capex,OCC,$/kW,2050,1358.0,520.7767,-61.7,263050
+Nuclear,nuclear,Gen_III,Fixed O&M,OM-fixed,$/kW/yr,2025,38.5,39.5014,2.6,262964
+Nuclear,nuclear,Gen_III,Fixed O&M,OM-fixed,$/kW/yr,2030,38.5,39.5014,2.6,262982
+Nuclear,nuclear,Gen_III,Fixed O&M,OM-fixed,$/kW/yr,2035,38.5,39.5014,2.6,263000
+Nuclear,nuclear,Gen_III,Fixed O&M,OM-fixed,$/kW/yr,2040,38.5,39.5014,2.6,263018
+Nuclear,nuclear,Gen_III,Fixed O&M,OM-fixed,$/kW/yr,2045,38.5,39.5014,2.6,263036
+Nuclear,nuclear,Gen_III,Fixed O&M,OM-fixed,$/kW/yr,2050,38.5,39.5014,2.6,263054
+Nuclear,nuclear,Gen_III,Variable O&M,OM-var,$/GJ,2025,0.75,0.5699,-24.0,262967
+Nuclear,nuclear,Gen_III,Variable O&M,OM-var,$/GJ,2030,0.75,0.5699,-24.0,262985
+Nuclear,nuclear,Gen_III,Variable O&M,OM-var,$/GJ,2035,0.75,0.5699,-24.0,263003
+Nuclear,nuclear,Gen_III,Variable O&M,OM-var,$/GJ,2040,0.75,0.5699,-24.0,263021
+Nuclear,nuclear,Gen_III,Variable O&M,OM-var,$/GJ,2045,0.75,0.5699,-24.0,263039
+Nuclear,nuclear,Gen_III,Variable O&M,OM-var,$/GJ,2050,0.75,0.5699,-24.0,263057
+Coal,coal,coal (conv pul),Capacity factor,capacity-factor,fraction,2025,0.85,0.65,-23.5,256979
+Coal,coal,coal (conv pul),Capacity factor,capacity-factor,fraction,2030,0.85,0.65,-23.5,256997
+Coal,coal,coal (conv pul),Capacity factor,capacity-factor,fraction,2035,0.85,0.65,-23.5,257015
+Coal,coal,coal (conv pul),Capacity factor,capacity-factor,fraction,2040,0.85,0.65,-23.5,257033
+Coal,coal,coal (conv pul),Capacity factor,capacity-factor,fraction,2045,0.85,0.65,-23.5,257051
+Coal,coal,coal (conv pul),Capacity factor,capacity-factor,fraction,2050,0.85,0.65,-23.5,257069
+Solar PV,solar,PV,Capacity factor,capacity-factor,fraction,2025,0.2,0.134,-33.0,249669
+Solar PV,solar,PV,Capacity factor,capacity-factor,fraction,2030,0.2,0.134,-33.0,249696
+Solar PV,solar,PV,Capacity factor,capacity-factor,fraction,2035,0.2,0.134,-33.0,249723
+Solar PV,solar,PV,Capacity factor,capacity-factor,fraction,2040,0.2,0.134,-33.0,249750
+Solar PV,solar,PV,Capacity factor,capacity-factor,fraction,2045,0.2,0.134,-33.0,249777
+Solar PV,solar,PV,Capacity factor,capacity-factor,fraction,2050,0.2,0.134,-33.0,249804
+Onshore wind,wind,wind,Capacity factor,capacity-factor,fraction,2025,0.37,0.238,-35.7,248068
+Onshore wind,wind,wind,Capacity factor,capacity-factor,fraction,2030,0.37,0.238,-35.7,248095
+Onshore wind,wind,wind,Capacity factor,capacity-factor,fraction,2035,0.37,0.238,-35.7,248122
+Onshore wind,wind,wind,Capacity factor,capacity-factor,fraction,2040,0.37,0.238,-35.7,248149
+Onshore wind,wind,wind,Capacity factor,capacity-factor,fraction,2045,0.37,0.238,-35.7,248176
+Onshore wind,wind,wind,Capacity factor,capacity-factor,fraction,2050,0.37,0.238,-35.7,248203
+Nuclear,nuclear,Gen_III,Capacity factor,capacity-factor,fraction,2025,0.9,0.85,-5.6,262969
+Nuclear,nuclear,Gen_III,Capacity factor,capacity-factor,fraction,2030,0.9,0.85,-5.6,262987
+Nuclear,nuclear,Gen_III,Capacity factor,capacity-factor,fraction,2035,0.9,0.85,-5.6,263005
+Nuclear,nuclear,Gen_III,Capacity factor,capacity-factor,fraction,2040,0.9,0.85,-5.6,263023
+Nuclear,nuclear,Gen_III,Capacity factor,capacity-factor,fraction,2045,0.9,0.85,-5.6,263041
+Nuclear,nuclear,Gen_III,Capacity factor,capacity-factor,fraction,2050,0.9,0.85,-5.6,263059

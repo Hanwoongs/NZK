@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""Single streaming pass over each flows.csv; caches what the diagnostic
+figures need so the 6 GB of results is read once, not once per figure.
+
+Writes figures/cache/<case>_p<N>.npz
+"""
+import csv, sys, json
+from pathlib import Path
+import numpy as np
+
+B = Path("/Users/hanwoongkim/Desktop/repo_runs")
+CACHE = B / "figures/cache_re"; CACHE.mkdir(parents=True, exist_ok=True)
+YR = {1:2021, 2:2025, 3:2030, 4:2035, 5:2040, 6:2045, 7:2050}
+
+TECHS = ["Coal","Gas CCGT","Nuclear","Coal CCS","Gas CCS","Hydro",
+         "Pumped Hydro","Solar PV","Onshore Wind","Offshore Wind","Battery"]
+TI = {t:i for i,t in enumerate(TECHS)}
+
+def classify(rt, rid):
+    r = rid.lower()
+    if rt.startswith("ThermalPowerCCS{NaturalGas}"): return "Gas CCS"
+    if rt.startswith("ThermalPowerCCS{Coal}"):       return "Coal CCS"
+    if rt.startswith("ThermalPower{NaturalGas}"):    return "Gas CCGT"
+    if rt.startswith("ThermalPower{Coal}"):          return "Coal"
+    if rt.startswith("ThermalPower{Uranium}"):       return "Nuclear"
+    if rt.startswith("Battery"):                     return "Battery"
+    if rt.startswith("HydroRes"):                    return "Hydro"
+    if rt.startswith("PumpedHydro") or "pumpedhydro" in r: return "Pumped Hydro"
+    if rt.startswith("VRE"):
+        if "offshore" in r: return "Offshore Wind"
+        if "onshore"  in r: return "Onshore Wind"
+        return "Solar PV"
+    return None
+
+def run(case, fold):
+    for p, yr in YR.items():
+        out = CACHE / f"{case}_p{p}.npz"
+        if out.exists():
+            print(f"  {case} p{p} cached"); continue
+        f = B / fold / f"results_period_{p}" / "flows.csv"
+        hourly = np.zeros((len(TECHS), 8760))
+        corr_flow = {}
+        with open(f) as fh:
+            rd = csv.reader(fh); h = next(rd)
+            i_ni, i_no = h.index("node_in"), h.index("node_out")
+            i_rid, i_rt = h.index("resource_id"), h.index("resource_type")
+            i_var, i_t, i_v = h.index("variable"), h.index("time"), h.index("value")
+            for row in rd:
+                if row[i_var] != "flow": continue
+                rt = row[i_rt]
+                try: val = float(row[i_v])
+                except ValueError: continue
+                ti = int(row[i_t]) - 1
+                if not (0 <= ti < 8760): continue
+                if rt.startswith("TransmissionLink"):
+                    cid = row[i_rid]
+                    a = corr_flow.get(cid)
+                    if a is None: a = corr_flow[cid] = np.zeros(8760)
+                    a[ti] += val
+                    continue
+                tech = classify(rt, row[i_rid])
+                if tech is None: continue
+                og = row[i_no].startswith("elec_"); ig = row[i_ni].startswith("elec_")
+                if og == ig: continue
+                hourly[TI[tech], ti] += val
+        names = sorted(corr_flow)
+        np.savez_compressed(out, hourly=hourly, techs=np.array(TECHS),
+                            corr_names=np.array(names),
+                            corr=np.array([corr_flow[n] for n in names]) if names else np.zeros((0,8760)))
+        print(f"  {case} p{p} ({yr}) written  gen={hourly.sum()/1e6:.1f} TWh  corridors={len(names)}", flush=True)
+
+for case, fold in [("Ref","Ref_re"), ("NDC","NDC_Re")]:
+    print(case); run(case, fold)
+print("done")

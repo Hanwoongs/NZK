@@ -1,0 +1,22 @@
+metric,technology_model,scenario,year,source,macro_value,macro_unit,gcam_value,gcam_unit
+Capex,Nuclear,Mid,2021,MACRO asset files (not BNEF),2885794.0,2021$ $/MW,572.578175,1975$ $/kW
+Capex,Nuclear,Mid,2025,MACRO asset files (not BNEF),2885794.0,2021$ $/MW,572.578175,1975$ $/kW
+Capex,Nuclear,Mid,2030,MACRO asset files (not BNEF),2833578.0,2021$ $/MW,562.217857,1975$ $/kW
+Capex,Nuclear,Mid,2035,MACRO asset files (not BNEF),2781362.0,2021$ $/MW,551.85754,1975$ $/kW
+Capex,Nuclear,Mid,2040,MACRO asset files (not BNEF),2729146.19,2021$ $/MW,541.49726,1975$ $/kW
+Capex,Nuclear,Mid,2045,MACRO asset files (not BNEF),2676930.39,2021$ $/MW,531.136982,1975$ $/kW
+Capex,Nuclear,Mid,2050,MACRO asset files (not BNEF),2624714.58,2021$ $/MW,520.776702,1975$ $/kW
+Fixed O&M,Nuclear,Mid,2021,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Fixed O&M,Nuclear,Mid,2025,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Fixed O&M,Nuclear,Mid,2030,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Fixed O&M,Nuclear,Mid,2035,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Fixed O&M,Nuclear,Mid,2040,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Fixed O&M,Nuclear,Mid,2045,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Fixed O&M,Nuclear,Mid,2050,MACRO asset files (not BNEF),199087.0,2021$ $/MW-yr,39.501389,1975$ $/kW/yr
+Variable O&M,Nuclear,Mid,2021,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ
+Variable O&M,Nuclear,Mid,2025,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ
+Variable O&M,Nuclear,Mid,2030,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ
+Variable O&M,Nuclear,Mid,2035,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ
+Variable O&M,Nuclear,Mid,2040,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ
+Variable O&M,Nuclear,Mid,2045,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ
+Variable O&M,Nuclear,Mid,2050,MACRO asset files (not BNEF),10.34,2021$ $/MWh,0.569885,1975$ $/GJ

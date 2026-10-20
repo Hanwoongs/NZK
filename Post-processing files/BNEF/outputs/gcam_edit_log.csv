@@ -1,0 +1,400 @@
+xml_line,gcam_technology,macro_technology,parameter,year,value_source_year,old_value,new_value,held_flat
+248051,wind,Onshore wind,OCC,2021,2021,354.0,409.273651,False
+248055,wind,Onshore wind,OM-fixed,2021,2021,11.21,7.844083,False
+248058,wind,Onshore wind,OM-var,2021,2021,0.0,0.0,False
+248078,wind,Onshore wind,OCC,2025,2025,297.0,390.659042,False
+248082,wind,Onshore wind,OM-fixed,2025,2025,10.73,7.048867,False
+248085,wind,Onshore wind,OM-var,2025,2025,0.0,0.0,False
+248105,wind,Onshore wind,OCC,2030,2030,250.0,315.319027,False
+248109,wind,Onshore wind,OM-fixed,2030,2030,10.26,6.442932,False
+248112,wind,Onshore wind,OM-var,2030,2030,0.0,0.0,False
+248132,wind,Onshore wind,OCC,2035,2035,221.0,298.430664,False
+248136,wind,Onshore wind,OM-fixed,2035,2035,9.89,6.077534,False
+248139,wind,Onshore wind,OM-var,2035,2035,0.0,0.0,False
+248159,wind,Onshore wind,OCC,2040,2040,203.0,291.114311,False
+248163,wind,Onshore wind,OM-fixed,2040,2040,9.61,5.945803,False
+248166,wind,Onshore wind,OM-var,2040,2040,0.0,0.0,False
+248186,wind,Onshore wind,OCC,2045,2045,192.0,285.714821,False
+248190,wind,Onshore wind,OM-fixed,2045,2045,9.39,5.828894,False
+248193,wind,Onshore wind,OM-var,2045,2045,0.0,0.0,False
+248213,wind,Onshore wind,OCC,2050,2050,185.0,279.203412,False
+248217,wind,Onshore wind,OM-fixed,2050,2050,9.22,5.688695,False
+248220,wind,Onshore wind,OM-var,2050,2050,0.0,0.0,False
+248240,wind,Onshore wind,OCC,2055,2050,181.0,279.203412,True
+248244,wind,Onshore wind,OM-fixed,2055,2050,9.09,5.688695,True
+248247,wind,Onshore wind,OM-var,2055,2050,0.0,0.0,True
+248267,wind,Onshore wind,OCC,2060,2050,178.0,279.203412,True
+248271,wind,Onshore wind,OM-fixed,2060,2050,8.98,5.688695,True
+248274,wind,Onshore wind,OM-var,2060,2050,0.0,0.0,True
+248294,wind,Onshore wind,OCC,2065,2050,176.0,279.203412,True
+248298,wind,Onshore wind,OM-fixed,2065,2050,8.9,5.688695,True
+248301,wind,Onshore wind,OM-var,2065,2050,0.0,0.0,True
+248321,wind,Onshore wind,OCC,2070,2050,175.0,279.203412,True
+248325,wind,Onshore wind,OM-fixed,2070,2050,8.84,5.688695,True
+248328,wind,Onshore wind,OM-var,2070,2050,0.0,0.0,True
+248348,wind,Onshore wind,OCC,2075,2050,174.0,279.203412,True
+248352,wind,Onshore wind,OM-fixed,2075,2050,8.8,5.688695,True
+248355,wind,Onshore wind,OM-var,2075,2050,0.0,0.0,True
+248375,wind,Onshore wind,OCC,2080,2050,174.0,279.203412,True
+248379,wind,Onshore wind,OM-fixed,2080,2050,8.76,5.688695,True
+248382,wind,Onshore wind,OM-var,2080,2050,0.0,0.0,True
+248402,wind,Onshore wind,OCC,2085,2050,174.0,279.203412,True
+248406,wind,Onshore wind,OM-fixed,2085,2050,8.73,5.688695,True
+248409,wind,Onshore wind,OM-var,2085,2050,0.0,0.0,True
+248429,wind,Onshore wind,OCC,2090,2050,174.0,279.203412,True
+248433,wind,Onshore wind,OM-fixed,2090,2050,8.71,5.688695,True
+248436,wind,Onshore wind,OM-var,2090,2050,0.0,0.0,True
+248456,wind,Onshore wind,OCC,2095,2050,173.0,279.203412,True
+248460,wind,Onshore wind,OM-fixed,2095,2050,8.69,5.688695,True
+248463,wind,Onshore wind,OM-var,2095,2050,0.0,0.0,True
+248483,wind,Onshore wind,OCC,2100,2050,173.0,279.203412,True
+248487,wind,Onshore wind,OM-fixed,2100,2050,8.68,5.688695,True
+248490,wind,Onshore wind,OM-var,2100,2050,0.0,0.0,True
+248662,wind_offshore,Offshore wind,OCC,2025,2025,579.0,951.658305,False
+248666,wind_offshore,Offshore wind,OM-fixed,2025,2025,25.36,17.525837,False
+248669,wind_offshore,Offshore wind,OM-var,2025,2025,0.0,0.0,False
+248688,wind_offshore,Offshore wind,OCC,2030,2030,510.0,896.504918,False
+248692,wind_offshore,Offshore wind,OM-fixed,2030,2030,22.62,15.288245,False
+248695,wind_offshore,Offshore wind,OM-var,2030,2030,0.0,0.0,False
+248714,wind_offshore,Offshore wind,OCC,2035,2035,464.0,791.048222,False
+248718,wind_offshore,Offshore wind,OM-fixed,2035,2035,20.92,13.703789,False
+248721,wind_offshore,Offshore wind,OM-var,2035,2035,0.0,0.0,False
+248740,wind_offshore,Offshore wind,OCC,2040,2040,434.0,765.677586,False
+248744,wind_offshore,Offshore wind,OM-fixed,2040,2040,19.85,12.540964,False
+248747,wind_offshore,Offshore wind,OM-var,2040,2040,0.0,0.0,False
+248766,wind_offshore,Offshore wind,OCC,2045,2045,415.0,764.390205,False
+248770,wind_offshore,Offshore wind,OM-fixed,2045,2045,19.18,11.662434,False
+248773,wind_offshore,Offshore wind,OM-var,2045,2045,0.0,0.0,False
+248792,wind_offshore,Offshore wind,OCC,2050,2050,401.0,763.973301,False
+248796,wind_offshore,Offshore wind,OM-fixed,2050,2050,18.77,10.982549,False
+248799,wind_offshore,Offshore wind,OM-var,2050,2050,0.0,0.0,False
+248818,wind_offshore,Offshore wind,OCC,2055,2050,393.0,763.973301,True
+248822,wind_offshore,Offshore wind,OM-fixed,2055,2050,18.51,10.982549,True
+248825,wind_offshore,Offshore wind,OM-var,2055,2050,0.0,0.0,True
+248844,wind_offshore,Offshore wind,OCC,2060,2050,387.0,763.973301,True
+248848,wind_offshore,Offshore wind,OM-fixed,2060,2050,18.35,10.982549,True
+248851,wind_offshore,Offshore wind,OM-var,2060,2050,0.0,0.0,True
+248870,wind_offshore,Offshore wind,OCC,2065,2050,383.0,763.973301,True
+248874,wind_offshore,Offshore wind,OM-fixed,2065,2050,18.25,10.982549,True
+248877,wind_offshore,Offshore wind,OM-var,2065,2050,0.0,0.0,True
+248896,wind_offshore,Offshore wind,OCC,2070,2050,381.0,763.973301,True
+248900,wind_offshore,Offshore wind,OM-fixed,2070,2050,18.18,10.982549,True
+248903,wind_offshore,Offshore wind,OM-var,2070,2050,0.0,0.0,True
+248922,wind_offshore,Offshore wind,OCC,2075,2050,379.0,763.973301,True
+248926,wind_offshore,Offshore wind,OM-fixed,2075,2050,18.15,10.982549,True
+248929,wind_offshore,Offshore wind,OM-var,2075,2050,0.0,0.0,True
+248948,wind_offshore,Offshore wind,OCC,2080,2050,378.0,763.973301,True
+248952,wind_offshore,Offshore wind,OM-fixed,2080,2050,18.12,10.982549,True
+248955,wind_offshore,Offshore wind,OM-var,2080,2050,0.0,0.0,True
+248974,wind_offshore,Offshore wind,OCC,2085,2050,378.0,763.973301,True
+248978,wind_offshore,Offshore wind,OM-fixed,2085,2050,18.11,10.982549,True
+248981,wind_offshore,Offshore wind,OM-var,2085,2050,0.0,0.0,True
+249000,wind_offshore,Offshore wind,OCC,2090,2050,377.0,763.973301,True
+249004,wind_offshore,Offshore wind,OM-fixed,2090,2050,18.1,10.982549,True
+249007,wind_offshore,Offshore wind,OM-var,2090,2050,0.0,0.0,True
+249026,wind_offshore,Offshore wind,OCC,2095,2050,377.0,763.973301,True
+249030,wind_offshore,Offshore wind,OM-fixed,2095,2050,18.09,10.982549,True
+249033,wind_offshore,Offshore wind,OM-var,2095,2050,0.0,0.0,True
+249052,wind_offshore,Offshore wind,OCC,2100,2050,377.0,763.973301,True
+249056,wind_offshore,Offshore wind,OM-fixed,2100,2050,18.09,10.982549,True
+249059,wind_offshore,Offshore wind,OM-var,2100,2050,0.0,0.0,True
+249652,PV,Solar PV,OCC,2021,2021,323.0,249.04737,False
+249656,PV,Solar PV,OM-fixed,2021,2021,5.67,6.856733,False
+249659,PV,Solar PV,OM-var,2021,2021,0.0,0.0,False
+249679,PV,Solar PV,OCC,2025,2025,255.0,173.748453,False
+249683,PV,Solar PV,OM-fixed,2025,2025,4.74,3.755736,False
+249686,PV,Solar PV,OM-var,2025,2025,0.0,0.0,False
+249706,PV,Solar PV,OCC,2030,2030,205.0,120.010104,False
+249710,PV,Solar PV,OM-fixed,2030,2030,4.08,3.516935,False
+249713,PV,Solar PV,OM-var,2030,2030,0.0,0.0,False
+249733,PV,Solar PV,OCC,2035,2035,177.0,102.347184,False
+249737,PV,Solar PV,OM-fixed,2035,2035,3.74,3.303411,False
+249740,PV,Solar PV,OM-var,2035,2035,0.0,0.0,False
+249760,PV,Solar PV,OCC,2040,2040,162.0,91.393991,False
+249764,PV,Solar PV,OM-fixed,2040,2040,3.55,3.147813,False
+249767,PV,Solar PV,OM-var,2040,2040,0.0,0.0,False
+249787,PV,Solar PV,OCC,2045,2045,153.0,82.778794,False
+249791,PV,Solar PV,OM-fixed,2045,2045,3.46,3.022502,False
+249794,PV,Solar PV,OM-var,2045,2045,0.0,0.0,False
+249814,PV,Solar PV,OCC,2050,2050,148.0,75.389452,False
+249818,PV,Solar PV,OM-fixed,2050,2050,3.41,2.91713,False
+249821,PV,Solar PV,OM-var,2050,2050,0.0,0.0,False
+249841,PV,Solar PV,OCC,2055,2050,145.0,75.389452,True
+249845,PV,Solar PV,OM-fixed,2055,2050,3.38,2.91713,True
+249848,PV,Solar PV,OM-var,2055,2050,0.0,0.0,True
+249868,PV,Solar PV,OCC,2060,2050,144.0,75.389452,True
+249872,PV,Solar PV,OM-fixed,2060,2050,3.36,2.91713,True
+249875,PV,Solar PV,OM-var,2060,2050,0.0,0.0,True
+249895,PV,Solar PV,OCC,2065,2050,143.0,75.389452,True
+249899,PV,Solar PV,OM-fixed,2065,2050,3.36,2.91713,True
+249902,PV,Solar PV,OM-var,2065,2050,0.0,0.0,True
+249922,PV,Solar PV,OCC,2070,2050,143.0,75.389452,True
+249926,PV,Solar PV,OM-fixed,2070,2050,3.35,2.91713,True
+249929,PV,Solar PV,OM-var,2070,2050,0.0,0.0,True
+249949,PV,Solar PV,OCC,2075,2050,142.0,75.389452,True
+249953,PV,Solar PV,OM-fixed,2075,2050,3.35,2.91713,True
+249956,PV,Solar PV,OM-var,2075,2050,0.0,0.0,True
+249976,PV,Solar PV,OCC,2080,2050,142.0,75.389452,True
+249980,PV,Solar PV,OM-fixed,2080,2050,3.35,2.91713,True
+249983,PV,Solar PV,OM-var,2080,2050,0.0,0.0,True
+250003,PV,Solar PV,OCC,2085,2050,142.0,75.389452,True
+250007,PV,Solar PV,OM-fixed,2085,2050,3.35,2.91713,True
+250010,PV,Solar PV,OM-var,2085,2050,0.0,0.0,True
+250030,PV,Solar PV,OCC,2090,2050,142.0,75.389452,True
+250034,PV,Solar PV,OM-fixed,2090,2050,3.35,2.91713,True
+250037,PV,Solar PV,OM-var,2090,2050,0.0,0.0,True
+250057,PV,Solar PV,OCC,2095,2050,142.0,75.389452,True
+250061,PV,Solar PV,OM-fixed,2095,2050,3.35,2.91713,True
+250064,PV,Solar PV,OM-var,2095,2050,0.0,0.0,True
+250084,PV,Solar PV,OCC,2100,2050,142.0,75.389452,True
+250088,PV,Solar PV,OM-fixed,2100,2050,3.35,2.91713,True
+250091,PV,Solar PV,OM-var,2100,2050,0.0,0.0,True
+256952,coal (conv pul),Coal,OCC,2021,2021,584.001,330.69311,False
+256956,coal (conv pul),Coal,OM-fixed,2021,2021,5.488325,3.000391,False
+256959,coal (conv pul),Coal,OM-var,2021,2021,0.00053785,0.079587,False
+256970,coal (conv pul),Coal,OCC,2025,2025,407.725,231.035041,False
+256974,coal (conv pul),Coal,OM-fixed,2025,2025,5.122969,2.800476,False
+256977,coal (conv pul),Coal,OM-var,2025,2025,0.00047539,0.072147,False
+256988,coal (conv pul),Coal,OCC,2030,2030,407.725,231.035041,False
+256992,coal (conv pul),Coal,OM-fixed,2030,2030,4.919037,2.719897,False
+256995,coal (conv pul),Coal,OM-var,2030,2030,0.00047539,0.072147,False
+257006,coal (conv pul),Coal,OCC,2035,2035,407.725,231.035041,False
+257010,coal (conv pul),Coal,OM-fixed,2035,2035,4.919037,2.719897,False
+257013,coal (conv pul),Coal,OM-var,2035,2035,0.00047539,0.072147,False
+257024,coal (conv pul),Coal,OCC,2040,2040,525.0,231.035041,False
+257028,coal (conv pul),Coal,OM-fixed,2040,2040,17.66,2.719897,False
+257031,coal (conv pul),Coal,OM-var,2040,2040,2.11,0.072147,False
+257042,coal (conv pul),Coal,OCC,2045,2045,506.0,231.035041,False
+257046,coal (conv pul),Coal,OM-fixed,2045,2045,17.66,2.719897,False
+257049,coal (conv pul),Coal,OM-var,2045,2045,2.11,0.072147,False
+257060,coal (conv pul),Coal,OCC,2050,2050,491.0,231.035041,False
+257064,coal (conv pul),Coal,OM-fixed,2050,2050,17.66,2.719897,False
+257067,coal (conv pul),Coal,OM-var,2050,2050,2.11,0.072147,False
+257078,coal (conv pul),Coal,OCC,2055,2050,479.0,231.035041,True
+257082,coal (conv pul),Coal,OM-fixed,2055,2050,17.66,2.719897,True
+257085,coal (conv pul),Coal,OM-var,2055,2050,2.11,0.072147,True
+257096,coal (conv pul),Coal,OCC,2060,2050,470.0,231.035041,True
+257100,coal (conv pul),Coal,OM-fixed,2060,2050,17.66,2.719897,True
+257103,coal (conv pul),Coal,OM-var,2060,2050,2.11,0.072147,True
+257114,coal (conv pul),Coal,OCC,2065,2050,463.0,231.035041,True
+257118,coal (conv pul),Coal,OM-fixed,2065,2050,17.66,2.719897,True
+257121,coal (conv pul),Coal,OM-var,2065,2050,2.11,0.072147,True
+257132,coal (conv pul),Coal,OCC,2070,2050,458.0,231.035041,True
+257136,coal (conv pul),Coal,OM-fixed,2070,2050,17.66,2.719897,True
+257139,coal (conv pul),Coal,OM-var,2070,2050,2.11,0.072147,True
+257150,coal (conv pul),Coal,OCC,2075,2050,454.0,231.035041,True
+257154,coal (conv pul),Coal,OM-fixed,2075,2050,17.66,2.719897,True
+257157,coal (conv pul),Coal,OM-var,2075,2050,2.11,0.072147,True
+257168,coal (conv pul),Coal,OCC,2080,2050,450.0,231.035041,True
+257172,coal (conv pul),Coal,OM-fixed,2080,2050,17.66,2.719897,True
+257175,coal (conv pul),Coal,OM-var,2080,2050,2.11,0.072147,True
+257186,coal (conv pul),Coal,OCC,2085,2050,448.0,231.035041,True
+257190,coal (conv pul),Coal,OM-fixed,2085,2050,17.66,2.719897,True
+257193,coal (conv pul),Coal,OM-var,2085,2050,2.11,0.072147,True
+257204,coal (conv pul),Coal,OCC,2090,2050,446.0,231.035041,True
+257208,coal (conv pul),Coal,OM-fixed,2090,2050,17.66,2.719897,True
+257211,coal (conv pul),Coal,OM-var,2090,2050,2.11,0.072147,True
+257222,coal (conv pul),Coal,OCC,2095,2050,445.0,231.035041,True
+257226,coal (conv pul),Coal,OM-fixed,2095,2050,17.66,2.719897,True
+257229,coal (conv pul),Coal,OM-var,2095,2050,2.11,0.072147,True
+257240,coal (conv pul),Coal,OCC,2100,2050,443.0,231.035041,True
+257244,coal (conv pul),Coal,OM-fixed,2100,2050,17.66,2.719897,True
+257247,coal (conv pul),Coal,OM-var,2100,2050,2.11,0.072147,True
+257766,coal (conv pul CCS),Coal CCS,OCC,2025,2025,689.7839,385.551382,False
+257770,coal (conv pul CCS),Coal CCS,OM-fixed,2025,2025,18.6388,10.41807,False
+257773,coal (conv pul CCS),Coal CCS,OM-var,2025,2025,0.006639845,1.030103,False
+257784,coal (conv pul CCS),Coal CCS,OCC,2030,2030,476.134,266.132812,False
+257788,coal (conv pul CCS),Coal CCS,OM-fixed,2030,2030,16.56839,9.260824,False
+257791,coal (conv pul CCS),Coal CCS,OM-var,2030,2030,0.006516313,1.014066,False
+257802,coal (conv pul CCS),Coal CCS,OCC,2035,2035,476.134,266.132812,False
+257806,coal (conv pul CCS),Coal CCS,OM-fixed,2035,2035,16.56839,9.260824,False
+257809,coal (conv pul CCS),Coal CCS,OM-var,2035,2035,0.006516313,1.013959,False
+257820,coal (conv pul CCS),Coal CCS,OCC,2040,2040,853.0,266.132812,False
+257824,coal (conv pul CCS),Coal CCS,OM-fixed,2040,2040,28.76,9.260824,False
+257827,coal (conv pul CCS),Coal CCS,OM-var,2040,2040,3.66,1.013431,False
+257838,coal (conv pul CCS),Coal CCS,OCC,2045,2045,799.0,266.132812,False
+257842,coal (conv pul CCS),Coal CCS,OM-fixed,2045,2045,28.48,9.260824,False
+257845,coal (conv pul CCS),Coal CCS,OM-var,2045,2045,3.62,1.013009,False
+257856,coal (conv pul CCS),Coal CCS,OCC,2050,2050,756.0,266.132812,False
+257860,coal (conv pul CCS),Coal CCS,OM-fixed,2050,2050,28.3,9.260824,False
+257863,coal (conv pul CCS),Coal CCS,OM-var,2050,2050,3.58,1.012769,False
+257874,coal (conv pul CCS),Coal CCS,OCC,2055,2050,720.0,266.132812,True
+257878,coal (conv pul CCS),Coal CCS,OM-fixed,2055,2050,28.19,9.260824,True
+257881,coal (conv pul CCS),Coal CCS,OM-var,2055,2050,3.55,1.012769,True
+257892,coal (conv pul CCS),Coal CCS,OCC,2060,2050,691.0,266.132812,True
+257896,coal (conv pul CCS),Coal CCS,OM-fixed,2060,2050,28.12,9.260824,True
+257899,coal (conv pul CCS),Coal CCS,OM-var,2060,2050,3.53,1.012769,True
+257910,coal (conv pul CCS),Coal CCS,OCC,2065,2050,667.0,266.132812,True
+257914,coal (conv pul CCS),Coal CCS,OM-fixed,2065,2050,28.07,9.260824,True
+257917,coal (conv pul CCS),Coal CCS,OM-var,2065,2050,3.51,1.012769,True
+257928,coal (conv pul CCS),Coal CCS,OCC,2070,2050,647.0,266.132812,True
+257932,coal (conv pul CCS),Coal CCS,OM-fixed,2070,2050,28.05,9.260824,True
+257935,coal (conv pul CCS),Coal CCS,OM-var,2070,2050,3.49,1.012769,True
+257946,coal (conv pul CCS),Coal CCS,OCC,2075,2050,632.0,266.132812,True
+257950,coal (conv pul CCS),Coal CCS,OM-fixed,2075,2050,28.03,9.260824,True
+257953,coal (conv pul CCS),Coal CCS,OM-var,2075,2050,3.48,1.012769,True
+257964,coal (conv pul CCS),Coal CCS,OCC,2080,2050,619.0,266.132812,True
+257968,coal (conv pul CCS),Coal CCS,OM-fixed,2080,2050,28.02,9.260824,True
+257971,coal (conv pul CCS),Coal CCS,OM-var,2080,2050,3.47,1.012769,True
+257982,coal (conv pul CCS),Coal CCS,OCC,2085,2050,608.0,266.132812,True
+257986,coal (conv pul CCS),Coal CCS,OM-fixed,2085,2050,28.01,9.260824,True
+257989,coal (conv pul CCS),Coal CCS,OM-var,2085,2050,3.46,1.012769,True
+258000,coal (conv pul CCS),Coal CCS,OCC,2090,2050,600.0,266.132812,True
+258004,coal (conv pul CCS),Coal CCS,OM-fixed,2090,2050,28.01,9.260824,True
+258007,coal (conv pul CCS),Coal CCS,OM-var,2090,2050,3.46,1.012769,True
+258018,coal (conv pul CCS),Coal CCS,OCC,2095,2050,593.0,266.132812,True
+258022,coal (conv pul CCS),Coal CCS,OM-fixed,2095,2050,28.01,9.260824,True
+258025,coal (conv pul CCS),Coal CCS,OM-var,2095,2050,3.45,1.012769,True
+258036,coal (conv pul CCS),Coal CCS,OCC,2100,2050,587.0,266.132812,True
+258040,coal (conv pul CCS),Coal CCS,OM-fixed,2100,2050,28.0,9.260824,True
+258043,coal (conv pul CCS),Coal CCS,OM-var,2100,2050,3.45,1.012769,True
+258947,gas (CC),Gas CCGT,OCC,2021,2021,276.212,189.484992,False
+258951,gas (CC),Gas CCGT,OM-fixed,2021,2021,5.300113,2.897345,False
+258954,gas (CC),Gas CCGT,OM-var,2021,2021,0.00063154,0.094418,False
+258965,gas (CC),Gas CCGT,OCC,2025,2025,274.13,137.968808,False
+258969,gas (CC),Gas CCGT,OM-fixed,2025,2025,5.481524,2.974725,False
+258972,gas (CC),Gas CCGT,OM-var,2025,2025,0.00056908,0.085591,False
+258983,gas (CC),Gas CCGT,OCC,2030,2030,243.594,137.968808,False
+258987,gas (CC),Gas CCGT,OM-fixed,2030,2030,5.285053,2.889132,False
+258990,gas (CC),Gas CCGT,OM-var,2030,2030,0.00056908,0.085591,False
+259001,gas (CC),Gas CCGT,OCC,2035,2035,243.594,137.968808,False
+259005,gas (CC),Gas CCGT,OM-fixed,2035,2035,5.285053,2.889132,False
+259008,gas (CC),Gas CCGT,OM-var,2035,2035,0.00056908,0.085591,False
+259019,gas (CC),Gas CCGT,OCC,2040,2040,207.0,137.968808,False
+259023,gas (CC),Gas CCGT,OM-fixed,2040,2040,7.39,2.889132,False
+259026,gas (CC),Gas CCGT,OM-var,2040,2040,0.53,0.085591,False
+259037,gas (CC),Gas CCGT,OCC,2045,2045,204.0,137.968808,False
+259041,gas (CC),Gas CCGT,OM-fixed,2045,2045,7.39,2.889132,False
+259044,gas (CC),Gas CCGT,OM-var,2045,2045,0.53,0.085591,False
+259055,gas (CC),Gas CCGT,OCC,2050,2050,201.0,137.968808,False
+259059,gas (CC),Gas CCGT,OM-fixed,2050,2050,7.39,2.889132,False
+259062,gas (CC),Gas CCGT,OM-var,2050,2050,0.53,0.085591,False
+259073,gas (CC),Gas CCGT,OCC,2055,2050,199.0,137.968808,True
+259077,gas (CC),Gas CCGT,OM-fixed,2055,2050,7.39,2.889132,True
+259080,gas (CC),Gas CCGT,OM-var,2055,2050,0.53,0.085591,True
+259091,gas (CC),Gas CCGT,OCC,2060,2050,198.0,137.968808,True
+259095,gas (CC),Gas CCGT,OM-fixed,2060,2050,7.39,2.889132,True
+259098,gas (CC),Gas CCGT,OM-var,2060,2050,0.53,0.085591,True
+259109,gas (CC),Gas CCGT,OCC,2065,2050,197.0,137.968808,True
+259113,gas (CC),Gas CCGT,OM-fixed,2065,2050,7.39,2.889132,True
+259116,gas (CC),Gas CCGT,OM-var,2065,2050,0.53,0.085591,True
+259127,gas (CC),Gas CCGT,OCC,2070,2050,196.0,137.968808,True
+259131,gas (CC),Gas CCGT,OM-fixed,2070,2050,7.39,2.889132,True
+259134,gas (CC),Gas CCGT,OM-var,2070,2050,0.53,0.085591,True
+259145,gas (CC),Gas CCGT,OCC,2075,2050,195.0,137.968808,True
+259149,gas (CC),Gas CCGT,OM-fixed,2075,2050,7.39,2.889132,True
+259152,gas (CC),Gas CCGT,OM-var,2075,2050,0.53,0.085591,True
+259163,gas (CC),Gas CCGT,OCC,2080,2050,195.0,137.968808,True
+259167,gas (CC),Gas CCGT,OM-fixed,2080,2050,7.39,2.889132,True
+259170,gas (CC),Gas CCGT,OM-var,2080,2050,0.53,0.085591,True
+259181,gas (CC),Gas CCGT,OCC,2085,2050,195.0,137.968808,True
+259185,gas (CC),Gas CCGT,OM-fixed,2085,2050,7.39,2.889132,True
+259188,gas (CC),Gas CCGT,OM-var,2085,2050,0.53,0.085591,True
+259199,gas (CC),Gas CCGT,OCC,2090,2050,195.0,137.968808,True
+259203,gas (CC),Gas CCGT,OM-fixed,2090,2050,7.39,2.889132,True
+259206,gas (CC),Gas CCGT,OM-var,2090,2050,0.53,0.085591,True
+259217,gas (CC),Gas CCGT,OCC,2095,2050,195.0,137.968808,True
+259221,gas (CC),Gas CCGT,OM-fixed,2095,2050,7.39,2.889132,True
+259224,gas (CC),Gas CCGT,OM-var,2095,2050,0.53,0.085591,True
+259235,gas (CC),Gas CCGT,OCC,2100,2050,195.0,137.968808,True
+259239,gas (CC),Gas CCGT,OM-fixed,2100,2050,7.39,2.889132,True
+259242,gas (CC),Gas CCGT,OM-var,2100,2050,0.53,0.085591,True
+259366,gas (CC CCS),Gas CCS,OCC,2025,2025,555.9161,310.726611,False
+259370,gas (CC CCS),Gas CCS,OM-fixed,2025,2025,6.106227,3.413046,False
+259373,gas (CC CCS),Gas CCS,OM-var,2025,2025,0.002978231,0.462408,False
+259384,gas (CC CCS),Gas CCS,OCC,2030,2030,383.7297,214.483856,False
+259388,gas (CC CCS),Gas CCS,OM-fixed,2030,2030,5.427943,3.033923,False
+259391,gas (CC CCS),Gas CCS,OM-var,2030,2030,0.002919409,0.453275,False
+259402,gas (CC CCS),Gas CCS,OCC,2035,2035,383.7297,214.483856,False
+259406,gas (CC CCS),Gas CCS,OM-fixed,2035,2035,5.427943,3.033923,False
+259409,gas (CC CCS),Gas CCS,OM-var,2035,2035,0.002895708,0.449595,False
+259420,gas (CC CCS),Gas CCS,OCC,2040,2040,402.0,214.483856,False
+259424,gas (CC CCS),Gas CCS,OM-fixed,2040,2040,15.87,3.033923,False
+259427,gas (CC CCS),Gas CCS,OM-var,2040,2040,1.58,0.446917,False
+259438,gas (CC CCS),Gas CCS,OCC,2045,2045,380.0,214.483856,False
+259442,gas (CC CCS),Gas CCS,OM-fixed,2045,2045,15.8,3.033923,False
+259445,gas (CC CCS),Gas CCS,OM-var,2045,2045,1.58,0.444964,False
+259456,gas (CC CCS),Gas CCS,OCC,2050,2050,365.0,214.483856,False
+259460,gas (CC CCS),Gas CCS,OM-fixed,2050,2050,15.76,3.033923,False
+259463,gas (CC CCS),Gas CCS,OM-var,2050,2050,1.58,0.443538,False
+259474,gas (CC CCS),Gas CCS,OCC,2055,2050,355.0,214.483856,True
+259478,gas (CC CCS),Gas CCS,OM-fixed,2055,2050,15.74,3.033923,True
+259481,gas (CC CCS),Gas CCS,OM-var,2055,2050,1.58,0.443538,True
+259492,gas (CC CCS),Gas CCS,OCC,2060,2050,347.0,214.483856,True
+259496,gas (CC CCS),Gas CCS,OM-fixed,2060,2050,15.73,3.033923,True
+259499,gas (CC CCS),Gas CCS,OM-var,2060,2050,1.58,0.443538,True
+259510,gas (CC CCS),Gas CCS,OCC,2065,2050,342.0,214.483856,True
+259514,gas (CC CCS),Gas CCS,OM-fixed,2065,2050,15.72,3.033923,True
+259517,gas (CC CCS),Gas CCS,OM-var,2065,2050,1.58,0.443538,True
+259528,gas (CC CCS),Gas CCS,OCC,2070,2050,339.0,214.483856,True
+259532,gas (CC CCS),Gas CCS,OM-fixed,2070,2050,15.72,3.033923,True
+259535,gas (CC CCS),Gas CCS,OM-var,2070,2050,1.58,0.443538,True
+259546,gas (CC CCS),Gas CCS,OCC,2075,2050,336.0,214.483856,True
+259550,gas (CC CCS),Gas CCS,OM-fixed,2075,2050,15.72,3.033923,True
+259553,gas (CC CCS),Gas CCS,OM-var,2075,2050,1.58,0.443538,True
+259564,gas (CC CCS),Gas CCS,OCC,2080,2050,335.0,214.483856,True
+259568,gas (CC CCS),Gas CCS,OM-fixed,2080,2050,15.72,3.033923,True
+259571,gas (CC CCS),Gas CCS,OM-var,2080,2050,1.58,0.443538,True
+259582,gas (CC CCS),Gas CCS,OCC,2085,2050,333.0,214.483856,True
+259586,gas (CC CCS),Gas CCS,OM-fixed,2085,2050,15.72,3.033923,True
+259589,gas (CC CCS),Gas CCS,OM-var,2085,2050,1.58,0.443538,True
+259600,gas (CC CCS),Gas CCS,OCC,2090,2050,333.0,214.483856,True
+259604,gas (CC CCS),Gas CCS,OM-fixed,2090,2050,15.72,3.033923,True
+259607,gas (CC CCS),Gas CCS,OM-var,2090,2050,1.58,0.443538,True
+259618,gas (CC CCS),Gas CCS,OCC,2095,2050,332.0,214.483856,True
+259622,gas (CC CCS),Gas CCS,OM-fixed,2095,2050,15.72,3.033923,True
+259625,gas (CC CCS),Gas CCS,OM-var,2095,2050,1.58,0.443538,True
+259636,gas (CC CCS),Gas CCS,OCC,2100,2050,332.0,214.483856,True
+259640,gas (CC CCS),Gas CCS,OM-fixed,2100,2050,15.72,3.033923,True
+259643,gas (CC CCS),Gas CCS,OM-var,2100,2050,1.58,0.443538,True
+262942,Gen_III,Nuclear,OCC,2021,2021,1021.568,572.578175,False
+262946,Gen_III,Nuclear,OM-fixed,2021,2021,38.5,39.501389,False
+262949,Gen_III,Nuclear,OM-var,2021,2021,0.75,0.569885,False
+262960,Gen_III,Nuclear,OCC,2025,2025,1010.464,572.578175,False
+262964,Gen_III,Nuclear,OM-fixed,2025,2025,38.5,39.501389,False
+262967,Gen_III,Nuclear,OM-var,2025,2025,0.75,0.569885,False
+262978,Gen_III,Nuclear,OCC,2030,2030,992.42,562.217857,False
+262982,Gen_III,Nuclear,OM-fixed,2030,2030,38.5,39.501389,False
+262985,Gen_III,Nuclear,OM-var,2030,2030,0.75,0.569885,False
+262996,Gen_III,Nuclear,OCC,2035,2035,974.029,551.85754,False
+263000,Gen_III,Nuclear,OM-fixed,2035,2035,38.5,39.501389,False
+263003,Gen_III,Nuclear,OM-var,2035,2035,0.75,0.569885,False
+263014,Gen_III,Nuclear,OCC,2040,2040,1443.0,541.49726,False
+263018,Gen_III,Nuclear,OM-fixed,2040,2040,38.5,39.501389,False
+263021,Gen_III,Nuclear,OM-var,2040,2040,0.75,0.569885,False
+263032,Gen_III,Nuclear,OCC,2045,2045,1398.0,531.136982,False
+263036,Gen_III,Nuclear,OM-fixed,2045,2045,38.5,39.501389,False
+263039,Gen_III,Nuclear,OM-var,2045,2045,0.75,0.569885,False
+263050,Gen_III,Nuclear,OCC,2050,2050,1358.0,520.776702,False
+263054,Gen_III,Nuclear,OM-fixed,2050,2050,38.5,39.501389,False
+263057,Gen_III,Nuclear,OM-var,2050,2050,0.75,0.569885,False
+263068,Gen_III,Nuclear,OCC,2055,2050,1321.0,520.776702,True
+263072,Gen_III,Nuclear,OM-fixed,2055,2050,38.5,39.501389,True
+263075,Gen_III,Nuclear,OM-var,2055,2050,0.75,0.569885,True
+263086,Gen_III,Nuclear,OCC,2060,2050,1289.0,520.776702,True
+263090,Gen_III,Nuclear,OM-fixed,2060,2050,38.5,39.501389,True
+263093,Gen_III,Nuclear,OM-var,2060,2050,0.75,0.569885,True
+263104,Gen_III,Nuclear,OCC,2065,2050,1259.0,520.776702,True
+263108,Gen_III,Nuclear,OM-fixed,2065,2050,38.5,39.501389,True
+263111,Gen_III,Nuclear,OM-var,2065,2050,0.75,0.569885,True
+263122,Gen_III,Nuclear,OCC,2070,2050,1232.0,520.776702,True
+263126,Gen_III,Nuclear,OM-fixed,2070,2050,38.5,39.501389,True
+263129,Gen_III,Nuclear,OM-var,2070,2050,0.75,0.569885,True
+263140,Gen_III,Nuclear,OCC,2075,2050,1208.0,520.776702,True
+263144,Gen_III,Nuclear,OM-fixed,2075,2050,38.5,39.501389,True
+263147,Gen_III,Nuclear,OM-var,2075,2050,0.75,0.569885,True
+263158,Gen_III,Nuclear,OCC,2080,2050,1186.0,520.776702,True
+263162,Gen_III,Nuclear,OM-fixed,2080,2050,38.5,39.501389,True
+263165,Gen_III,Nuclear,OM-var,2080,2050,0.75,0.569885,True
+263176,Gen_III,Nuclear,OCC,2085,2050,1166.0,520.776702,True
+263180,Gen_III,Nuclear,OM-fixed,2085,2050,38.5,39.501389,True
+263183,Gen_III,Nuclear,OM-var,2085,2050,0.75,0.569885,True
+263194,Gen_III,Nuclear,OCC,2090,2050,1148.0,520.776702,True
+263198,Gen_III,Nuclear,OM-fixed,2090,2050,38.5,39.501389,True
+263201,Gen_III,Nuclear,OM-var,2090,2050,0.75,0.569885,True
+263212,Gen_III,Nuclear,OCC,2095,2050,1132.0,520.776702,True
+263216,Gen_III,Nuclear,OM-fixed,2095,2050,38.5,39.501389,True
+263219,Gen_III,Nuclear,OM-var,2095,2050,0.75,0.569885,True
+263230,Gen_III,Nuclear,OCC,2100,2050,1117.0,520.776702,True
+263234,Gen_III,Nuclear,OM-fixed,2100,2050,38.5,39.501389,True
+263237,Gen_III,Nuclear,OM-var,2100,2050,0.75,0.569885,True

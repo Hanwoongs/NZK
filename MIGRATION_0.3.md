@@ -1,123 +1,171 @@
-# Migration to MacroEnergy release-0.3
+# repo_runs on MacroEnergy release-0.3
 
-Created 2026-10-19 as a git worktree of `NZK_Della_repo`, on a new branch
-`NZK_release03` based on `upstream/release-0.3`.
+Created 2026-10-19. This folder is **the `repo_runs` cases running on
+MacroEnergy 0.3.0-rc1** instead of the 0.1-era fork they were built against.
 
 ```
-~/Desktop/NZK_Della_repo    branch NZK_Della       unchanged, still works
-~/Desktop/NZK_MACRO_v03     branch NZK_release03   this folder
+~/Desktop/repo_runs          the working copy, still on the 0.1 fork — untouched
+~/Desktop/NZK_Della_repo     the 0.1 fork package, branch NZK_Della — untouched
+~/Desktop/NZK_MACRO_v03      this folder, branch NZK_release03
 ```
 
-Both share one `.git`. Nothing in the old folder was modified.
+It is a git worktree of `NZK_Della_repo`, so all three share one `.git` and
+nothing in the other two was modified.
 
-## Where we came from
+## What is here
 
-The old repo is a fork, `joonmoon6409/MacroEnergy-ESAG.jl`, not the official
-`macroenergy/MacroEnergy.jl`. Its `Project.toml` says `version = "0.1.0"`, but
-that is just a string the fork never bumped. The real code vintage is upstream
-PR #244, which is **445 commits behind release-0.3**.
+**The package** — upstream `macroenergy/MacroEnergy.jl`, branch `release-0.3`,
+version **0.3.0-rc1**.
+
+**The cases** — everything from `repo_runs`:
+
+```
+Ref/  NDC/                        the two run cases
+Post-processing files/            transmission, demand, provincial CF, BNEF
+figures/                          diagnostic charts and their scripts
+_backup_20261019_om_mid/          input-change backups
+_backup_20261019_ccs_japan/
+20251205 BNEF Korea data .xlsx
+NZK_MODEL_README.md               repo_runs/README.md, renamed so it does not
+                                  collide with the package's own README.md
+```
+
+**Excluded:** `Ref_re/` and `NDC_Re/`, 5 GB each of results from the 0.1 run.
+They stay in `repo_runs` for comparison. This folder is 462 MB.
+
+**Also carried over** from the fork: 11 custom asset files
+(`be_hefa`, `beccsammonia`, `beccsatj`, `beccsbiomethane`, `beccscharcoal`,
+`beccsdiesel`, `beccsethanol`, `biomassharvest`, `biomasstransformation`,
+`fischertropsch`, `fuelsenduse_generalized`) and the three commodities they
+need — `Charcoal`, `Biomethane`, `Pollution` — added to `src/MacroEnergy.jl`
+and marked `# ESAG fork`.
+
+Ref and NDC do not use any of them; they use only core types (`ThermalPower`,
+`ThermalPowerCCS`, `VRE`, `Battery`, `HydroRes`, `TransmissionLink`,
+`CO2Injection`). They are kept because BECCS is on the model backlog. They
+compile and load. Their Julia type names are `BECCSATJ` and `HEFA`, not
+`BECCSAtj` / `BEHefa`.
+
+## Where the old package stood
+
+`NZK_Della_repo` is a fork, `joonmoon6409/MacroEnergy-ESAG.jl`, not the
+official repo. Its `Project.toml` says `version = "0.1.0"`, but that is a
+string the fork never bumped. The real code vintage is upstream PR #244 —
+**445 commits behind release-0.3**.
 
 | | version |
 |---|---|
-| old repo, declared | 0.1.0 (meaningless) |
-| old repo, actual | upstream PR #244 |
+| the fork, declared | 0.1.0 (meaningless) |
+| the fork, actual | upstream PR #244 |
 | upstream release-0.2 | 0.2.5 |
-| **this folder** | **0.3.0-rc1** |
+| **here** | **0.3.0-rc1** |
 
 `release-0.3` is a release *candidate*, not a final release.
 
-## What was carried over
+## Julia
 
-**Case data** — every NZK and ExampleSystems folder, plus `0718_techno_params`,
-`TDR_script`, `test.jl`, `test_system_output.json`.
+**1.12.1, matching the cluster** (`module load julia/1.12.1`). Installed with
+`juliaup add 1.12.1`. Run everything here as `julia +1.12.1` — the local
+default is still 1.9.4.
 
-`results_*` directories were **excluded**: 1.3 GB of stale run output in
-`NZK_power provincial_0908_BNEF` alone, all regenerable. The folder went from
-1.4 GB to 178 MB, and the whole copy is 357 MB.
-
-**Fork source** — 11 custom asset files that exist only in the fork:
-
-```
-be_hefa  beccsammonia  beccsatj  beccsbiomethane  beccscharcoal
-beccsdiesel  beccsethanol  biomassharvest  biomasstransformation
-fischertropsch  fuelsenduse_generalized
-```
-
-and three commodities they need, which 0.3 does not declare: `Charcoal`,
-`Biomethane`, `Pollution`. Both were added to `src/MacroEnergy.jl`, marked
-`# ESAG fork`. No upstream file was otherwise modified — the fork's only change
-to shared code was `include` lines, so there was nothing to merge by hand.
-
-The NZK power model does not use any of these 11. It uses only core types:
-`ThermalPower`, `ThermalPowerCCS`, `VRE`, `Battery`, `HydroRes`,
-`TransmissionLink`, `CO2Injection`.
+0.3 **will not build on 1.9.4**; `MacroEnergyTimeReduction 0.0.2` requires
+newer. The old fork still builds on 1.9.4, so both keep working.
 
 ## Verified
 
-Verified on **Julia 1.12.1**, the same version the cluster loads:
-
-- `Pkg.instantiate()` resolves — 242 dependencies precompiled
+- `Pkg.instantiate()` resolves on 1.12.1 — 242 dependencies precompiled
 - `using MacroEnergy` loads, reports 0.3.0-rc1
-- all 7 core asset types and all 11 fork asset types are defined
-- **`load_case` on the current `repo_runs/Ref` succeeds, all 7 periods**
+- all 7 core and all 11 fork asset types are defined
+- **`load_case("Ref")` and `load_case("NDC")` both succeed, 7 periods each**
 
-That last one is the important result: the live NZK inputs load unchanged
-under 0.3. No input migration was needed to get that far.
+The current inputs load unchanged. No input migration was needed.
 
-## Julia version
+## Load time, measured
 
-**This folder is built on Julia 1.12.1, matching the cluster**
-(`module load julia/1.12.1` in `run_NZK_della.slurm`). Installed locally with
-`juliaup add 1.12.1`; run everything here as `julia +1.12.1`.
+Same machine, same `Ref` inputs, same function:
 
-**0.3 will not build on Julia 1.9.4**, which is still the local default —
-`MacroEnergyTimeReduction 0.0.2` requires newer. It was first built on 1.10.5
-to confirm that, then rebuilt on 1.12.1 with `Manifest.toml` deleted so the
-dependency set resolves against the version actually used.
-
-The old `NZK_Della` branch still builds on 1.9.4, so both folders keep working.
-
-| | Julia |
+| | `load_case` |
 |---|---|
-| local default | 1.9.4 |
-| `NZK_Della` (0.1) | 1.9.4 |
-| **`NZK_release03` (0.3)** | **1.12.1** |
-| cluster | 1.12.1 |
+| 0.1 fork, Julia 1.9.4 | **369.1 s** |
+| 0.3, Julia 1.12.1 | **18.8 s** |
 
-## What 0.3 brings that we wanted
+**19.6× faster.** This matches the changelog entry: *"Cached repeated reads of
+shared CSV inputs within each case or system load, avoiding repeated full-file
+parsing when assets select different columns from the same file."* Our case is
+exactly that shape — 51 VRE assets each reading different columns out of one
+8,760 × 59 `availability.csv`, 17 demand columns out of one demand file.
 
-**Grouped `MaxNewCapacityConstraint` exists.** From
-`src/model/constraints/max_new_capacity.jl`:
+Where the 2 h 30 m Ref run on the cluster actually went:
 
-> Typed payload for a **system-wide or location-level** `MaxNewCapacityConstraint`.
-> `groups` contains `GroupConfig` entries whose `value` is an upper bound on
-> **the sum of newly built capacity**.
+| stage | time | share | does 0.3 help |
+|---|---|---|---|
+| loading | 16 m 54 s | 11% | **yes, measured** |
+| model generation | ~29 m | 19% | claimed, not measured |
+| scaling + solve + write | ~94 m | 62% | barely — this is Gurobi |
 
-with `add_model_constraint!` methods for both `::System` and `::Location`.
+Optimistically that is 2 h 30 m → about 2 h. Real, but not transformative:
+**the solve dominates and 0.3 cannot change it.** The thing that would is TDR
+(new in 0.3), which replaces 8,760 hours with weighted representative periods —
+but that changes the model, so results would no longer be comparable to the
+chronological runs.
 
-This is the single thing most blocking us: on 0.1 the constraint is per-asset,
-so a national solar build-rate limit cannot be expressed, and the per-province
-workaround relocates build rather than limiting it (7,500 → 6,000 MW moved the
-national peak only 6.5 → 6.0 GW/yr, and Ref 2050 solar went *up*, 139 → 142 GW).
+## What 0.3 gives us that we needed
+
+**Grouped `MaxNewCapacityConstraint`.** From the changelog:
+
+> system-wide and per-location capacity constraints for selected groups of
+> assets ... `MaxNewCapacityConstraint` bounds newly built capacity. Limits are
+> configured via a `constraints` block in `system_data.json` (whole system) or
+> per location in `locations.json`, using **asset-type and tag selectors**.
+
+and for VRE, `technology: "Solar"` is normalised into a `:solar` tag.
+
+This removes the workaround we are stuck with on 0.1, where the constraint is
+per-asset so a national solar build limit cannot be written. The per-province
+cap relocates build rather than limiting it — tightening 7,500 → 6,000 MW moved
+the national peak only 6.5 → 6.0 GW/yr, and Ref 2050 solar went *up*,
+139 → 142 GW.
+
+Also worth noting:
+
+- `capacity_summary.csv` — multi-period capacity in one file
+- `capex.csv` — per-component capital cost
+- `StartYear` in `case_settings.json` — label periods by calendar year
+- **Fixed:** `StorageChargeLimitConstraint` was declared at the wrong level in
+  a `Battery`'s charge edge and was *silently dropped*. It now binds. This may
+  change our battery results.
+- **Fixed:** myopic runs with `ReturnModels = false` now actually free each
+  period's model — a memory fix, relevant given our 192 GB runs.
+
+## Running on the cluster
+
+`Ref/run_NZK_della_v03.slurm` and `NDC/run_NZK_della_v03.slurm` are copies of
+the existing scripts with the job name suffixed `_v03` and
+
+```
+REPO="/scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK_v03"
+```
+
+so the 0.3 package lands in a new directory and the existing
+`MacroEnergy_NZK` is left alone. Upload this whole folder there. The original
+`run_NZK_della.slurm` files are untouched.
 
 ## Not yet done
 
-- Run the case end to end, not just load it. Loading proves the schema parses;
-  it does not prove the model builds or that results match.
-- Compare a full Ref solve against the 0.1 result, so any difference can be
-  attributed to the version rather than to the base-year fixes now in flight.
-- Rewrite the solar build-rate limit to use the grouped constraint.
-- Run on the cluster. The local build matches its Julia version, but the
-  cluster has its own Gurobi (`gurobi/13.0.0`) and has not been tested.
-- Decide whether to keep the 11 fork assets at all. They compile, but nothing
-  in the NZK power model uses them.
+- **Run a case end to end.** Loading proves the schema parses. It does not
+  prove the model builds, solves, or returns the same answer.
+- Compare a full Ref solve against the 0.1 result. Do this before the
+  base-year fixes land, or the two changes cannot be told apart.
+- Rewrite the solar build-rate limit using the grouped constraint.
+- Check whether `StorageChargeLimitConstraint` now binding changes battery
+  results.
+- Test on the cluster. The Julia version matches, but Gurobi there is
+  `gurobi/13.0.0` and has not been tried.
 
 ## Reproduce
 
 ```bash
 cd ~/Desktop/NZK_MACRO_v03
 julia +1.12.1 --project=. -e 'using Pkg; Pkg.instantiate()'
-julia +1.12.1 --project=. -e 'using MacroEnergy; println(pkgversion(MacroEnergy))'
+julia +1.12.1 --project=. -e 'using MacroEnergy; MacroEnergy.load_case("Ref")'
 ```
-
-The fork asset types are named `BECCSATJ` and `HEFA`, not `BECCSAtj` / `BEHefa`.
