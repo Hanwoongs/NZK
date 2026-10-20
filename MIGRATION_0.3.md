@@ -138,6 +138,35 @@ Also worth noting:
 - **Fixed:** myopic runs with `ReturnModels = false` now actually free each
   period's model — a memory fix, relevant given our 192 GB runs.
 
+## The run scripts
+
+Both cases carry their full run set, unchanged from `repo_runs`:
+
+```
+run_v1_BNEF.jl              the actual run script
+run_NZK_della.slurm         the existing one, points at the 0.1 cluster path
+run_NZK_della_v03.slurm     added here, points at a new 0.3 cluster path
+run_HiGHS.jl  run_with_env.jl
+```
+
+alongside `assets/`, `system/`, `settings/`, `user_additions/`,
+`system_data.json` and `input.xlsx`.
+
+**One change was needed.** `run_case` returns something different in 0.3:
+
+| | returns |
+|---|---|
+| 0.1 | `case.systems, solution` |
+| 0.3 | `case, solution` |
+
+The script bound this as `(system, model)`, which on 0.3 would silently put a
+`Case` into a variable named `system`. It would not have errored — the script
+never uses the returned values — but it would have been wrong to read. Both
+scripts now bind `(case, solution)`.
+
+Every keyword the script passes (`lazy_load`, `optimizer`,
+`optimizer_attributes`) is still accepted by 0.3.
+
 ## Running on the cluster
 
 `Ref/run_NZK_della_v03.slurm` and `NDC/run_NZK_della_v03.slurm` are copies of

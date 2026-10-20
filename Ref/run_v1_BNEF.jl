@@ -10,7 +10,8 @@ using Gurobi
 
 # run(`python3 $(joinpath(@__DIR__, "analyze_capacity.py"))`)
 
-(system, model) = run_case(
+# MacroEnergy 0.3 returns (case, solution). 0.1 returned (case.systems, solution).
+(case, solution) = run_case(
     @__DIR__;
     optimizer=Gurobi.Optimizer,
     optimizer_attributes=("Method" => 2, "Crossover" => 0, "BarConvTol" => 1e-3, "Threads" => 22, "BarHomogeneous" => 1),
