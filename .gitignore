@@ -57,3 +57,6 @@ results_*/
 Ref_re/
 NDC_Re/
 **/.DS_Store
+
+# local smoke-test copies
+_smoke/
