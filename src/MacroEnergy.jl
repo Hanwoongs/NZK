@@ -55,6 +55,9 @@ abstract type Methanol <: Commodity end ## MWh
 abstract type Nitrogen <: Commodity end ## tonnes
 abstract type Heat <: Commodity end ## MWh
 abstract type Steam <: Commodity end ## MWh
+abstract type Charcoal <: Commodity end ## MWh      # ESAG fork
+abstract type Biomethane <: Commodity end ## MWh    # ESAG fork
+abstract type Pollution <: Commodity end ## tonnes  # ESAG fork
 
 ## Time data types
 abstract type AbstractTimeData{T<:Commodity} end
@@ -234,6 +237,19 @@ include("model/assets/thermalheating.jl")
 include("model/assets/electricheating.jl")
 include("model/assets/thermalsteam.jl")
 include("model/assets/electricsteam.jl")
+
+## ESAG fork assets, carried over from the NZK_Della branch
+include("model/assets/be_hefa.jl")
+include("model/assets/beccsammonia.jl")
+include("model/assets/beccsatj.jl")
+include("model/assets/beccsbiomethane.jl")
+include("model/assets/beccscharcoal.jl")
+include("model/assets/beccsdiesel.jl")
+include("model/assets/beccsethanol.jl")
+include("model/assets/biomassharvest.jl")
+include("model/assets/biomasstransformation.jl")
+include("model/assets/fischertropsch.jl")
+include("model/assets/fuelsenduse_generalized.jl")
 
 include("config/configure_settings.jl")
 include("config/case_settings.jl")
