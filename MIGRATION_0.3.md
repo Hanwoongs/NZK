@@ -54,7 +54,9 @@ The NZK power model does not use any of these 11. It uses only core types:
 
 ## Verified
 
-- `Pkg.instantiate()` resolves — 215 dependencies precompiled
+Verified on **Julia 1.12.1**, the same version the cluster loads:
+
+- `Pkg.instantiate()` resolves — 242 dependencies precompiled
 - `using MacroEnergy` loads, reports 0.3.0-rc1
 - all 7 core asset types and all 11 fork asset types are defined
 - **`load_case` on the current `repo_runs/Ref` succeeds, all 7 periods**
@@ -64,12 +66,23 @@ under 0.3. No input migration was needed to get that far.
 
 ## Julia version
 
-**0.3 will not build on Julia 1.9.4.** `MacroEnergyTimeReduction 0.0.2`
-requires newer. Built and tested here on **1.10.5** (`julia +release`).
-The cluster runs `julia/1.12.1`, which is newer still, so it should be fine —
-but it has not been tested there.
+**This folder is built on Julia 1.12.1, matching the cluster**
+(`module load julia/1.12.1` in `run_NZK_della.slurm`). Installed locally with
+`juliaup add 1.12.1`; run everything here as `julia +1.12.1`.
 
-The old `NZK_Della` branch still builds on 1.9.4.
+**0.3 will not build on Julia 1.9.4**, which is still the local default —
+`MacroEnergyTimeReduction 0.0.2` requires newer. It was first built on 1.10.5
+to confirm that, then rebuilt on 1.12.1 with `Manifest.toml` deleted so the
+dependency set resolves against the version actually used.
+
+The old `NZK_Della` branch still builds on 1.9.4, so both folders keep working.
+
+| | Julia |
+|---|---|
+| local default | 1.9.4 |
+| `NZK_Della` (0.1) | 1.9.4 |
+| **`NZK_release03` (0.3)** | **1.12.1** |
+| cluster | 1.12.1 |
 
 ## What 0.3 brings that we wanted
 
@@ -94,7 +107,8 @@ national peak only 6.5 → 6.0 GW/yr, and Ref 2050 solar went *up*, 139 → 142 
 - Compare a full Ref solve against the 0.1 result, so any difference can be
   attributed to the version rather than to the base-year fixes now in flight.
 - Rewrite the solar build-rate limit to use the grouped constraint.
-- Test on the cluster under `julia/1.12.1`.
+- Run on the cluster. The local build matches its Julia version, but the
+  cluster has its own Gurobi (`gurobi/13.0.0`) and has not been tested.
 - Decide whether to keep the 11 fork assets at all. They compile, but nothing
   in the NZK power model uses them.
 
@@ -102,6 +116,8 @@ national peak only 6.5 → 6.0 GW/yr, and Ref 2050 solar went *up*, 139 → 142 
 
 ```bash
 cd ~/Desktop/NZK_MACRO_v03
-julia +release --project=. -e 'using Pkg; Pkg.instantiate()'
-julia +release --project=. -e 'using MacroEnergy; println(pkgversion(MacroEnergy))'
+julia +1.12.1 --project=. -e 'using Pkg; Pkg.instantiate()'
+julia +1.12.1 --project=. -e 'using MacroEnergy; println(pkgversion(MacroEnergy))'
 ```
+
+The fork asset types are named `BECCSATJ` and `HEFA`, not `BECCSAtj` / `BEHefa`.
