@@ -138,6 +138,31 @@ Also worth noting:
 - **Fixed:** myopic runs with `ReturnModels = false` now actually free each
   period's model — a memory fix, relevant given our 192 GB runs.
 
+## Case settings syntax
+
+0.3 splits what 0.1 carried in one field. `SolutionAlgorithm` now means
+Monolithic or Benders; whether periods are solved myopically moved to a new
+`ExpansionHorizon`:
+
+```json
+0.1:  "SolutionAlgorithm": "Myopic"
+
+0.3:  "SolutionAlgorithm": "Monolithic",
+      "ExpansionHorizon":  "Myopic"
+```
+
+0.3 still accepts the old form and translates it, but logs a deprecation
+notice. Both `Ref/settings/case_settings.json` and
+`NDC/settings/case_settings.json` now use the new form. Verified: the warning
+is gone and both load as `SolutionAlgorithm=Monolithic(),
+ExpansionHorizon=Myopic()`, 7 periods each.
+
+To cut a run short while developing, add to the same file:
+
+```json
+"MyopicSettings": { "StopAfterPeriod": 1 }
+```
+
 ## The run scripts
 
 Both cases carry their full run set, unchanged from `repo_runs`:
@@ -180,12 +205,46 @@ so the 0.3 package lands in a new directory and the existing
 `MacroEnergy_NZK` is left alone. Upload this whole folder there. The original
 `run_NZK_della.slurm` files are untouched.
 
+## First solve, 2026-10-19
+
+Ref was run locally through 2030 (`StopAfterPeriod: 3`) on Gurobi 13.
+
+```
+22:20 -> 22:48      29 minutes, 3 periods
+peak memory         10.9 GB of 36 GB
+periods             10.2M, 13.8M, 13.8M rows
+output              capacity, flows, costs, capex, capacity_summary, run_status
+```
+
+All three periods solved to optimality and every output file was written.
+`StopAfterPeriod` stopped the iteration where it should.
+
+**The cluster's 192 GB allocation is far more than this needs — 11 GB was
+enough.** That is worth revisiting in the slurm scripts.
+
+2021 generation from that run, against the published statistics:
+
+| | model | observed | |
+|---|---|---|---|
+| Coal | 203.2 TWh | 198 | +2.6% |
+| Gas | 167.7 | 167 | +0.4% |
+| Nuclear | 158.9 | 158 | +0.6% |
+
+**The coal/gas inversion is closed.** Before the base-year fixes it was
+coal 299.5 and gas 58.3. This is the first run containing coal availability
+0.65, nuclear 0.78, the 2021 gas retirement block, coal and gas O&M on BNEF
+Mid, and CCS on the Japan proxy.
+
+**This is not a version comparison.** Those inputs changed at the same time as
+the version did, so the difference against the 10/13 cluster run cannot be
+attributed to 0.3. Isolating the version effect needs 0.1 run on these same
+inputs.
+
 ## Not yet done
 
-- **Run a case end to end.** Loading proves the schema parses. It does not
-  prove the model builds, solves, or returns the same answer.
-- Compare a full Ref solve against the 0.1 result. Do this before the
-  base-year fixes land, or the two changes cannot be told apart.
+- **Isolate the version effect.** Run 0.1 on the current inputs and compare
+  against this 0.3 solve. Until then the two changes are confounded.
+- Run all 7 periods, and run NDC.
 - Rewrite the solar build-rate limit using the grouped constraint.
 - Check whether `StorageChargeLimitConstraint` now binding changes battery
   results.

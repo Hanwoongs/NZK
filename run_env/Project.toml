@@ -1,0 +1,6 @@
+# Local run environment: MacroEnergy 0.3 (dev'd from the parent folder) + Gurobi,
+# so the MacroEnergyGurobiExt extension loads. The package's own Project.toml
+# keeps Gurobi as a weakdep and is left untouched.
+[deps]
+Gurobi = "2e9cd046-0924-5485-92f1-d5272153d98b"
+MacroEnergy = "260b7737-bf0e-4e84-9335-3af14438b1f5"

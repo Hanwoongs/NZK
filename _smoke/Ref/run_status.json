@@ -1,0 +1,8 @@
+{
+    "status": "OK",
+    "case_path": "/Users/hanwoongkim/Desktop/NZK_MACRO_v03/_smoke/Ref",
+    "timestamp": "2026-10-19T22:48:57.629",
+    "elapsed_seconds": 1738.695,
+    "output_path": "/Users/hanwoongkim/Desktop/NZK_MACRO_v03/_smoke/Ref/results_001",
+    "termination_status": "1: OPTIMAL, 2: OPTIMAL, 3: OPTIMAL"
+}
