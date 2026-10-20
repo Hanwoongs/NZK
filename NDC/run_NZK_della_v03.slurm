@@ -21,4 +21,6 @@ REPO="/scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK_v03"   # 0.3 — upload this 
 CASE="$REPO/NDC"
 
 cd "$CASE"
-julia --project="$REPO" run_v1_BNEF.jl
+# 0.3 keeps Gurobi as a weakdep, so the solver lives in $REPO/run_env,
+# not in the package project itself.
+julia --project="$REPO/run_env" run_v1_BNEF.jl

@@ -192,18 +192,63 @@ scripts now bind `(case, solution)`.
 Every keyword the script passes (`lazy_load`, `optimizer`,
 `optimizer_attributes`) is still accepted by 0.3.
 
+## The solver environment, `run_env/`
+
+**0.3 keeps Gurobi as a weakdep**, behind the `MacroEnergyGurobiExt`
+extension, so `using Gurobi` fails under `--project=.`. The run scripts need a
+project that has both.
+
+```
+run_env/Project.toml     MacroEnergy (dev'd from "..") + Gurobi
+run_env/Manifest.toml     path = ".."  — relative, so the folder is portable
+```
+
+The package's own `Project.toml` is untouched. Run anything that needs the
+solver as:
+
+```bash
+julia +1.12.1 --project=run_env <script>
+```
+
+Confirmed working from inside a case directory, which is what the slurm
+scripts do.
+
 ## Running on the cluster
 
+```bash
+rsync -av --exclude '_smoke' --exclude 'results_*' --exclude '.git' \
+  ~/Desktop/NZK_MACRO_v03/ \
+  hk6264@della.princeton.edu:/scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK_v03/
+```
+
+Once, on the cluster:
+
+```bash
+cd /scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK_v03
+module load julia/1.12.1 gurobi/13.0.0
+julia --project=run_env -e 'using Pkg; Pkg.develop(path="."); Pkg.instantiate()'
+julia --project=run_env -e 'using MacroEnergy, Gurobi; println("OK")'
+```
+
+Then `sbatch Ref/run_NZK_della_v03.slurm`.
+
 `Ref/run_NZK_della_v03.slurm` and `NDC/run_NZK_della_v03.slurm` are copies of
-the existing scripts with the job name suffixed `_v03` and
+the existing scripts with the job name suffixed `_v03`,
 
 ```
 REPO="/scratch/gpfs/JENKINS/hk6264/MacroEnergy_NZK_v03"
+julia --project="$REPO/run_env" run_v1_BNEF.jl
 ```
 
 so the 0.3 package lands in a new directory and the existing
-`MacroEnergy_NZK` is left alone. Upload this whole folder there. The original
-`run_NZK_della.slurm` files are untouched.
+`MacroEnergy_NZK` is left alone. The original `run_NZK_della.slurm` files are
+untouched. Note the `--project` points at `run_env`, not at `$REPO` — that is
+the weakdep above.
+
+**Memory.** The scripts still ask for `--mem=192G`. The local 3-period solve
+peaked at 10.9 GB, so this is likely far more than needed and it lengthens the
+queue wait. Left as is for the first 7-period run; check `seff <jobid>`
+afterwards and cut it.
 
 ## First solve, 2026-10-19
 
