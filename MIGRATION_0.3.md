@@ -23,15 +23,16 @@ version **0.3.0-rc1**.
 Ref/  NDC/                        the two run cases
 Post-processing files/            transmission, demand, provincial CF, BNEF
 figures/                          diagnostic charts and their scripts
-_backup_20261019_om_mid/          input-change backups
-_backup_20261019_ccs_japan/
 20251205 BNEF Korea data .xlsx
 NZK_MODEL_README.md               repo_runs/README.md, renamed so it does not
                                   collide with the package's own README.md
 ```
 
-**Excluded:** `Ref_re/` and `NDC_Re/`, 5 GB each of results from the 0.1 run.
-They stay in `repo_runs` for comparison. This folder is 462 MB.
+**Excluded:** `Ref_re/` and `NDC_Re/`, 5 GB each of results from the 0.1 run,
+and the two October `_backup_*` folders of pre-edit asset CSVs. Both still
+exist in `repo_runs`, and the input changes the backups covered are written up
+with before and after values in `Post-processing files/BNEF/README.md`. This
+folder is 462 MB.
 
 **Also carried over** from the fork: 11 custom asset files
 (`be_hefa`, `beccsammonia`, `beccsatj`, `beccsbiomethane`, `beccscharcoal`,
