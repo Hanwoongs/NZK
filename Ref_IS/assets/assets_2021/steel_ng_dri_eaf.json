@@ -1,0 +1,998 @@
+{
+  "steel_ng_dri_eaf": [
+    {
+      "type": "DirectReductionElectricArcFurnace",
+      "global_data": {
+        "transforms": {
+          "timedata": "CrudeSteel",
+          "constraints": {
+            "BalanceConstraint": true
+          },
+          "ironore_consumption": 1.5,
+          "electricity_consumption": 0.65,
+          "reductant_consumption": 2.5,
+          "carbonsource_consumption": 0.0,
+          "emission_rate": 0.6
+        },
+        "edges": {
+          "crudesteel_edge": {
+            "commodity": "CrudeSteel",
+            "has_capacity": true,
+            "unidirectional": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "investment_cost": 5500000.0,
+            "fixed_om_cost": 110000.0,
+            "variable_om_cost": 0.0,
+            "wacc": 0.045,
+            "lifetime": 30,
+            "capital_recovery_period": 30,
+            "constraints": {
+              "CapacityConstraint": true,
+              "MinFlowConstraint": true,
+              "RampingLimitConstraint": true
+            },
+            "min_flow_fraction": 0.0,
+            "ramp_up_fraction": 1.0,
+            "ramp_down_fraction": 1.0
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "steel_ng_dri_eaf_SEL",
+          "location": "SEL",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_SEL",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_SEL"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_SEL",
+              "id": "steel_h2_dri_eaf_SEL_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_PUS",
+          "location": "PUS",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_PUS",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_PUS"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_PUS",
+              "id": "steel_h2_dri_eaf_PUS_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_TAE",
+          "location": "TAE",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_TAE",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_TAE"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_TAE",
+              "id": "steel_h2_dri_eaf_TAE_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_INC",
+          "location": "INC",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_INC",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_INC"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_INC",
+              "id": "steel_h2_dri_eaf_INC_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_KWJ",
+          "location": "KWJ",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_KWJ",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_KWJ"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_KWJ",
+              "id": "steel_h2_dri_eaf_KWJ_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_USN",
+          "location": "USN",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_USN",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_USN"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_USN",
+              "id": "steel_h2_dri_eaf_USN_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_SJG",
+          "location": "SJG",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_SJG",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_SJG"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_SJG",
+              "id": "steel_h2_dri_eaf_SJG_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_GGI",
+          "location": "GGI",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GGI",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GGI"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_GGI",
+              "id": "steel_h2_dri_eaf_GGI_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_GWN",
+          "location": "GWN",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GWN",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GWN"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_GWN",
+              "id": "steel_h2_dri_eaf_GWN_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_CNA",
+          "location": "CNA",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_CNA",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_CNA"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_CNA",
+              "id": "steel_h2_dri_eaf_CNA_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_CNB",
+          "location": "CNB",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_CNB",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_CNB"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_CNB",
+              "id": "steel_h2_dri_eaf_CNB_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_DJJ",
+          "location": "DJJ",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_DJJ",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_DJJ"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_DJJ",
+              "id": "steel_h2_dri_eaf_DJJ_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_JNB",
+          "location": "JNB",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_JNB",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JNB"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_JNB",
+              "id": "steel_h2_dri_eaf_JNB_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_JNA",
+          "location": "JNA",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_JNA",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JNA"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_JNA",
+              "id": "steel_h2_dri_eaf_JNA_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_GNB",
+          "location": "GNB",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GNB",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GNB"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_GNB",
+              "id": "steel_h2_dri_eaf_GNB_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_GNA",
+          "location": "GNA",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GNA",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GNA"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_GNA",
+              "id": "steel_h2_dri_eaf_GNA_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "steel_ng_dri_eaf_JEJ",
+          "location": "JEJ",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_JEJ",
+              "existing_capacity": 0.25,
+              "can_retrofit": true
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JEJ"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "reductant_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            },
+            "carbonsource_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            }
+          },
+          "retrofit_options": [
+            {
+              "template_id": "steel_h2_dri_eaf_JEJ",
+              "id": "steel_h2_dri_eaf_JEJ_retrofit",
+              "edges": {
+                "crudesteel_edge": {
+                  "is_retrofit": true,
+                  "can_expand": true,
+                  "existing_capacity": 0.0,
+                  "retrofit_efficiency": 1.0,
+                  "investment_cost": 500000.0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

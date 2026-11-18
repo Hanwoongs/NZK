@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "baseline_unchanged": true,
+  "source_unchanged": true,
+  "reproducible": true,
+  "hourly_resolution": 8760,
+  "steel_ccs_first_year": 2030,
+  "parameter_status": "SYNTHETIC_PLACEHOLDER_NOT_KOREA_CALIBRATION",
+  "periods": [
+    {
+      "year": 2021,
+      "steel_base_assets": 68,
+      "electrolyzers": 17,
+      "retrofit_options": 17
+    },
+    {
+      "year": 2025,
+      "steel_base_assets": 68,
+      "electrolyzers": 17,
+      "retrofit_options": 17
+    },
+    {
+      "year": 2030,
+      "steel_base_assets": 102,
+      "electrolyzers": 17,
+      "retrofit_options": 51
+    },
+    {
+      "year": 2035,
+      "steel_base_assets": 102,
+      "electrolyzers": 17,
+      "retrofit_options": 51
+    },
+    {
+      "year": 2040,
+      "steel_base_assets": 102,
+      "electrolyzers": 17,
+      "retrofit_options": 51
+    },
+    {
+      "year": 2045,
+      "steel_base_assets": 102,
+      "electrolyzers": 17,
+      "retrofit_options": 51
+    },
+    {
+      "year": 2050,
+      "steel_base_assets": 102,
+      "electrolyzers": 17,
+      "retrofit_options": 51
+    }
+  ]
+}

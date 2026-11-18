@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-17",
+  "baseline_branch": "NZK_Della_1019",
+  "baseline_commit": "89371efb2051943fa2fd4605dcd95668e1555102",
+  "target_branch_at_integration": "NZK_Industry_Integration",
+  "original_clean_delivery": "NZK_Steel_Della1019_Clean_20261117",
+  "baseline_model_files": 92,
+  "baseline_text_line_endings_normalized_to_lf": true,
+  "industrial_numeric_inputs_changed": false,
+  "tdr_case_included": false,
+  "source_archive_sha256": "3240f7c8fbf51390c7016396c327a66675ddadf26ef626c7ededc913cbf0d2a1",
+  "storage_patch_applied_only_to_extracted_runtime": true
+}

@@ -1,0 +1,428 @@
+{
+  "review_date": "2026-11-18",
+  "scan_date": "2026-11-17",
+  "diagnostics_rerun": false,
+  "historical_comparison_status": "Coverage conclusion superseded by this review; warning/error comparison remains valid.",
+  "historical_summary_limitation": "new_asset_blocked_count was collected from the legacy checks list, not public branch assessments.",
+  "warning_error_comparison": {
+    "Ref": {
+      "errors": 0,
+      "warnings": 979
+    },
+    "Ref_IS": {
+      "errors": 0,
+      "warnings": 979
+    },
+    "added_findings": 0
+  },
+  "saved_asset_reports": {
+    "Ref": {
+      "report": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\auxiliary\\validation\\diagnostics\\Ref_assets-diagnostics.html",
+      "sha256": "a1ab687ce099d746b5cfeb83f543d7e7a7feed8399ccfbe2eba2a53401f2e00b",
+      "asset_period_records": 1372,
+      "all_check_states": {
+        "complete": 40618,
+        "not_applicable": 116326
+      },
+      "dependency_checks_all_components": {
+        "P01": {
+          "not_applicable": 1372
+        },
+        "P02": {
+          "not_applicable": 1372
+        },
+        "P03": {
+          "complete": 1372,
+          "not_applicable": 2423
+        },
+        "P04": {
+          "complete": 1003,
+          "not_applicable": 930
+        },
+        "P05": {
+          "not_applicable": 1372
+        }
+      },
+      "dependency_checks_asset_scope": {
+        "P01": {
+          "not_applicable": 1372
+        },
+        "P02": {
+          "not_applicable": 1372
+        },
+        "P03": {
+          "complete": 1372
+        },
+        "P04": {
+          "complete": 561,
+          "not_applicable": 811
+        },
+        "P05": {
+          "not_applicable": 1372
+        }
+      },
+      "affected_unique_ids": 0,
+      "affected_types": {},
+      "affected_periods": {}
+    },
+    "Ref_IS": {
+      "report": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\auxiliary\\validation\\diagnostics\\Ref_IS_assets-diagnostics.html",
+      "sha256": "6fd6e939ef8b8f21c1c7a6389205c2085b7806c8404638b3b2bd7f0e0cb1db19",
+      "asset_period_records": 2137,
+      "all_check_states": {
+        "complete": 73241,
+        "not_applicable": 267762,
+        "blocked": 1768,
+        "partial": 442
+      },
+      "dependency_checks_all_components": {
+        "P01": {
+          "not_applicable": 1695,
+          "blocked": 442
+        },
+        "P02": {
+          "not_applicable": 1695,
+          "blocked": 442
+        },
+        "P03": {
+          "complete": 1695,
+          "not_applicable": 7030,
+          "partial": 442
+        },
+        "P04": {
+          "complete": 1003,
+          "not_applicable": 1253,
+          "blocked": 442
+        },
+        "P05": {
+          "not_applicable": 1695,
+          "blocked": 442
+        }
+      },
+      "dependency_checks_asset_scope": {
+        "P01": {
+          "not_applicable": 1695,
+          "blocked": 442
+        },
+        "P02": {
+          "not_applicable": 1695,
+          "blocked": 442
+        },
+        "P03": {
+          "complete": 1695,
+          "partial": 442
+        },
+        "P04": {
+          "complete": 561,
+          "not_applicable": 1134,
+          "blocked": 442
+        },
+        "P05": {
+          "not_applicable": 1695,
+          "blocked": 442
+        }
+      },
+      "affected_unique_ids": 68,
+      "affected_types": {
+        "DirectReductionElectricArcFurnace": 238,
+        "ElectricArcFurnace": 119,
+        "DirectReductionElectricArcFurnaceCCS": 85
+      },
+      "affected_periods": {
+        "1": 51,
+        "2": 51,
+        "3": 68,
+        "4": 68,
+        "5": 68,
+        "6": 68,
+        "7": 68
+      }
+    }
+  },
+  "affected_route_asset_period_records": {
+    "h2_dri_eaf": 119,
+    "ng_dri_eaf": 119,
+    "scrap_eaf": 119,
+    "ng_dri_eaf_ccs": 85
+  },
+  "affected_base_asset_period_records": 442,
+  "affected_unique_asset_ids": 68,
+  "blocked_check_scopes": 1768,
+  "partial_check_scopes": 442,
+  "configured_retrofit_options_using_affected_templates": 204,
+  "retrofit_note": "These options are not extra measured blocked records. The saved report does not separately inventory generated retrofit assets.",
+  "source_input_review": {
+    "base_steel_asset_period_records": 646,
+    "retrofit_option_period_records": 289,
+    "checks": {
+      "global_data_matches_test_fixture_passed": 646,
+      "no_instance_transform_override_passed": 646,
+      "balance_enabled_passed": 646,
+      "all_transform_fields_have_source_balance_passed": 646,
+      "coefficient_nonnegative_passed": 3723,
+      "coefficient_edge_present_passed": 3723,
+      "edge_commodity_and_endpoint_passed": 4369,
+      "edge_unidirectional_passed": 4369,
+      "capacity_only_on_output_passed": 4369,
+      "ccs_capture_component_present_passed": 170,
+      "retrofit_template_exists_passed": 289,
+      "retrofit_no_flow_parameter_override_passed": 289,
+      "retrofit_overlay_fields_passed": 289
+    },
+    "issues": [],
+    "explicit_uc_startup_fields_in_steel_json": [],
+    "prior_model_input_hash_matches": 65,
+    "prior_model_input_line_ending_only_differences": 74,
+    "prior_model_input_other_differences": [],
+    "passed_scoped_checks": true
+  },
+  "source_balances": {
+    "BFBOFSteel": {
+      "file": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\user_additions\\assets\\BFBOFSteel.jl",
+      "sha256": "5fbeca2f3ccfc80aef5010bb2690825187372dd7e7b84c55fd269f07303e41b5",
+      "balance_parameters": {
+        "ironore_consumption": {
+          "edge": "ironore_edge",
+          "line": 364,
+          "equation": "flow(ironore_edge) == get(transform_data, :ironore_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "steelscrap_consumption": {
+          "edge": "steelscrap_edge",
+          "line": 369,
+          "equation": "flow(steelscrap_edge) == get(transform_data, :steelscrap_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "electricity_consumption": {
+          "edge": "elec_edge",
+          "line": 374,
+          "equation": "get(transform_data, :electricity_consumption, 0.0) * flow(crudesteel_edge) == flow(elec_edge)"
+        },
+        "metcoal_consumption": {
+          "edge": "metcoal_edge",
+          "line": 379,
+          "equation": "flow(metcoal_edge) == get(transform_data, :metcoal_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "thermalcoal_consumption": {
+          "edge": "thermalcoal_edge",
+          "line": 384,
+          "equation": "flow(thermalcoal_edge) == get(transform_data, :thermalcoal_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "natgas_consumption": {
+          "edge": "natgas_edge",
+          "line": 389,
+          "equation": "flow(natgas_edge) == get(transform_data, :natgas_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "emission_rate": {
+          "edge": "co2_edge",
+          "line": 394,
+          "equation": "flow(co2_edge) == get(transform_data, :emission_rate, 0.0) * flow(crudesteel_edge)"
+        }
+      },
+      "plain_process_data_lines": [],
+      "same_as_prior_reference_source": true,
+      "prior_reference_source": "C:\\Users\\hl8692\\Codex_Work\\MACRO Learning Development\\NZK Building\\NZK-NZK_Della_1019\\NZK-NZK_Della_1019\\Ref_IS\\user_additions\\assets\\BFBOFSteel.jl",
+      "copy_or_uc_or_startup_lines": []
+    },
+    "BFBOFSteel_CCS": {
+      "file": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\user_additions\\assets\\BFBOFSteel_CCS.jl",
+      "sha256": "9a033339cb4afe47ad08a71efcdfb17b5579173e700fcc42e1e651fc3a5af983",
+      "balance_parameters": {
+        "ironore_consumption": {
+          "edge": "ironore_edge",
+          "line": 397,
+          "equation": "flow(ironore_edge) == get(transform_data, :ironore_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "steelscrap_consumption": {
+          "edge": "steelscrap_edge",
+          "line": 402,
+          "equation": "flow(steelscrap_edge) == get(transform_data, :steelscrap_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "electricity_consumption": {
+          "edge": "elec_edge",
+          "line": 407,
+          "equation": "flow(elec_edge) == get(transform_data, :electricity_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "metcoal_consumption": {
+          "edge": "metcoal_edge",
+          "line": 412,
+          "equation": "flow(metcoal_edge) == get(transform_data, :metcoal_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "thermalcoal_consumption": {
+          "edge": "thermalcoal_edge",
+          "line": 417,
+          "equation": "flow(thermalcoal_edge) == get(transform_data, :thermalcoal_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "natgas_consumption": {
+          "edge": "natgas_edge",
+          "line": 422,
+          "equation": "flow(natgas_edge) == get(transform_data, :natgas_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "emission_rate": {
+          "edge": "co2_edge",
+          "line": 427,
+          "equation": "flow(co2_edge) == get(transform_data, :emission_rate, 0.0) * flow(crudesteel_edge)"
+        },
+        "capture_rate": {
+          "edge": "co2_captured_edge",
+          "line": 432,
+          "equation": "flow(co2_captured_edge) == get(transform_data, :capture_rate, 0.0) * flow(crudesteel_edge)"
+        }
+      },
+      "plain_process_data_lines": [],
+      "same_as_prior_reference_source": true,
+      "prior_reference_source": "C:\\Users\\hl8692\\Codex_Work\\MACRO Learning Development\\NZK Building\\NZK-NZK_Della_1019\\NZK-NZK_Della_1019\\Ref_IS\\user_additions\\assets\\BFBOFSteel_CCS.jl",
+      "copy_or_uc_or_startup_lines": []
+    },
+    "DirectReductionElectricArcFurnace": {
+      "file": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\auxiliary\\.runtime\\MacroEnergy_rc1\\src\\model\\assets\\integrateddirectreductionelectricarcfurnace.jl",
+      "sha256": "e62e55a4ba0ee18f79f3398ee04dc82e088b4f8bf7d5e7b22983a055892a18d4",
+      "balance_parameters": {
+        "ironore_consumption": {
+          "edge": "ironore_edge",
+          "line": 300,
+          "equation": "flow(ironore_edge) == get(transform_data, :ironore_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "electricity_consumption": {
+          "edge": "elec_edge",
+          "line": 305,
+          "equation": "flow(elec_edge) == get(transform_data, :electricity_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "reductant_consumption": {
+          "edge": "reductant_edge",
+          "line": 310,
+          "equation": "flow(reductant_edge) == get(transform_data, :reductant_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "carbonsource_consumption": {
+          "edge": "carbonsource_edge",
+          "line": 315,
+          "equation": "flow(carbonsource_edge) == get(transform_data, :carbonsource_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "emission_rate": {
+          "edge": "co2_edge",
+          "line": 320,
+          "equation": "flow(co2_edge) == get(transform_data, :emission_rate, 0.0) * flow(crudesteel_edge)"
+        }
+      },
+      "plain_process_data_lines": [
+        106
+      ],
+      "same_as_prior_reference_source": true,
+      "prior_reference_source": "C:\\Users\\hl8692\\Codex_Work\\MACRO Diagnostic Tool\\MACRO Package\\MacroEnergy.jl-release-0.3\\MacroEnergy.jl-release-0.3\\src\\model\\assets\\integrateddirectreductionelectricarcfurnace.jl",
+      "copy_or_uc_or_startup_lines": []
+    },
+    "DirectReductionElectricArcFurnaceCCS": {
+      "file": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\auxiliary\\.runtime\\MacroEnergy_rc1\\src\\model\\assets\\integrateddirectreductionelectricarcfurnaceccs.jl",
+      "sha256": "40850991ca25cb3f6833244c28feba9567235aec2b33d68289cb94b470fc033f",
+      "balance_parameters": {
+        "ironore_consumption": {
+          "edge": "ironore_edge",
+          "line": 294,
+          "equation": "flow(ironore_edge) == get(transform_data, :ironore_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "electricity_consumption": {
+          "edge": "elec_edge",
+          "line": 299,
+          "equation": "flow(elec_edge) == get(transform_data, :electricity_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "reductant_consumption": {
+          "edge": "reductant_edge",
+          "line": 304,
+          "equation": "flow(reductant_edge) == get(transform_data, :reductant_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "emission_rate": {
+          "edge": "co2_edge",
+          "line": 309,
+          "equation": "flow(co2_edge) == get(transform_data, :emission_rate, 0.0) * flow(crudesteel_edge)"
+        },
+        "capture_rate": {
+          "edge": "co2_captured_edge",
+          "line": 314,
+          "equation": "flow(co2_captured_edge) == get(transform_data, :capture_rate, 0.0) * flow(crudesteel_edge)"
+        }
+      },
+      "plain_process_data_lines": [
+        107
+      ],
+      "same_as_prior_reference_source": true,
+      "prior_reference_source": "C:\\Users\\hl8692\\Codex_Work\\MACRO Diagnostic Tool\\MACRO Package\\MacroEnergy.jl-release-0.3\\MacroEnergy.jl-release-0.3\\src\\model\\assets\\integrateddirectreductionelectricarcfurnaceccs.jl",
+      "copy_or_uc_or_startup_lines": []
+    },
+    "ElectricArcFurnace": {
+      "file": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\auxiliary\\.runtime\\MacroEnergy_rc1\\src\\model\\assets\\standaloneelectricarcfurnace.jl",
+      "sha256": "4d6edaf9b02d4357c7aefc681b612da5bdeef944ff06bc62e4bdc2cc91f7a7eb",
+      "balance_parameters": {
+        "electricity_consumption": {
+          "edge": "elec_edge",
+          "line": 288,
+          "equation": "flow(elec_edge) == get(transform_data, :electricity_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "steelscrap_consumption": {
+          "edge": "steelscrap_edge",
+          "line": 293,
+          "equation": "flow(steelscrap_edge) == get(transform_data, :steelscrap_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "naturalgas_consumption": {
+          "edge": "naturalgas_edge",
+          "line": 298,
+          "equation": "flow(naturalgas_edge) == get(transform_data, :naturalgas_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "carbonsource_consumption": {
+          "edge": "carbonsource_edge",
+          "line": 303,
+          "equation": "flow(carbonsource_edge) == get(transform_data, :carbonsource_consumption, 0.0) * flow(crudesteel_edge)"
+        },
+        "emission_rate": {
+          "edge": "co2_edge",
+          "line": 308,
+          "equation": "flow(co2_edge) == get(transform_data, :emission_rate, 0.0) * flow(crudesteel_edge)"
+        }
+      },
+      "plain_process_data_lines": [
+        107
+      ],
+      "same_as_prior_reference_source": true,
+      "prior_reference_source": "C:\\Users\\hl8692\\Codex_Work\\MACRO Diagnostic Tool\\MACRO Package\\MacroEnergy.jl-release-0.3\\MacroEnergy.jl-release-0.3\\src\\model\\assets\\standaloneelectricarcfurnace.jl",
+      "copy_or_uc_or_startup_lines": []
+    }
+  },
+  "previous_synthetic_tests": {
+    "scope": "Four-hour single-region synthetic fixtures; not full Ref_IS optimization",
+    "results": {
+      "retrofits_and_carry_over": {
+        "shared_NG_capacity_test": "0.4 + 0.6 feasible; 0.6 + 0.6 infeasible for 1.0 old capacity",
+        "three_retrofit_paths_solved": true,
+        "passed": true,
+        "capacity_carry_over_components": 10
+      },
+      "new_build_and_flows": {
+        "stoichiometric_edges_checked": 35,
+        "routes_with_positive_new_capacity": [
+          "bfbof",
+          "bfbof_ccs",
+          "ng_dri_eaf",
+          "ng_dri_eaf_ccs",
+          "h2_dri_eaf",
+          "scrap_eaf"
+        ],
+        "passed": true,
+        "hydrogen_electricity_coupling_checked": true
+      },
+      "ramping": {
+        "tight_ramp_model": "infeasible",
+        "same_model_after_removing_only_ramping": "optimal",
+        "passed": true,
+        "removed_constraints": 8
+      },
+      "aggregate_demand": {
+        "nonuniform_supply_meets_aggregate_demand": true,
+        "short_supply_infeasible": true,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "limits": [
+    "The direct review does not replace corrected diagnostics.",
+    "No new solve was run.",
+    "Korean parameter calibration, full-resolution optimization, and multi-period PF remain untested."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "baseline_warning_error_count": 979,
+    "added_asset_missing_inventory_records": [
+    ],
+    "method": "Warning/error multiset comparison plus public assessment coverage; only case-root paths normalized.",
+    "candidate_warning_error_count": 979,
+    "passed": true,
+    "optimization_performed": false,
+    "added_asset_outcomes": {
+        "no_finding": 35275,
+        "finding": 0,
+        "unknown": 0,
+        "not_applicable": 164254
+    },
+    "added_asset_incomplete_check_count": 0,
+    "added_asset_coverage_resolved": true,
+    "removed_findings": {
+    },
+    "source_confirmed": true,
+    "added_findings": {
+    },
+    "unmapped_asset_check_records": [
+    ],
+    "no_new_warning_error_findings": true,
+    "added_asset_coverage": {
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 164254,
+        "not_evaluated": 0,
+        "complete": 35275
+    }
+}

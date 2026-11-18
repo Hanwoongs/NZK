@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "date": "2026-11-17",
+  "layout": "auxiliary",
+  "top_level": [
+    ".gitattributes",
+    ".gitignore",
+    "README.md",
+    "assets",
+    "auxiliary",
+    "run.jl",
+    "settings",
+    "system",
+    "system_data.json",
+    "user_additions"
+  ],
+  "model_input_files_unchanged": 139,
+  "source_zip_unchanged": true,
+  "setup_passed": true,
+  "fresh_source_setup_passed": true,
+  "generator_reproducibility_passed": true,
+  "load_check_periods": 7,
+  "diagnostics_comparison_passed": true,
+  "new_warning_error_findings": 0,
+  "baseline_warning_error_count": 979,
+  "candidate_warning_error_count": 979,
+  "documentation_links_verified": 20,
+  "runtime_ignored_by_git": true,
+  "tracked_repository_files_unchanged": true,
+  "optimization_performed": false,
+  "committed": false,
+  "pushed": false
+}

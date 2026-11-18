@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-18",
+  "status": "locally_accepted_and_backported",
+  "legacy_source_tree_sha256": "e3bec389be2f3bc120f19dcce99c3d8213c5d6d7e7e905a8c1ed637a68324f41",
+  "installed_targets_verified": [
+    {
+      "path": "C:\\Users\\hl8692\\Github\\Macro_Diagnostics\\Macro_Diagnostics\\Macro_Diagnostics",
+      "source_files_matched": 177,
+      "matches_tested_candidate_02": true
+    },
+    {
+      "path": "C:\\Users\\hl8692\\Codex_Work\\MACRO Diagnostic Tool\\Macro_Diagnostics\\Macro_Diagnostics\\Macro_Diagnostics",
+      "source_files_matched": 177,
+      "matches_tested_candidate_02": true
+    }
+  ],
+  "nzk_acceptance_reused": "runs/20261118_steel_parser_candidate_02/acceptance_review.json",
+  "nzk_rescan_required": false,
+  "reason": "Both installed source trees exactly match the 177 source files tested in candidate_02.",
+  "regression_assertions": {
+    "release": 1968,
+    "legacy": 1867
+  },
+  "release_test_files": 15,
+  "legacy_test_files": 13,
+  "historical_pattern_assertions": 10,
+  "official_case_comparisons": 9,
+  "historical_steel_case_scans": 4,
+  "full_default_suite_rerun": false,
+  "package_version_changed": false,
+  "model_solved": false,
+  "source_acceptance_file": "C:\\Users\\hl8692\\Codex_Work\\MACRO Diagnostic Tool\\steel-process-data-fix-20261118\\ACCEPTANCE.json",
+  "source_acceptance_sha256": "6b4a1c0c3a4ea5d930eddbd8aadd027373a43bb5ec2f12a12ce5f21a73733b62",
+  "note": "Local accepted repair; not a new official release. Earlier candidate manifests retain their status at scan time."
+}

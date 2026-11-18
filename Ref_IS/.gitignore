@@ -1,0 +1,6 @@
+/auxiliary/.runtime/
+/results*/
+/tdr_results*/
+__pycache__/
+*.pyc
+*.log

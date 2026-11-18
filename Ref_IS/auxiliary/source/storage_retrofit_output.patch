@@ -1,0 +1,8 @@
+--- a/src/model/networks/storage.jl
++++ b/src/model/networks/storage.jl
+@@ -216,4 +216,5 @@
+ retired_units(g::AbstractStorage) = g.retired_units;
+ retirement_period(g::AbstractStorage) = g.retirement_period;
++retrofitted_capacity(g::AbstractStorage) = 0.0;
+ retrofitted_capacity_track(g::AbstractStorage,s::Int64) = 0.0; ### Note that retrofits are not implemented for storage yet
+ spillage_edge(g::AbstractStorage) = g.spillage_edge;

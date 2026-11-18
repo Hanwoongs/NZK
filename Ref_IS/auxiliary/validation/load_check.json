@@ -1,0 +1,62 @@
+{
+  "macroenergy_version": "0.3.0-rc1",
+  "periods": [
+    {
+      "steel_assets_including_retrofits": 85,
+      "hourly_steps": 8760,
+      "period": 1,
+      "electrolyzers": 17
+    },
+    {
+      "steel_assets_including_retrofits": 85,
+      "hourly_steps": 8760,
+      "period": 2,
+      "electrolyzers": 17
+    },
+    {
+      "steel_assets_including_retrofits": 153,
+      "hourly_steps": 8760,
+      "period": 3,
+      "electrolyzers": 17
+    },
+    {
+      "steel_assets_including_retrofits": 153,
+      "hourly_steps": 8760,
+      "period": 4,
+      "electrolyzers": 17
+    },
+    {
+      "steel_assets_including_retrofits": 153,
+      "hourly_steps": 8760,
+      "period": 5,
+      "electrolyzers": 17
+    },
+    {
+      "steel_assets_including_retrofits": 153,
+      "hourly_steps": 8760,
+      "period": 6,
+      "electrolyzers": 17
+    },
+    {
+      "steel_assets_including_retrofits": 153,
+      "hourly_steps": 8760,
+      "period": 7,
+      "electrolyzers": 17
+    }
+  ],
+  "passed": true,
+  "optimization_performed": false,
+  "bundled_source_selected": true,
+  "julia_version": "1.13.1",
+  "date": "2026-11-17",
+  "tested_in": "NZK clone",
+  "layout": "auxiliary",
+  "setup_offline_passed": true,
+  "fresh_auxiliary_source_setup_passed": true,
+  "generator_reproducibility_passed": true,
+  "structural_validation_passed": true,
+  "runner_syntax_passed": true,
+  "runner_executed": false,
+  "original_source_zip_unchanged": true,
+  "model_files_unchanged": 139
+}

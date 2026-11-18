@@ -1,0 +1,5438 @@
+{
+  "baseline": "../Ref",
+  "source": "auxiliary/.runtime/MacroEnergy_rc1",
+  "parameter_status": "SYNTHETIC_PLACEHOLDER_NOT_KOREA_CALIBRATION",
+  "configuration_sha256": "84bff5851a6430b41a5a9b3d075013b65ca68ee882470cb05d7c8da5cdc7b8df",
+  "baseline_hashes": {
+    "assets/assets_2021/batterys.csv": "c5469f0fadca9e081ee111b4943ea72eb25de99b0e5ae4e9d02928cbf1c5bbeb",
+    "assets/assets_2021/coalpower_21.csv": "79e170a1a2ba7557861765b8918f6f20399c6671ea1a118c53458adf7a9dac6e",
+    "assets/assets_2021/hydro_res_21.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2021/NaturalGasPower_21.csv": "2259ed0096efa2d91b8b3d9aa78585d252eb3769610f62c4774ef48136b74631",
+    "assets/assets_2021/nuclear_21.csv": "8540ebab05a6daea9302dfc3ace25dfb54083757487bc62a6bdf82b2f2a4bebf",
+    "assets/assets_2021/pumpedhydro_21.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2021/transmission_v2_2021.csv": "0fdb55776b1491556293241cfab9bc59a19a1e84e9e27f1e80210721e8bcc28b",
+    "assets/assets_2021/VRE_21.csv": "453c8f95eee19eca35a1fc3a8723be72e3bfa82aee073e18fb4c787846733e80",
+    "assets/assets_2025/batterys_25.csv": "99a93c371511f56ee2cffc8226789006bec55ab37a7eac9099e990a690958ebd",
+    "assets/assets_2025/co2_injection_25.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2025/coalpower_25.csv": "8dd06dbb3e9be498f035e16e3f59c585df9aef1144efdbde565079728cbb7650",
+    "assets/assets_2025/coalpowerCCS_25.csv": "641e1b75b7200e0e5025d5e4a933a0b4470bf6a3bc995cefba276c426e8fe172",
+    "assets/assets_2025/hydro_res_25.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2025/NaturalGasPower_25.csv": "32e4ff962ef1e49a31d5cfc7e7f8b212c9ffca95acae23792b6e4f5799a623fb",
+    "assets/assets_2025/NaturalGasPowerCCS_25.csv": "53cc49ae966ec837649bae53ef07678516c7d607ed88b49aeb33e440ee67eca6",
+    "assets/assets_2025/nuclear_25.csv": "f1a35c668d369acfc07814fc17ffedbb01a9e6a57e4f95d03cb6dbfab5c9b36f",
+    "assets/assets_2025/pumpedhydro_25.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2025/transmission_v2_2025.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2025/VRE_25.csv": "7a03cf58bb7420055d4f4003a2558727113ef0e52f461d9a57a9f617f3c7511c",
+    "assets/assets_2030/batterys_30.csv": "99a93c371511f56ee2cffc8226789006bec55ab37a7eac9099e990a690958ebd",
+    "assets/assets_2030/co2_injection_30.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2030/coalpower_30.csv": "e5f9bf20be2f95307946b1c3ef5dec447aed8f69fbba16d26175934daf69049d",
+    "assets/assets_2030/coalpowerCCS_30.csv": "914a8ae0aa186bb662421d81e2388efb1bfe805937203e2f18338af4e506b434",
+    "assets/assets_2030/hydro_res_30.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2030/NaturalGasPower_30.csv": "48e4b2c4c49d2db765d3236f60ccaf61a37bfe6e4476fb0c36760d7184178226",
+    "assets/assets_2030/NaturalGasPowerCCS_30.csv": "f396aee4a51c9556f8b0e4e74b46a4a5b5e52d4512c20e46f9cf2d6d65021ef2",
+    "assets/assets_2030/nuclear_30.csv": "738ca907450a2e390a7e509d09b3d86a8f4b7a3d66af35ea08eb0e87ca7c1a8a",
+    "assets/assets_2030/pumpedhydro_30.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2030/transmission_v2_2030.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2030/VRE_30.csv": "7a1b6ad7aa2c57ec1f1e76e11a7f507c41eb31f12ef8811c787efbb445f03766",
+    "assets/assets_2035/batterys_35.csv": "99a93c371511f56ee2cffc8226789006bec55ab37a7eac9099e990a690958ebd",
+    "assets/assets_2035/co2_injection_35.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2035/coalpower_35.csv": "e5f9bf20be2f95307946b1c3ef5dec447aed8f69fbba16d26175934daf69049d",
+    "assets/assets_2035/coalpowerCCS_35.csv": "af3529d471fe76ef2c785dec3dfdee812318eaf809599ef202f83cbf3189fc5f",
+    "assets/assets_2035/hydro_res_35.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2035/NaturalGasPower_35.csv": "48e4b2c4c49d2db765d3236f60ccaf61a37bfe6e4476fb0c36760d7184178226",
+    "assets/assets_2035/NaturalGasPowerCCS_35.csv": "5b8f6ad560329693c1388938d48c399fe8ac21fc18d5025a8ac2b0be2d6913ee",
+    "assets/assets_2035/nuclear_35.csv": "81580ede525203b21477bd0fd2d9716fef05a649db343a3e5e6a766b89edc10f",
+    "assets/assets_2035/pumpedhydro_35.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2035/transmission_v2_2035.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2035/VRE_35.csv": "3caf4a2f03ab853e15c8c595d75019410c36807429be7fa45a6c38fe9ef70f99",
+    "assets/assets_2040/batterys_40.csv": "2d9cf7bd12ee445cb0ab392840ec13a5b7f0d6d277bde98801b8693fe212d350",
+    "assets/assets_2040/co2_injection_40.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2040/coalpower_40.csv": "07ce08d177f9150870e22d5439d8567fd2a35cbad7db59cd2154e9335d0cd8b0",
+    "assets/assets_2040/coalpowerCCS_40.csv": "aaffdac9bf9680b2fe54da6519fc128682b7a710673b8984bcace1bdab3fe872",
+    "assets/assets_2040/hydro_res_40.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2040/NaturalGasPower_40.csv": "cb5cf35c85d144c15adabf43aeca85d70aa4d162093e43c7daa04f67b871bc81",
+    "assets/assets_2040/NaturalGasPowerCCS_40.csv": "5c794562cc6c870620867f2ce9e2b71bc0534740fc1733747a83d0cfc612af47",
+    "assets/assets_2040/nuclear_40.csv": "8b654ac32380423c4c74e81328a1431f77c32e4a8c2693361fd29bb4113657bd",
+    "assets/assets_2040/pumpedhydro_40.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2040/transmission_v2_2040.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2040/VRE_40.csv": "720dda5516d1a08e6383cc9d8e25c650da61780023ebadbb2079eee54cfc1510",
+    "assets/assets_2045/batterys_45.csv": "936de626b25bdc35aeb187c4c685b3fa4b9c6044aa86a289509163c67215ec27",
+    "assets/assets_2045/co2_injection_45.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2045/coalpower_45.csv": "07ce08d177f9150870e22d5439d8567fd2a35cbad7db59cd2154e9335d0cd8b0",
+    "assets/assets_2045/coalpowerCCS_45.csv": "3fb835c6b64796d684c03640229a94de16125199c6b327a992f5b07067d042bc",
+    "assets/assets_2045/hydro_res_45.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2045/NaturalGasPower_45.csv": "cb5cf35c85d144c15adabf43aeca85d70aa4d162093e43c7daa04f67b871bc81",
+    "assets/assets_2045/NaturalGasPowerCCS_45.csv": "6bf3900721c37f0e60eb8ddaebd13f40aaf72e11f38c51cb583ef4b1fca38c25",
+    "assets/assets_2045/nuclear_45.csv": "8afee26a00560154d20d61db395b9c454992e9153336d64a98ff626eaa80d694",
+    "assets/assets_2045/pumpedhydro_45.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2045/transmission_v2_2045.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2045/VRE_45.csv": "319ca9ab589bf723a24a0d500bcac72f82915342982fc12aa7e59a983a9cb379",
+    "assets/assets_2050/batterys_50.csv": "8a3efc74e229f1a09b72ec23a42a0125577150a4044dd0e2d5acff69e3ce4ae9",
+    "assets/assets_2050/co2_injection_50.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2050/coalpower_50.csv": "07ce08d177f9150870e22d5439d8567fd2a35cbad7db59cd2154e9335d0cd8b0",
+    "assets/assets_2050/coalpowerCCS_50.csv": "ff412aedee53d1059e9820d8fe84ab293d6f529a4577f928daff7a1df989dd46",
+    "assets/assets_2050/hydro_res_50.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2050/NaturalGasPower_50.csv": "cb5cf35c85d144c15adabf43aeca85d70aa4d162093e43c7daa04f67b871bc81",
+    "assets/assets_2050/NaturalGasPowerCCS_50.csv": "304ff81b4bd4c2b06456c3d5be102e8de463bcd38503b54bc38722339ab2ef92",
+    "assets/assets_2050/nuclear_50.csv": "ec29e57d1a955e19dda78cc5e5c17d49f75364866b4d77be4bb5ccceb363df12",
+    "assets/assets_2050/pumpedhydro_50.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2050/transmission_v2_2050.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2050/VRE_50.csv": "f01b0a6fe1f6ddad6f05369c79e691f09faeb12197db940fcb4f0b1e1654430a",
+    "system/availability.csv": "1ec71076ee07c818ac8edd7ff83512a5e6f4024b062a72123a982e6836e8d72d",
+    "system/availability_hydro_res.csv": "72025293024d101dbfb868d4c5c2d58e37eb1ce6e57268cb1a6c9b957e8e9e3d",
+    "system/commodities.json": "5939f57c7170df445abd424e9b1a1e959b58f52009d8da43b46913b25851d5ae",
+    "system/demand_ref.csv": "4fbc9dba3948ffd1c9cbae8740908c63c6b2ab55ce54acfd5f8cdfadbc8006a0",
+    "system/fuel_prices.csv": "85dedb965b9dfae5bfdb8d880678b319f0381fef8fd4ab2983c285b419c66598",
+    "system/nodes_2021.json": "371f5388f5bc04ba76ce34008321bd8bc07f927a4bf2462cea6c6a220e5742c8",
+    "system/nodes_2025.json": "9d40e5a32ee78fd2397b5dfeb374e8e96fe8922ff8efddc9b5fc3ba78cd6da09",
+    "system/nodes_2030.json": "f9ed2d2e52771681b0a3ec01c6b01604fc1e52f6eba81444c1e2efc4c912cd4e",
+    "system/nodes_2035.json": "bde898901fc58cbfacd1dfee495486cd9d2e9d7880cc96bfaaf9968c17fa350a",
+    "system/nodes_2040.json": "d4c90100f4e8dbe9b2e5980bb63dd3a6f67f2042f857d17aaef51512e302bf4d",
+    "system/nodes_2045.json": "257967bcd2ddeca543a5a8f61ce5fd85286463934f9e64ee8052606f908130a1",
+    "system/nodes_2050.json": "7e3fd6e825752961ea2e6039cffcdf60c0f39b2d369dd44fdc878a365accd887",
+    "system/Period_map.csv": "215e8015c6d2f1454a4475d2cc3f15ba2bf9d6f0030d782bc754c7caadc58416",
+    "system/time_data.json": "5e47ff075c0bcfe12a34bd4c9e1fcd800a6c881f6e8bf5b48d15e404fe740dc7",
+    "settings/case_settings.json": "e37815792851ebd2ee8726de495be672b0ba9e01af6594c659fdc131c8727080",
+    "settings/case_settings.json.bak": "9827f62fa845d1ce6d9af38f5f844aeccd5153917ab107f41cb91df17b62df75",
+    "settings/macro_settings.json": "9900c1f5d60572141a67c5de8b9c5b32c884272a2b960a862960f26350240481",
+    "system_data.json": "8a7e35a561dd3c7ea47f00488a177314a50f1046346e1aab083255117a443670"
+  },
+  "source_hashes": {
+    "src/config/case_settings.jl": "593b9ea5f388897d3827ad41ec046372c1ded38bea67e7c01e58dda22099b62e",
+    "src/config/configure_settings.jl": "f290465bc6f8a9fe843078a86cb15b1e8b94af1d2b7ad3144f0ef59411e746f1",
+    "src/load_inputs/default_system_data.jl": "a9006b7336e90fce5488fc6dc40f22bc3f5cc99a7de04daaf6b0613d6ca44834",
+    "src/load_inputs/generate_system.jl": "26a1f2ab06db862de26b39f1687d764e1920e22bce31a54497a1bd90d3b98c66",
+    "src/load_inputs/input_schema/supply_inputs.jl": "6f33c9a1768dfe47c94608cd9b0fee31cd733802411e94afebefc3ce44933f4d",
+    "src/load_inputs/load.jl": "524ad3b561a1b2b2908293f36cd668a266c4a603a608c66466a8f5878cab3219",
+    "src/load_inputs/load_commodities.jl": "45958d38b9852fb80e3d7635d608a42a96c8cce70127befea4077ff0f457aabc",
+    "src/load_inputs/load_csv_inputs.jl": "bbcaea54051e63dd27c87178debc9cfbd1e9285d524abe42e69d0880db9bfd81",
+    "src/load_inputs/load_inputs.jl": "153b5bbf7d13d96281daa78224f1e3170ac1cd0fd5d322b7805fc6c9ec48788f",
+    "src/load_inputs/load_json_inputs.jl": "135d101366d59a2f7f426e1bc3adc365b9d61f317be47f63ec11bb87c5aadd37",
+    "src/load_inputs/load_stages_data.jl": "5031d757baffcae315322b23e326fd07bb67a21b882f43383ef779db696ecd47",
+    "src/load_inputs/load_system.jl": "7f3bc6850d6ec48fdcb38787435f7f8dd97d7307ece98f5add115cf7b10936cf",
+    "src/load_inputs/load_system_data.jl": "ecb672abb94d645fb69373ee0495b8a9034be902f01113e7a9cdaf59ecb9c245",
+    "src/load_inputs/load_time_data.jl": "55c63434692a4d0d570bf5ceb0cb47a9133e85e052930bae662d61400f2df2ce",
+    "src/load_inputs/load_tools/load_dataframe.jl": "5714c2c577897884401227ce7e2ce77f31a3703091d6fa9b76abd6eb10cda970",
+    "src/load_inputs/load_tools/load_timeseries.jl": "e12f76cda827bc782d85a833d1a86086df9efbe56415ef2f37216a80428d1812",
+    "src/load_inputs/process_data.jl": "569a90a187859c2698d6c6b2de216c1444fcfc0eda7e99e2c682d1c469fb0448",
+    "src/MacroEnergy.jl": "752c7b0ad6f63ff42f68881ece7ba04ec11a578725962445f761d40ec59b6f8c",
+    "src/model/assets/aluminaplant.jl": "391ecdbf8f4eaf7069040b1c9fe2fd2d9be4ca71b114acf145969e857d983453",
+    "src/model/assets/aluminumrefining.jl": "23cd0dc05b9c2161d6fee09d06746f51640712075e4034276b512907a63690e7",
+    "src/model/assets/aluminumsmelting.jl": "8ad39fbf8e8cf7af775ca56f3009abf105cbae3731fdd7b65d47f8662a99d5e4",
+    "src/model/assets/battery.jl": "d5d7265a94feb184f4704699399890799dbceca54b9240899e800a0f22e6ec0a",
+    "src/model/assets/beccselectricity.jl": "3be78cf44ced9b7e96773577ca47f69614f6575a9cc6190b0aec2426aeb71948",
+    "src/model/assets/beccsgasoline.jl": "7d0cf31bcbfb2b203dd6ed2d63f5e23505811316666f6dbd4951ea76fec531be",
+    "src/model/assets/beccshydrogen.jl": "ffe886fcbf76ec498d0a73d88a6d8e05f5bf4c18adc01d44fe926daad1e83805",
+    "src/model/assets/beccsliquidfuels.jl": "5b06d864f0c16e871fe7168841067f41e3403e73af3368e9b780885991ebcc6f",
+    "src/model/assets/beccsnaturalgas.jl": "9c226593d8e56ae66ef54993a4e2b9d57e76d7f4ce7cd8b536feceaedc0e70e4",
+    "src/model/assets/cementplant.jl": "f749156387ccb8b9bc5608a8d20963eecb8c68957418a03efa62bef37c35b762",
+    "src/model/assets/co2injection.jl": "cd7b03c6013f59d6a50311a6327d26c108178da226d9fb7a76cbe50b7839e352",
+    "src/model/assets/constrainedfossilliquidfuels.jl": "5081062742aad43624079f885783282dea7c790583a01f7a3dc940ad61a8a51d",
+    "src/model/assets/downstreamemissions.jl": "20c898e6aeac11f9baa7bcdfb38cf5fc43775b20a182b8db52bc974e6dd613e0",
+    "src/model/assets/electricdac.jl": "6ae78b42540e0951b2f88d451df6d5babf94b19fdb3e8712a77ceddbe1d8dea0",
+    "src/model/assets/electricheating.jl": "bc0b1f3dfff2e13847465b912c91ed063b8806c831a5331944e9aece3cecde1f",
+    "src/model/assets/electricsteam.jl": "5cd1c9bcb36c2adb710d2e1ac29b383dce2aa6e75ee71383fe7d93351b5eaaf8",
+    "src/model/assets/electrolyzer.jl": "867c890dac29c7b1b5b26eb6b13e1dfff5c52d7e9ccf1ab9ce2a2921d912d2d2",
+    "src/model/assets/fuelcell.jl": "273d80e8fcb7ec5a0842f45b166fe63a070c741f130db277a4fd798adf4851cd",
+    "src/model/assets/gasstorage.jl": "2b520e9670a0d1634f57187655c6486544f6a5a26ea0bfc74d0f740172da2670",
+    "src/model/assets/hydrores.jl": "45b8609b7b660e6bcb6ba04ab8e5da594b5cd66edba3631953a130346ba2df09",
+    "src/model/assets/integratedblastfurnacebasicoxygenfurnace.jl": "3dec569e812bb385289b643fd1f2e6ff8eb24cb730bc083e0edc68e70839a596",
+    "src/model/assets/integratedblastfurnacebasicoxygenfurnaceccs.jl": "f563e4c66cc42da1f19b959f8a4e6fb7e2c939f73c71f7099b67c1a95ac07487",
+    "src/model/assets/integrateddirectreductionelectricarcfurnace.jl": "e62e55a4ba0ee18f79f3398ee04dc82e088b4f8bf7d5e7b22983a055892a18d4",
+    "src/model/assets/integrateddirectreductionelectricarcfurnaceccs.jl": "40850991ca25cb3f6833244c28feba9567235aec2b33d68289cb94b470fc033f",
+    "src/model/assets/mustrun.jl": "1754fb8cfc1ee5bfbe9df50bee685fe0281ddc8e4139e6ec4c370b9970e1b89c",
+    "src/model/assets/natgasdac.jl": "01f9434972ace79d64f6b423834c9a8a35d950de0627bad073e8c81fad3ef001",
+    "src/model/assets/onewaytransmissionlink.jl": "15aca8206f9666694a53247346b8336cf5527ef91032c183c27e0ed598a125dd",
+    "src/model/assets/standaloneelectricarcfurnace.jl": "4d6edaf9b02d4357c7aefc681b612da5bdeef944ff06bc62e4bdc2cc91f7a7eb",
+    "src/model/assets/syntheticammonia.jl": "80951821d7ca7dc01c2386134d8f2549fd1cd45fe147d6c8277471f763791255",
+    "src/model/assets/syntheticliquidfuels.jl": "0b4523c12c53bfad7d98b1361a8d14413ece9d57415da658fd24afc81581fd86",
+    "src/model/assets/syntheticmethanol.jl": "df658800160d01f16863a7644a1354a608b88f8036f02fa89c71e3f0aceecf86",
+    "src/model/assets/syntheticnaturalgas.jl": "0ea611819cbad5c629e9db27d0b9444841bbecf150adbd168038396dde44c617",
+    "src/model/assets/thermalammonia.jl": "652dcf86d7836821fb1178ce07d19b26b3792dc812a3084bfb86e88521cddeed",
+    "src/model/assets/thermalammoniaccs.jl": "1a04b79c6ddb8a3212474618ebe1cf1e53d081e12971a3fa789fc5a361c9ba27",
+    "src/model/assets/thermalheating.jl": "b3dc9bac74f9bdae74c5d29725bdb5de182ab82fd07512f717e45ef1e1346015",
+    "src/model/assets/thermalhydrogen.jl": "b4db0fa6b95edfb88390ecc070e4acee0a84909c9be6d5206bf70163ef4785c6",
+    "src/model/assets/thermalhydrogenccs.jl": "40497e1bd76865a40f3603943d657d5129b1dfe64dc1e0dc15aade780f469a3d",
+    "src/model/assets/thermalmethanol.jl": "d0493b857db49ecbd1d041d45fa525ffe1c2242d3b69f5c5bd06ccd77f304b07",
+    "src/model/assets/thermalmethanolccs.jl": "ae647bed88383eaf0b8738f3e47afa4601e181b9b6e894032dfff1214dfba3c9",
+    "src/model/assets/thermalpower.jl": "3b6dd688b3276796fc200d1488e75907e18cb72cb67d64ffc72a3b7c821a6e48",
+    "src/model/assets/thermalpowerccs.jl": "844d8bc032bf7a5a3618accf25acbe72df569e7a012e7f89bd34b75406e71ea1",
+    "src/model/assets/thermalsteam.jl": "1996dcf0084657fb9932249e4d6c752d2c38e03f01135885e2e4cf9c95fb1fcc",
+    "src/model/assets/transmissionlink.jl": "5abeed300e94ee720950750143d2f278d3606eb0460afdb7847efc845cf18951",
+    "src/model/assets/upstreamemissions.jl": "bb402b4f6f9c459b11a023961622a3095a2d6eee3d05b376274838444c7456fc",
+    "src/model/assets/vre.jl": "b2da085edaf86ae4fcb11e987f6b4a7455e019e7489f21321fb9340c853f40c7",
+    "src/model/benders/operations.jl": "3067564b6df42ef6bb656e5e371bb5f4039023151366352a573389b036ba7040",
+    "src/model/benders/planning.jl": "abf8d2952990ccb399781d042dca1b2ab2451084671050aeec2e12c95f21304f",
+    "src/model/benders/prepare_benders_run.jl": "af749e3659088a1b0910a3fbe6be755f9f9e455eae1b8fb8a7d906425afcbe4c",
+    "src/model/benders/results.jl": "64e2347782f0ee68544eb14dc1792485509ab788d740d18d0f52423ce23a5837",
+    "src/model/case.jl": "a0a0106dfc84b9141978bfeee703efcf46c59fd5dc310a03e3c230a3fa22d184",
+    "src/model/constraints/age_based_retirements.jl": "5cb996c0a2c2161ccd7711aa0c25eb8e9d7df09bb074ae10bb04d2f73a742090",
+    "src/model/constraints/aggregated_demand.jl": "0fa8ae8ce6c85212c252be59da175bc74abdb36058e55afe07bbf6167c8da5a3",
+    "src/model/constraints/balance.jl": "3ee62a7dc9e943670e008fbe84245878636a6144d2c69a9a723290854523fc9d",
+    "src/model/constraints/capacity.jl": "2892b047d4f1b1e5818c268b4d176483dba4fd9220fa55d81310339c3f9f8c58",
+    "src/model/constraints/co2_cap.jl": "86bb630b1be545c86e84f5b45209b10913502a0061bee78f887fad4e146326ec",
+    "src/model/constraints/co2_storage.jl": "988f76308b258a69736af77958109c69509736b517d50ca62be2c7059d42b042",
+    "src/model/constraints/constraints_utils.jl": "5049acc104b239542effbc8670a51fd2f43484dfe2e7cd7c41831d53431df1e6",
+    "src/model/constraints/long_duration_storage_change_constraint.jl": "3b00ad0356ca7f0df95d265946575a557e778c7890eebcaa054307ceec5f7ed8",
+    "src/model/constraints/long_duration_storage_implicit_min_max.jl": "999640a4d08eea36bda4ce3000ad2d0511f272d5e7d3abb413d34f29b31bf185",
+    "src/model/constraints/max_capacity.jl": "5bd818624ca668c47c1e73fc776d37533836a5569050ec1b9098c400450529ff",
+    "src/model/constraints/max_new_capacity.jl": "a44a53c95e560392d1c18c463251ec5c9e7302d07a99990086ae0d845164cc45",
+    "src/model/constraints/max_non_served_demand.jl": "22dac22aa2f7548b2ee2020179864dc7dfc67383d40fa497289dd0c413d1c0dc",
+    "src/model/constraints/max_non_served_demand_per_segment.jl": "7755e849580a44c1c10ffbb8aebb779203601ed58f26c3bbd42780e8ba17cdc8",
+    "src/model/constraints/max_storage_level.jl": "1c8fed911063674e44b1fc71b4930f9d32400553bcdfa57095d78cb264554a7d",
+    "src/model/constraints/min_capacity.jl": "b085571870c8f23c882a40c588ece0db704f8062fd85619b1a5d341991cc20f9",
+    "src/model/constraints/min_flow.jl": "17da9e4c9298f19a66929951e44b2e77c85817c2cd29d0d0cf49e37f97082c06",
+    "src/model/constraints/min_storage_level.jl": "b997b8d6d51edc3dcc4465bb1d1f7c8705dac776d32ebfd41a774ea3d051f6a4",
+    "src/model/constraints/min_storage_outflow.jl": "69d82499459bc26f5c88261734f26adbff776fd93f8cb7ae73346cfd5de491f9",
+    "src/model/constraints/min_up_down_time.jl": "9991593752efcb778d6f3c1336578a0a1cbbe48c9d53e3cabcb6dc037339338a",
+    "src/model/constraints/must_run.jl": "089360adf0cf781fba8dccff1056fa173aa20c659a56be3eef1f82f78a7fe3eb",
+    "src/model/constraints/ramping_limits.jl": "468fe9e6a2e6c25381c4edc658232f3cc78496be3a6e2ae33b7ad6f55878cbcf",
+    "src/model/constraints/storage_capacity.jl": "b188913555e59ac44b656a1d23b19236f9ac9c9cab3a258e71895e479827b6c5",
+    "src/model/constraints/storage_charge_discharge_ratio.jl": "058a22338740ed80d2382c0bf6a93d8c836fd5e2d71211aafcc1d6d9dd115ee2",
+    "src/model/constraints/storage_charge_limit.jl": "6f054f7f17ad3da060c347b23c2f1332c55bb6c01267b487cb861d6352f603cc",
+    "src/model/constraints/storage_discharge_limit.jl": "31b8e2dffb6a072ce0fbd9c32545144a514603153d69123f83209a7215a7891f",
+    "src/model/constraints/storage_duration.jl": "8e3c7d54fcdbc82e29bb178899fd6f6ff6f7e1368ab6297b34ec64ab4d282856",
+    "src/model/constraints/storage_symmetric_capacity.jl": "2eb472e53f8dbecd5ac62c254998de1b3241b3117148acdb19781843ffe4714e",
+    "src/model/generate_model.jl": "a922897585bfe1268fccbffa8c35c9e022aa892c758ec36a4dc3d42f4c4bcfa0",
+    "src/model/jump_containers.jl": "9a74671b4d6ece4522d4f5cf9a712b513560dcd8e10d49d315c2292eb02db971",
+    "src/model/myopic.jl": "c7beaaf11b2a890a74692394ffc4eb68e6108c67098ca57912ff6833b09c7755",
+    "src/model/networks/asset.jl": "3b759f357eba6dd51d88b7d5e433d588ba13c8efbfedb689517c13f1dd40a21d",
+    "src/model/networks/edge.jl": "6d9794845df897332bb9e2856d457f9d9ab1322905e6cac70e097852ce50d083",
+    "src/model/networks/location.jl": "52f2f3f9f3202850a5b9d53bf7ce984e3f8b766e6a32f859ec801c5fec82f08d",
+    "src/model/networks/macroobject.jl": "40d9c5fe9b5ad196de4ce33b271d76cc36c62abd16198add2e79283fad674fc4",
+    "src/model/networks/node.jl": "bc0b789caa7f5629e60024be321d1dca7faa41f89f40390035d01382c3d6fa6b",
+    "src/model/networks/storage.jl": "2bf5eba863ccef64404249e9ebccd5189ca7a2ef4bd09fe1ff27d4330a6adf5f",
+    "src/model/networks/transformation.jl": "10bb97f6281ccdf38d68b72e4f5acc8ef4cf83d52743a53c9a19d16a44216298",
+    "src/model/networks/vertex.jl": "ff767371f6399b1b007539f0c8c6d1e6935b0fc4f17817837c7756493f3834f1",
+    "src/model/optimizer.jl": "553c4fee4ae44b385241d3d15234cc1cbc6ed79598aed47cb91bc307114a2e2b",
+    "src/model/release_model.jl": "4127f37858fe1a43282ad7caacb778e5cf41e2de410856ce91ea60c99e9e2446",
+    "src/model/retrofit.jl": "44fbf36cdb0e5311b259a269f1e9ea169fb05d2208299b026da4b631fc1feac6",
+    "src/model/scaling.jl": "9be7640ab7c8dbf19ba5f2020d7d3cf5d2b7b85c5bcdd53730cc07d1f8225ebc",
+    "src/model/solver.jl": "541fa5c431af3d79afba94372c9ebe1d48995daa6b4664a349920b602ddd9f35",
+    "src/model/system.jl": "ffa3ab20c1486fa7263e3e888693729e6233275495c44cb4a7530ca0b65b4031",
+    "src/model/time_management.jl": "872eb34677ca35fe9521332c3dadee9f8a1a4b844f68b1a3432f04cac37b63fa",
+    "src/model/types/balance.jl": "fec12fc1a857f6fae15ea7c8ea6d2d16afe6b8b8b4c3fc1c34ff30e509bc9d5a",
+    "src/model/types/solve_status.jl": "a65b67a0ff3efaa39e68295350a604004d6646061f3c7107858ea74d30206f20",
+    "src/model/types/supply.jl": "a0b44f7ff7ec8b0cd3be28b595bea70898a5d20dab4707ab190ade58fdd9e79b",
+    "src/model/units.jl": "a061fe6f6aa769f5f7f374d978b1cba000e520b24a441f2ec3ea2374294b195e",
+    "src/preprocess_inputs/preprocess_inputs.jl": "a96f44692954d9a3a0690772c481228183c76583cdcab1d6cc2229dcf0219a6f",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/cache_fingerprint.jl": "beddb7effbd3389fe57a80d59b1e1570089b3de67317afd451fd71ee49ac17d4",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/output_based_features.jl": "e3851078cf0f2ae7a9d2df68c4155c0b932fa9b8326600c3a1424fadf0b8f553",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/output_feature_sources.jl": "b661edd6d8a03c1761a40b875b7fa88ec3bbe492a946566bd84acc1debf28ede",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/output_features.jl": "7f27c8f06f780929932e0aadc20456c045ce4eea0f9e6af83538814c77ae2ed2",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/providers.jl": "b1a0b5e0ba22e5a85abe636dbaa5be2d34a2fa24db3968555b4d51979c38ef0f",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/subperiod_cases.jl": "74cf8cbce1c3b143cac00439249124587fe52ab0ad3b238c813c427a2952e28c",
+    "src/preprocess_inputs/time_domain_reduction/output_based_features/subperiod_runs.jl": "6ffc973d95e35a5cb79bbb043fc2fad875e422b4d8dfd99e390655630b40c963",
+    "src/preprocess_inputs/time_domain_reduction/tdr_candidate_periods.jl": "2278fc615e3994f8a2f5de5f3863a6d2ea76d034f215a713fe77401b1a013b27",
+    "src/preprocess_inputs/time_domain_reduction/tdr_clustering.jl": "8eb581c56b713b328026d940ac7484a56ed3b0d203d8169f66b896a684192900",
+    "src/preprocess_inputs/time_domain_reduction/tdr_extreme_periods.jl": "822a5ee9685aa7fa738ee1ad85c9d4ef9c1f81aaa286407bdd85ec9dc93104b2",
+    "src/preprocess_inputs/time_domain_reduction/tdr_features.jl": "6a6b87806a1b5c03d9fd62bdaef778fa8e7c47d0534a6621f7c42993fc2700e9",
+    "src/preprocess_inputs/time_domain_reduction/tdr_input_formats.jl": "dd298af2e79872e4635d66cead98e5f7dcee2df068d89b90d8d7bc6bdced7c7b",
+    "src/preprocess_inputs/time_domain_reduction/tdr_input_search.jl": "312e5c0279a1005c974d59271b11f0af5dfdec29d8b263bb9c9224d3ab70fbe0",
+    "src/preprocess_inputs/time_domain_reduction/tdr_log.jl": "b5d75dbcf96e4985fe226a473255c962c03c497ecba9ebbf0cfeb3fc94fd5836",
+    "src/preprocess_inputs/time_domain_reduction/tdr_methods/autoencoder_sequential.jl": "d0531ff34e3a8a5c0e6ccdce026c16ca158e4c35221b0d072f790268d00c8f3d",
+    "src/preprocess_inputs/time_domain_reduction/tdr_methods/autoencoder_simultaneous.jl": "bcbdc38e2e2445dab726fb245a80bccad554abe6fe83d939c3d7ac8913c6efa4",
+    "src/preprocess_inputs/time_domain_reduction/tdr_methods/kmeans.jl": "c7008b1b6e6172daf1bed494c1f287ab581df77427db803e83abb48403031456",
+    "src/preprocess_inputs/time_domain_reduction/tdr_methods/kmedoids.jl": "d93e2392d26e9b429baa802a9711c2320329d532fd7426604bd00a01bcd1e809",
+    "src/preprocess_inputs/time_domain_reduction/tdr_methods/tdr_methods.jl": "bb82067867928c29564ad17d8b4db01020b457fab497aa6ec72af07d674ee827",
+    "src/preprocess_inputs/time_domain_reduction/tdr_outputs.jl": "17dd8c734aa1b4de9ff60f026a0cf926c34e48d136ddf5a0b129e8b7e7a7fee9",
+    "src/preprocess_inputs/time_domain_reduction/tdr_prepared_inputs.jl": "e12e32648caca3ffbe7097f62b8733c58f6d671036cc3b45f285071f3a951825",
+    "src/preprocess_inputs/time_domain_reduction/tdr_settings.jl": "07d1b575efcc62fa92d627f5773e5207b90fa76d7327d8834f3f78aeff837cb8",
+    "src/preprocess_inputs/time_domain_reduction/tdr_time_series_sources.jl": "b6771aec12aa04fbba355a423f25b5447d8661bea729ea07ba3764a09d4572c1",
+    "src/preprocess_inputs/time_domain_reduction/tdr_utilities.jl": "3f8a2110c8fb0cfbce49e1990ee4c5c66f08f2569c7b84764418e87e4c037e0d",
+    "src/preprocess_inputs/time_domain_reduction/time_domain_reduction.jl": "604322ba8f7d3f93004e5f9492106df3e46b88b5d382af9994e91899660abcb2",
+    "src/utilities/asset_diagrams.jl": "1ea08442466ba5d149b26796d88a4320a588817121046460ab1fd76cdef47990",
+    "src/utilities/benchmarking.jl": "fd813d9ff6df365da75e2560c8a51a565633c336b03dd514bd59a23adcdfa49d",
+    "src/utilities/comparisons.jl": "b0f511ed5d70796dec70d89c38c1f2718ec14a78159766b8b0283253306d886e",
+    "src/utilities/default_data.jl": "847d19d47c0123db9d0a3727a9c4e7ef182769936d4a067311552c0abe00a00e",
+    "src/utilities/download_examples.jl": "7774485c18db7c164d8f1665050a0e96d35de8a6e29a5cf569fad7cb5bfdd78d",
+    "src/utilities/economics.jl": "4debff1f917cffe20f2fe5f38f7f948374badeec469f41fca7eea42653cae5a9",
+    "src/utilities/file_io/csv.jl": "04fb34e97f8b86161fe38f48c489d125b512bd184d3faa912dd073ed1860787c",
+    "src/utilities/file_io/duckdb.jl": "86d518af1c1f7d248ac499277aad3b5ef81fd29b13eeaff9f6ec7916447e205d",
+    "src/utilities/file_io/json.jl": "89b39cfbce533cc86009cecdbb7b452e5303942c9e7151258bf55e6af1f1be02",
+    "src/utilities/file_io/read_file.jl": "779e27d2ff12de28e2259fea2d2446162f7923851d02c829d980d3e4aef26cea",
+    "src/utilities/logging.jl": "2b8f770d531f96b7371ca47e08104cd8dd6e380338a1055d205cb99b6ae6f21e",
+    "src/utilities/model_converters/update_node_supply.jl": "4d613d5469a053692bdfb3c01287435491338b67e7c077851852dff554e3d119",
+    "src/utilities/model_templates.jl": "430be5197a1c9bff5629f9e85a06ec9c4a4aa8ba3c62b9af68bb893449582e62",
+    "src/utilities/postprocessing.jl": "daf1b704257e2206b711708ce2443eb38f34e99cce9f4ce50276c20d53a50c59",
+    "src/utilities/run_tools.jl": "7efa4d9c0b84edac35a7e915bfb5184ca4dfc7695d5212f5cf2e8d77ab0b7e8d",
+    "src/utilities/user_additions.jl": "97854fe757faa6c85743d784082b4f2b4ae3a0eb03d05b1630f388a466169eac",
+    "src/utilities/utilities.jl": "a6068cd35b4d372cf44e5d91e3f3ccbd23a72ab08923fdbf8bfb6c72ecc0dbe9",
+    "src/write_outputs/utilities/benders_output_utilities.jl": "dc609d24ca861369a2ff652543af8e8be60b9b707dce95f2afc0654ca95c63a0",
+    "src/write_outputs/utilities/dataframe_utils.jl": "377ed2e8faed22f7f3c55d60cc040ec8dcb5c26c80319387837f6a8ac6e3caa2",
+    "src/write_outputs/utilities/file_writers.jl": "eeba6450c8de7762d04641dc4086f26fe7924a32cfa4e4253ee102f6115fddbb",
+    "src/write_outputs/utilities/helpers.jl": "a028236b4d1953df0a59509445f2121fdcdc04aa72dbb507548479a0b0e392ec",
+    "src/write_outputs/utilities/output_utilities.jl": "15b34b0cff9ba1fbdbb3cb35c8fe6c1ecf1b0208c57ff52bbabd84ff7d6f0ca1",
+    "src/write_outputs/write_capacity.jl": "d9b6867af7b1d99a6731860865398772ad70e3e8a9c2bc6a97061a299fb0ed63",
+    "src/write_outputs/write_capex.jl": "7256bacc0fafc2fea69e60578eefc20fe0cebe468a5ab3d7bcbad079cd7d0be4",
+    "src/write_outputs/write_cost.jl": "81dd07493c85f6063a7f50cdb4e53bf9ef23a0f49322502c56d091613edfeae2",
+    "src/write_outputs/write_curtailment.jl": "5573e7b6f5cb65033f343c6169cbaad6c8ee9be8b3858bb3624b9bf80584bacc",
+    "src/write_outputs/write_duals.jl": "3b1db7528ac7d119cbb2ee773fbcdf84c102555f735560affb3f42cd260a6453",
+    "src/write_outputs/write_flow.jl": "6e4d169639dff1ca1627532ad2c72f8cf62813e989dcfd1cc59c57f8c14ab142",
+    "src/write_outputs/write_full_timeseries.jl": "b3a157cf94b9c36a1cc3b15da64480ab93fe24606a9e47861d14a521afa38052",
+    "src/write_outputs/write_non_served_demand.jl": "793102d0e43b239db400662e975f09be4572f9a34f03d9405533baaafaceb219",
+    "src/write_outputs/write_outputs.jl": "cc94ab7cfea96f18ffe4ea95af07b8cde57bed3cfdd23f732371f5ead8d083b4",
+    "src/write_outputs/write_settings.jl": "9728a74c7ac91808448a315e320d50e1120156f83d7cf8ca04738b79c23f42e7",
+    "src/write_outputs/write_storage_level.jl": "727834805e76f05a5cae675f8cd8d01539496c9191011895ec1434ab9bcdaef9",
+    "src/write_outputs/write_system_data.jl": "1171eb141284030c09db05eb72c0759c8a4b53a7fa627a849cc62ba0869f8b0c",
+    "src/write_outputs/write_time_weights.jl": "6bc7a8475cb15b39f81a667a586ab92cd49cf2220111d8c33af9e93ee5f6a468"
+  },
+  "steel_inventory": [
+    {
+      "year": 2021,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2021/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2021,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2021/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2025/steel_bfbof.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2025,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2025/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SEL"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_PUS"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_TAE"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_INC"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_KWJ"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_USN"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SJG"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GGI"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GWN"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNA"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNB"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_DJJ"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNB"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNA"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNB"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNA"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2030/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JEJ"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_SEL",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_PUS",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_TAE",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_INC",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_KWJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_USN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_SJG",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_GGI",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_GWN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_CNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_CNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_DJJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_JNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_JNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_GNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_GNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_bfbof_ccs_JEJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SEL",
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_PUS",
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_TAE",
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_INC",
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_KWJ",
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_USN",
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SJG",
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GGI",
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GWN",
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNA",
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNB",
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_DJJ",
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNB",
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNA",
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNB",
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNA",
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JEJ",
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_SEL",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_PUS",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_TAE",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_INC",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_KWJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_USN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_SJG",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_GGI",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_GWN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_CNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_CNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_DJJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_JNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_JNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_GNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_GNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_ng_dri_eaf_ccs_JEJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2030,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2030/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SEL"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_PUS"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_TAE"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_INC"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_KWJ"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_USN"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SJG"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GGI"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GWN"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNA"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNB"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_DJJ"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNB"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNA"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNB"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNA"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2035/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JEJ"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_SEL",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_PUS",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_TAE",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_INC",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_KWJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_USN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_SJG",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_GGI",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_GWN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_CNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_CNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_DJJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_JNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_JNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_GNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_GNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_bfbof_ccs_JEJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SEL",
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_PUS",
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_TAE",
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_INC",
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_KWJ",
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_USN",
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SJG",
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GGI",
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GWN",
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNA",
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNB",
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_DJJ",
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNB",
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNA",
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNB",
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNA",
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JEJ",
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_SEL",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_PUS",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_TAE",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_INC",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_KWJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_USN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_SJG",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_GGI",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_GWN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_CNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_CNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_DJJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_JNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_JNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_GNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_GNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_ng_dri_eaf_ccs_JEJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2035,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2035/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SEL"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_PUS"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_TAE"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_INC"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_KWJ"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_USN"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SJG"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GGI"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GWN"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNA"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNB"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_DJJ"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNB"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNA"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNB"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNA"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2040/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JEJ"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_SEL",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_PUS",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_TAE",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_INC",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_KWJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_USN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_SJG",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_GGI",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_GWN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_CNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_CNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_DJJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_JNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_JNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_GNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_GNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_bfbof_ccs_JEJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SEL",
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_PUS",
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_TAE",
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_INC",
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_KWJ",
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_USN",
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SJG",
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GGI",
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GWN",
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNA",
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNB",
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_DJJ",
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNB",
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNA",
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNB",
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNA",
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JEJ",
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_SEL",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_PUS",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_TAE",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_INC",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_KWJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_USN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_SJG",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_GGI",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_GWN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_CNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_CNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_DJJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_JNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_JNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_GNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_GNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_ng_dri_eaf_ccs_JEJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2040,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2040/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SEL"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_PUS"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_TAE"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_INC"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_KWJ"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_USN"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SJG"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GGI"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GWN"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNA"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNB"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_DJJ"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNB"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNA"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNB"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNA"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2045/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JEJ"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_SEL",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_PUS",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_TAE",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_INC",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_KWJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_USN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_SJG",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_GGI",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_GWN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_CNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_CNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_DJJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_JNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_JNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_GNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_GNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_bfbof_ccs_JEJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SEL",
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_PUS",
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_TAE",
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_INC",
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_KWJ",
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_USN",
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SJG",
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GGI",
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GWN",
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNA",
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNB",
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_DJJ",
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNB",
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNA",
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNB",
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNA",
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JEJ",
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_SEL",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_PUS",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_TAE",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_INC",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_KWJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_USN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_SJG",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_GGI",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_GWN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_CNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_CNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_DJJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_JNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_JNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_GNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_GNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_ng_dri_eaf_ccs_JEJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2045,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2045/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_SEL",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SEL"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_PUS",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_PUS"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_TAE",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_TAE"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_INC",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_INC"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_KWJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_KWJ"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_USN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_USN"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_SJG",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_SJG"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_GGI",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GGI"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_GWN",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GWN"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_CNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNA"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_CNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_CNB"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_DJJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_DJJ"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_JNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNB"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_JNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JNA"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_GNB",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNB"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_GNA",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_GNA"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_JEJ",
+      "type": "BFBOFSteel",
+      "file": "assets/assets_2050/steel_bfbof.json",
+      "retrofit_targets": [
+        "steel_bfbof_ccs_JEJ"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_SEL",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_PUS",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_TAE",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_INC",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_KWJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_USN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_SJG",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_GGI",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_GWN",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_CNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_CNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_DJJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_JNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_JNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_GNB",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_GNA",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_bfbof_ccs_JEJ",
+      "type": "BFBOFSteel_CCS",
+      "file": "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SEL",
+        "steel_h2_dri_eaf_SEL"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_PUS",
+        "steel_h2_dri_eaf_PUS"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_TAE",
+        "steel_h2_dri_eaf_TAE"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_INC",
+        "steel_h2_dri_eaf_INC"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_KWJ",
+        "steel_h2_dri_eaf_KWJ"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_USN",
+        "steel_h2_dri_eaf_USN"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_SJG",
+        "steel_h2_dri_eaf_SJG"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GGI",
+        "steel_h2_dri_eaf_GGI"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GWN",
+        "steel_h2_dri_eaf_GWN"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNA",
+        "steel_h2_dri_eaf_CNA"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_CNB",
+        "steel_h2_dri_eaf_CNB"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_DJJ",
+        "steel_h2_dri_eaf_DJJ"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNB",
+        "steel_h2_dri_eaf_JNB"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JNA",
+        "steel_h2_dri_eaf_JNA"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNB",
+        "steel_h2_dri_eaf_GNB"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_GNA",
+        "steel_h2_dri_eaf_GNA"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_ng_dri_eaf.json",
+      "retrofit_targets": [
+        "steel_ng_dri_eaf_ccs_JEJ",
+        "steel_h2_dri_eaf_JEJ"
+      ]
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_SEL",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_PUS",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_TAE",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_INC",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_KWJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_USN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_SJG",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_GGI",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_GWN",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_CNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_CNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_DJJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_JNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_JNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_GNB",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_GNA",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_ng_dri_eaf_ccs_JEJ",
+      "type": "DirectReductionElectricArcFurnaceCCS",
+      "file": "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_SEL",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_PUS",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_TAE",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_INC",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_KWJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_USN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_SJG",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_GGI",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_GWN",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_CNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_CNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_DJJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_JNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_JNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_GNB",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_GNA",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_h2_dri_eaf_JEJ",
+      "type": "DirectReductionElectricArcFurnace",
+      "file": "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_SEL",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_PUS",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_TAE",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_INC",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_KWJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_USN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_SJG",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_GGI",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_GWN",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_CNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_CNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_DJJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_JNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_JNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_GNB",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_GNA",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    },
+    {
+      "year": 2050,
+      "id": "steel_scrap_eaf_JEJ",
+      "type": "ElectricArcFurnace",
+      "file": "assets/assets_2050/steel_scrap_eaf.json",
+      "retrofit_targets": []
+    }
+  ],
+  "generated_files": {
+    "assets/assets_2021/batterys.csv": "c5469f0fadca9e081ee111b4943ea72eb25de99b0e5ae4e9d02928cbf1c5bbeb",
+    "assets/assets_2021/coalpower_21.csv": "79e170a1a2ba7557861765b8918f6f20399c6671ea1a118c53458adf7a9dac6e",
+    "assets/assets_2021/hydro_res_21.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2021/NaturalGasPower_21.csv": "2259ed0096efa2d91b8b3d9aa78585d252eb3769610f62c4774ef48136b74631",
+    "assets/assets_2021/nuclear_21.csv": "8540ebab05a6daea9302dfc3ace25dfb54083757487bc62a6bdf82b2f2a4bebf",
+    "assets/assets_2021/pumpedhydro_21.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2021/transmission_v2_2021.csv": "0fdb55776b1491556293241cfab9bc59a19a1e84e9e27f1e80210721e8bcc28b",
+    "assets/assets_2021/VRE_21.csv": "453c8f95eee19eca35a1fc3a8723be72e3bfa82aee073e18fb4c787846733e80",
+    "assets/assets_2025/batterys_25.csv": "99a93c371511f56ee2cffc8226789006bec55ab37a7eac9099e990a690958ebd",
+    "assets/assets_2025/co2_injection_25.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2025/coalpower_25.csv": "8dd06dbb3e9be498f035e16e3f59c585df9aef1144efdbde565079728cbb7650",
+    "assets/assets_2025/coalpowerCCS_25.csv": "641e1b75b7200e0e5025d5e4a933a0b4470bf6a3bc995cefba276c426e8fe172",
+    "assets/assets_2025/hydro_res_25.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2025/NaturalGasPower_25.csv": "32e4ff962ef1e49a31d5cfc7e7f8b212c9ffca95acae23792b6e4f5799a623fb",
+    "assets/assets_2025/NaturalGasPowerCCS_25.csv": "53cc49ae966ec837649bae53ef07678516c7d607ed88b49aeb33e440ee67eca6",
+    "assets/assets_2025/nuclear_25.csv": "f1a35c668d369acfc07814fc17ffedbb01a9e6a57e4f95d03cb6dbfab5c9b36f",
+    "assets/assets_2025/pumpedhydro_25.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2025/transmission_v2_2025.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2025/VRE_25.csv": "7a03cf58bb7420055d4f4003a2558727113ef0e52f461d9a57a9f617f3c7511c",
+    "assets/assets_2030/batterys_30.csv": "99a93c371511f56ee2cffc8226789006bec55ab37a7eac9099e990a690958ebd",
+    "assets/assets_2030/co2_injection_30.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2030/coalpower_30.csv": "e5f9bf20be2f95307946b1c3ef5dec447aed8f69fbba16d26175934daf69049d",
+    "assets/assets_2030/coalpowerCCS_30.csv": "914a8ae0aa186bb662421d81e2388efb1bfe805937203e2f18338af4e506b434",
+    "assets/assets_2030/hydro_res_30.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2030/NaturalGasPower_30.csv": "48e4b2c4c49d2db765d3236f60ccaf61a37bfe6e4476fb0c36760d7184178226",
+    "assets/assets_2030/NaturalGasPowerCCS_30.csv": "f396aee4a51c9556f8b0e4e74b46a4a5b5e52d4512c20e46f9cf2d6d65021ef2",
+    "assets/assets_2030/nuclear_30.csv": "738ca907450a2e390a7e509d09b3d86a8f4b7a3d66af35ea08eb0e87ca7c1a8a",
+    "assets/assets_2030/pumpedhydro_30.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2030/transmission_v2_2030.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2030/VRE_30.csv": "7a1b6ad7aa2c57ec1f1e76e11a7f507c41eb31f12ef8811c787efbb445f03766",
+    "assets/assets_2035/batterys_35.csv": "99a93c371511f56ee2cffc8226789006bec55ab37a7eac9099e990a690958ebd",
+    "assets/assets_2035/co2_injection_35.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2035/coalpower_35.csv": "e5f9bf20be2f95307946b1c3ef5dec447aed8f69fbba16d26175934daf69049d",
+    "assets/assets_2035/coalpowerCCS_35.csv": "af3529d471fe76ef2c785dec3dfdee812318eaf809599ef202f83cbf3189fc5f",
+    "assets/assets_2035/hydro_res_35.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2035/NaturalGasPower_35.csv": "48e4b2c4c49d2db765d3236f60ccaf61a37bfe6e4476fb0c36760d7184178226",
+    "assets/assets_2035/NaturalGasPowerCCS_35.csv": "5b8f6ad560329693c1388938d48c399fe8ac21fc18d5025a8ac2b0be2d6913ee",
+    "assets/assets_2035/nuclear_35.csv": "81580ede525203b21477bd0fd2d9716fef05a649db343a3e5e6a766b89edc10f",
+    "assets/assets_2035/pumpedhydro_35.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2035/transmission_v2_2035.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2035/VRE_35.csv": "3caf4a2f03ab853e15c8c595d75019410c36807429be7fa45a6c38fe9ef70f99",
+    "assets/assets_2040/batterys_40.csv": "2d9cf7bd12ee445cb0ab392840ec13a5b7f0d6d277bde98801b8693fe212d350",
+    "assets/assets_2040/co2_injection_40.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2040/coalpower_40.csv": "07ce08d177f9150870e22d5439d8567fd2a35cbad7db59cd2154e9335d0cd8b0",
+    "assets/assets_2040/coalpowerCCS_40.csv": "aaffdac9bf9680b2fe54da6519fc128682b7a710673b8984bcace1bdab3fe872",
+    "assets/assets_2040/hydro_res_40.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2040/NaturalGasPower_40.csv": "cb5cf35c85d144c15adabf43aeca85d70aa4d162093e43c7daa04f67b871bc81",
+    "assets/assets_2040/NaturalGasPowerCCS_40.csv": "5c794562cc6c870620867f2ce9e2b71bc0534740fc1733747a83d0cfc612af47",
+    "assets/assets_2040/nuclear_40.csv": "8b654ac32380423c4c74e81328a1431f77c32e4a8c2693361fd29bb4113657bd",
+    "assets/assets_2040/pumpedhydro_40.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2040/transmission_v2_2040.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2040/VRE_40.csv": "720dda5516d1a08e6383cc9d8e25c650da61780023ebadbb2079eee54cfc1510",
+    "assets/assets_2045/batterys_45.csv": "936de626b25bdc35aeb187c4c685b3fa4b9c6044aa86a289509163c67215ec27",
+    "assets/assets_2045/co2_injection_45.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2045/coalpower_45.csv": "07ce08d177f9150870e22d5439d8567fd2a35cbad7db59cd2154e9335d0cd8b0",
+    "assets/assets_2045/coalpowerCCS_45.csv": "3fb835c6b64796d684c03640229a94de16125199c6b327a992f5b07067d042bc",
+    "assets/assets_2045/hydro_res_45.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2045/NaturalGasPower_45.csv": "cb5cf35c85d144c15adabf43aeca85d70aa4d162093e43c7daa04f67b871bc81",
+    "assets/assets_2045/NaturalGasPowerCCS_45.csv": "6bf3900721c37f0e60eb8ddaebd13f40aaf72e11f38c51cb583ef4b1fca38c25",
+    "assets/assets_2045/nuclear_45.csv": "8afee26a00560154d20d61db395b9c454992e9153336d64a98ff626eaa80d694",
+    "assets/assets_2045/pumpedhydro_45.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2045/transmission_v2_2045.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2045/VRE_45.csv": "319ca9ab589bf723a24a0d500bcac72f82915342982fc12aa7e59a983a9cb379",
+    "assets/assets_2050/batterys_50.csv": "8a3efc74e229f1a09b72ec23a42a0125577150a4044dd0e2d5acff69e3ce4ae9",
+    "assets/assets_2050/co2_injection_50.csv": "9168fd091cf7012efc011fdb9832fa2ab8ae574ace1e5ff46c5f56aa9a9bd63d",
+    "assets/assets_2050/coalpower_50.csv": "07ce08d177f9150870e22d5439d8567fd2a35cbad7db59cd2154e9335d0cd8b0",
+    "assets/assets_2050/coalpowerCCS_50.csv": "ff412aedee53d1059e9820d8fe84ab293d6f529a4577f928daff7a1df989dd46",
+    "assets/assets_2050/hydro_res_50.csv": "3464dfd46996d604fedf9cd167cd7c337ad896a0dba5ab6e07cc3472da1a0ebd",
+    "assets/assets_2050/NaturalGasPower_50.csv": "cb5cf35c85d144c15adabf43aeca85d70aa4d162093e43c7daa04f67b871bc81",
+    "assets/assets_2050/NaturalGasPowerCCS_50.csv": "304ff81b4bd4c2b06456c3d5be102e8de463bcd38503b54bc38722339ab2ef92",
+    "assets/assets_2050/nuclear_50.csv": "ec29e57d1a955e19dda78cc5e5c17d49f75364866b4d77be4bb5ccceb363df12",
+    "assets/assets_2050/pumpedhydro_50.csv": "d20b8c5a4b0348a6a3479f36e6875d86029425bd820c4aa6abd39d24591aff69",
+    "assets/assets_2050/transmission_v2_2050.csv": "6f5e45fa4745481f3ad7d9f4326c28d04957c3ef8dd044ac1acfcf0366c72d68",
+    "assets/assets_2050/VRE_50.csv": "f01b0a6fe1f6ddad6f05369c79e691f09faeb12197db940fcb4f0b1e1654430a",
+    "system/availability.csv": "1ec71076ee07c818ac8edd7ff83512a5e6f4024b062a72123a982e6836e8d72d",
+    "system/availability_hydro_res.csv": "72025293024d101dbfb868d4c5c2d58e37eb1ce6e57268cb1a6c9b957e8e9e3d",
+    "system/commodities.json": "fcdf5c20d581969ec9fb6cc22eca04e8d3a65486c63601f057635de97098806b",
+    "system/demand_ref.csv": "4fbc9dba3948ffd1c9cbae8740908c63c6b2ab55ce54acfd5f8cdfadbc8006a0",
+    "system/fuel_prices.csv": "85dedb965b9dfae5bfdb8d880678b319f0381fef8fd4ab2983c285b419c66598",
+    "system/nodes_2021.json": "d9ac912ebe102c639998c9eea6e4d01dfe7be47a413dd113f3f84aa87f1b0bb3",
+    "system/nodes_2025.json": "965a44956e1f9430c99d34b028402b8b2664f34decc4a42ac9f727022f985256",
+    "system/nodes_2030.json": "b5ffffc3b3a70026e43565d1f0c1651b06b2ed65d934b8f7b55b9e6a54896a3b",
+    "system/nodes_2035.json": "9db58d40edc240c20ec2bb02dd1d79c42db49252f7e32d21a6959e6d1005dbed",
+    "system/nodes_2040.json": "27596b6ee87f72a5c3adf9d131259a192e8ae2184f29b957f4ef21060d08c92b",
+    "system/nodes_2045.json": "952485dbe1c92dd8b2c90e9ab6fe26c5f5f6ac494836e99bb1690f9e8532e71d",
+    "system/nodes_2050.json": "f8a6e85b5cedbf649e03f39c29e0d7e17c761c9908a04395bfa548d40c685a82",
+    "system/Period_map.csv": "215e8015c6d2f1454a4475d2cc3f15ba2bf9d6f0030d782bc754c7caadc58416",
+    "system/time_data.json": "5a218ae774c6944eb0061ca2429a7ed9419b2cdd540f3ba04cc09877fe534fce",
+    "settings/case_settings.json": "e37815792851ebd2ee8726de495be672b0ba9e01af6594c659fdc131c8727080",
+    "settings/case_settings.json.bak": "9827f62fa845d1ce6d9af38f5f844aeccd5153917ab107f41cb91df17b62df75",
+    "settings/macro_settings.json": "e6c965771ddeedce6c4232283bf3b0264bf5c866ee0119242e5fabd7e16d290b",
+    "system_data.json": "8a7e35a561dd3c7ea47f00488a177314a50f1046346e1aab083255117a443670",
+    "assets/assets_2021/steel_bfbof.json": "fc71a9eef84f8c2231e3cc42bba6886400e148780e091167510b8d145379ff56",
+    "assets/assets_2021/steel_ng_dri_eaf.json": "e383f79934ac8a53706d10086099fc7060189df0ead746a57c87d00c214c1f65",
+    "assets/assets_2021/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2021/steel_scrap_eaf.json": "45869d8416fbb22a3a3e1df9e7dc87d42d08e0848a95784de436b6db743b4dc8",
+    "assets/assets_2021/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "assets/assets_2025/steel_bfbof.json": "46bc84afb19a07d95e832d5d3d90f214b648a8ff910688984d3af0a4c8a014f2",
+    "assets/assets_2025/steel_ng_dri_eaf.json": "183532063194936c167694f0e1e9ca658c7e003f79af49be47a67bec01343799",
+    "assets/assets_2025/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2025/steel_scrap_eaf.json": "5d209a7e5568afc1e3b6fe8bdc3bb17a8516cea2ceec6c14a23018469b6829ec",
+    "assets/assets_2025/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "assets/assets_2030/steel_bfbof.json": "4c811f975ec6b5a9a15f37bd76dae06ac4510651b58d2eecaedefa045c247498",
+    "assets/assets_2030/steel_bfbof_ccs_retrofit_option.json": "ab7c2ccdd2fff31f0387ee69fcb5fe8fc9b817c33e13a52be4e2025b7d9a6877",
+    "assets/assets_2030/steel_ng_dri_eaf.json": "d5012c19aba4c5208406bfdd019eea308a0dafcb68660ae28a2c5151eeac68e9",
+    "assets/assets_2030/steel_ng_dri_eaf_ccs_retrofit_option.json": "0541f0367f8e0093878ddc58f8259d528fcff71612bc916e53605bf71b0ec9bb",
+    "assets/assets_2030/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2030/steel_scrap_eaf.json": "5d209a7e5568afc1e3b6fe8bdc3bb17a8516cea2ceec6c14a23018469b6829ec",
+    "assets/assets_2030/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "assets/assets_2035/steel_bfbof.json": "4c811f975ec6b5a9a15f37bd76dae06ac4510651b58d2eecaedefa045c247498",
+    "assets/assets_2035/steel_bfbof_ccs_retrofit_option.json": "ab7c2ccdd2fff31f0387ee69fcb5fe8fc9b817c33e13a52be4e2025b7d9a6877",
+    "assets/assets_2035/steel_ng_dri_eaf.json": "d5012c19aba4c5208406bfdd019eea308a0dafcb68660ae28a2c5151eeac68e9",
+    "assets/assets_2035/steel_ng_dri_eaf_ccs_retrofit_option.json": "0541f0367f8e0093878ddc58f8259d528fcff71612bc916e53605bf71b0ec9bb",
+    "assets/assets_2035/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2035/steel_scrap_eaf.json": "5d209a7e5568afc1e3b6fe8bdc3bb17a8516cea2ceec6c14a23018469b6829ec",
+    "assets/assets_2035/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "assets/assets_2040/steel_bfbof.json": "4c811f975ec6b5a9a15f37bd76dae06ac4510651b58d2eecaedefa045c247498",
+    "assets/assets_2040/steel_bfbof_ccs_retrofit_option.json": "ab7c2ccdd2fff31f0387ee69fcb5fe8fc9b817c33e13a52be4e2025b7d9a6877",
+    "assets/assets_2040/steel_ng_dri_eaf.json": "d5012c19aba4c5208406bfdd019eea308a0dafcb68660ae28a2c5151eeac68e9",
+    "assets/assets_2040/steel_ng_dri_eaf_ccs_retrofit_option.json": "0541f0367f8e0093878ddc58f8259d528fcff71612bc916e53605bf71b0ec9bb",
+    "assets/assets_2040/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2040/steel_scrap_eaf.json": "5d209a7e5568afc1e3b6fe8bdc3bb17a8516cea2ceec6c14a23018469b6829ec",
+    "assets/assets_2040/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "assets/assets_2045/steel_bfbof.json": "4c811f975ec6b5a9a15f37bd76dae06ac4510651b58d2eecaedefa045c247498",
+    "assets/assets_2045/steel_bfbof_ccs_retrofit_option.json": "ab7c2ccdd2fff31f0387ee69fcb5fe8fc9b817c33e13a52be4e2025b7d9a6877",
+    "assets/assets_2045/steel_ng_dri_eaf.json": "d5012c19aba4c5208406bfdd019eea308a0dafcb68660ae28a2c5151eeac68e9",
+    "assets/assets_2045/steel_ng_dri_eaf_ccs_retrofit_option.json": "0541f0367f8e0093878ddc58f8259d528fcff71612bc916e53605bf71b0ec9bb",
+    "assets/assets_2045/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2045/steel_scrap_eaf.json": "5d209a7e5568afc1e3b6fe8bdc3bb17a8516cea2ceec6c14a23018469b6829ec",
+    "assets/assets_2045/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "assets/assets_2050/steel_bfbof.json": "4c811f975ec6b5a9a15f37bd76dae06ac4510651b58d2eecaedefa045c247498",
+    "assets/assets_2050/steel_bfbof_ccs_retrofit_option.json": "ab7c2ccdd2fff31f0387ee69fcb5fe8fc9b817c33e13a52be4e2025b7d9a6877",
+    "assets/assets_2050/steel_ng_dri_eaf.json": "d5012c19aba4c5208406bfdd019eea308a0dafcb68660ae28a2c5151eeac68e9",
+    "assets/assets_2050/steel_ng_dri_eaf_ccs_retrofit_option.json": "0541f0367f8e0093878ddc58f8259d528fcff71612bc916e53605bf71b0ec9bb",
+    "assets/assets_2050/steel_h2_dri_eaf_retrofit_option.json": "dc1e59bccc44bbb634f494dae3dc5ea7a0356bf9b0db7a6573600b8a509919fe",
+    "assets/assets_2050/steel_scrap_eaf.json": "5d209a7e5568afc1e3b6fe8bdc3bb17a8516cea2ceec6c14a23018469b6829ec",
+    "assets/assets_2050/electrolyzer_steel.json": "29fd45a581ec5e66b0bc441fc151e5cd8c6cae8ed86846c3b58254253a990e7b",
+    "user_additions/assets/BFBOFSteel.jl": "5fbeca2f3ccfc80aef5010bb2690825187372dd7e7b84c55fd269f07303e41b5",
+    "user_additions/assets/BFBOFSteel_CCS.jl": "9a033339cb4afe47ad08a71efcdfb17b5579173e700fcc42e1e651fc3a5af983"
+  }
+}

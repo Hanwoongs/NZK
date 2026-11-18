@@ -1,0 +1,949 @@
+{
+  "steel_bfbof": [
+    {
+      "type": "BFBOFSteel",
+      "global_data": {
+        "transforms": {
+          "timedata": "CrudeSteel",
+          "constraints": {
+            "BalanceConstraint": true
+          },
+          "ironore_consumption": 1.5,
+          "steelscrap_consumption": 0.1,
+          "metcoal_consumption": 5.0,
+          "thermalcoal_consumption": 0.0,
+          "natgas_consumption": 0.0,
+          "electricity_consumption": 0.2,
+          "emission_rate": 1.8
+        },
+        "edges": {
+          "crudesteel_edge": {
+            "commodity": "CrudeSteel",
+            "has_capacity": true,
+            "unidirectional": true,
+            "can_expand": true,
+            "can_retire": true,
+            "integer_decisions": false,
+            "investment_cost": 5000000.0,
+            "fixed_om_cost": 100000.0,
+            "variable_om_cost": 0.0,
+            "wacc": 0.045,
+            "lifetime": 30,
+            "capital_recovery_period": 30,
+            "constraints": {
+              "CapacityConstraint": true,
+              "MinFlowConstraint": true,
+              "RampingLimitConstraint": true
+            },
+            "min_flow_fraction": 0.0,
+            "ramp_up_fraction": 1.0,
+            "ramp_down_fraction": 1.0
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "steel_bfbof_SEL",
+          "location": "SEL",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_SEL",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_SEL"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_PUS",
+          "location": "PUS",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_PUS",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_PUS"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_TAE",
+          "location": "TAE",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_TAE",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_TAE"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_INC",
+          "location": "INC",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_INC",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_INC"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_KWJ",
+          "location": "KWJ",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_KWJ",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_KWJ"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_USN",
+          "location": "USN",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_USN",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_USN"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_SJG",
+          "location": "SJG",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_SJG",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_SJG"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_GGI",
+          "location": "GGI",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GGI",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GGI"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_GWN",
+          "location": "GWN",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GWN",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GWN"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_CNA",
+          "location": "CNA",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_CNA",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_CNA"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_CNB",
+          "location": "CNB",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_CNB",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_CNB"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_DJJ",
+          "location": "DJJ",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_DJJ",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_DJJ"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_JNB",
+          "location": "JNB",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_JNB",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JNB"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_JNA",
+          "location": "JNA",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_JNA",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JNA"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_GNB",
+          "location": "GNB",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GNB",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GNB"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_GNA",
+          "location": "GNA",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_GNA",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GNA"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        },
+        {
+          "id": "steel_bfbof_JEJ",
+          "location": "JEJ",
+          "edges": {
+            "crudesteel_edge": {
+              "end_vertex": "crudesteel_JEJ",
+              "existing_capacity": 0.0,
+              "can_retrofit": false
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JEJ"
+            },
+            "co2_edge": {
+              "commodity": "CO2",
+              "unidirectional": true,
+              "has_capacity": false,
+              "end_vertex": "co2_sink_KR"
+            },
+            "ironore_edge": {
+              "commodity": "IronOre",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "ironore_source"
+            },
+            "steelscrap_edge": {
+              "commodity": "SteelScrap",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "steelscrap_source"
+            },
+            "metcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "thermalcoal_edge": {
+              "commodity": "Coal",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "coal_source"
+            },
+            "natgas_edge": {
+              "commodity": "NaturalGas",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "natgas_source"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

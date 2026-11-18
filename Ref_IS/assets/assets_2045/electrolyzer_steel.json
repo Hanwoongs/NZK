@@ -1,0 +1,291 @@
+{
+  "electrolyzer_steel": [
+    {
+      "type": "Electrolyzer",
+      "global_data": {
+        "transforms": {
+          "timedata": "Electricity",
+          "constraints": {
+            "BalanceConstraint": true
+          },
+          "efficiency_rate": 0.7
+        },
+        "edges": {
+          "h2_edge": {
+            "commodity": "Hydrogen",
+            "has_capacity": true,
+            "unidirectional": true,
+            "can_expand": true,
+            "can_retire": true,
+            "existing_capacity": 0.0,
+            "constraints": {
+              "CapacityConstraint": true
+            },
+            "wacc": 0.045,
+            "investment_cost": 700000.0,
+            "fixed_om_cost": 14000.0,
+            "lifetime": 20,
+            "capital_recovery_period": 20
+          }
+        }
+      },
+      "instance_data": [
+        {
+          "id": "electrolyzer_steel_SEL",
+          "location": "SEL",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_SEL"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_SEL"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_PUS",
+          "location": "PUS",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_PUS"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_PUS"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_TAE",
+          "location": "TAE",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_TAE"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_TAE"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_INC",
+          "location": "INC",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_INC"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_INC"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_KWJ",
+          "location": "KWJ",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_KWJ"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_KWJ"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_USN",
+          "location": "USN",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_USN"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_USN"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_SJG",
+          "location": "SJG",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_SJG"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_SJG"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_GGI",
+          "location": "GGI",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_GGI"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GGI"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_GWN",
+          "location": "GWN",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_GWN"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GWN"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_CNA",
+          "location": "CNA",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_CNA"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_CNA"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_CNB",
+          "location": "CNB",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_CNB"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_CNB"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_DJJ",
+          "location": "DJJ",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_DJJ"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_DJJ"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_JNB",
+          "location": "JNB",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_JNB"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JNB"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_JNA",
+          "location": "JNA",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_JNA"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JNA"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_GNB",
+          "location": "GNB",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_GNB"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GNB"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_GNA",
+          "location": "GNA",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_GNA"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_GNA"
+            }
+          }
+        },
+        {
+          "id": "electrolyzer_steel_JEJ",
+          "location": "JEJ",
+          "edges": {
+            "h2_edge": {
+              "end_vertex": "h2_JEJ"
+            },
+            "elec_edge": {
+              "commodity": "Electricity",
+              "unidirectional": true,
+              "has_capacity": false,
+              "start_vertex": "elec_JEJ"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

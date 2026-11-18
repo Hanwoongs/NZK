@@ -1,0 +1,296 @@
+{
+  "review_date": "2026-11-18",
+  "candidate_status": "NZK targeted validation; upstream candidate acceptance is recorded separately",
+  "source_tree_sha256": "6771f1ade74df5f2cd66e81408692fcc8a7e425a7a4e21b1f1f6ee3e6363b68a",
+  "cases": {
+    "Ref": {
+      "asset_count": 1372,
+      "node_count": 335,
+      "scan_seconds": 96.343632,
+      "message_counts": {
+        "topology": {
+          "WARNING": 4,
+          "INFO": 122
+        },
+        "nodes": {
+          "WARNING": 127,
+          "INFO": 120
+        },
+        "assets": {
+          "WARNING": 848,
+          "INFO": 136
+        }
+      },
+      "html_public_coverage_match": true,
+      "asset_coverage": {
+        "complete": 40618,
+        "not_applicable": 116326
+      },
+      "P01_P05_coverage": {
+        "P01": {
+          "not_applicable": 1372
+        },
+        "P02": {
+          "not_applicable": 1372
+        },
+        "P03": {
+          "complete": 1372,
+          "not_applicable": 2423
+        },
+        "P04": {
+          "complete": 1003,
+          "not_applicable": 930
+        },
+        "P05": {
+          "not_applicable": 1372
+        }
+      },
+      "incomplete": [],
+      "added_asset_coverage": {
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0,
+        "not_evaluated": 0,
+        "complete": 0
+      },
+      "added_asset_coverage_resolved": false,
+      "added_asset_missing_records": [],
+      "unmapped_asset_check_records": [],
+      "steel_records": 0,
+      "steel_transformation_records": 0,
+      "native_steel_transformation_records": 0,
+      "steel_balance_records": 0,
+      "flow_coefficient_values_and_input_origins_matched": 0,
+      "sample_native_transform": null
+    },
+    "Ref_IS": {
+      "asset_count": 2137,
+      "node_count": 587,
+      "scan_seconds": 19.4782647,
+      "message_counts": {
+        "topology": {
+          "WARNING": 4,
+          "INFO": 129
+        },
+        "nodes": {
+          "WARNING": 127,
+          "INFO": 120
+        },
+        "assets": {
+          "WARNING": 848,
+          "INFO": 136
+        }
+      },
+      "html_public_coverage_match": true,
+      "asset_coverage": {
+        "complete": 75893,
+        "not_applicable": 280580
+      },
+      "P01_P05_coverage": {
+        "P01": {
+          "not_applicable": 2137
+        },
+        "P02": {
+          "not_applicable": 2137
+        },
+        "P03": {
+          "complete": 2137,
+          "not_applicable": 7030
+        },
+        "P04": {
+          "complete": 1003,
+          "not_applicable": 1695
+        },
+        "P05": {
+          "not_applicable": 2137
+        }
+      },
+      "incomplete": [],
+      "added_asset_coverage": {
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 164254,
+        "not_evaluated": 0,
+        "complete": 35275
+      },
+      "added_asset_coverage_resolved": true,
+      "added_asset_missing_records": [],
+      "unmapped_asset_check_records": [],
+      "steel_records": 646,
+      "steel_transformation_records": 646,
+      "native_steel_transformation_records": 442,
+      "steel_balance_records": 3723,
+      "flow_coefficient_values_and_input_origins_matched": 3723,
+      "sample_native_transform": {
+        "component_count": 7,
+        "asset_id": "steel_h2_dri_eaf_SEL",
+        "transformations": [
+          {
+            "constraint_origin": "constructor_argument",
+            "kind": "Transformation",
+            "fields": {
+              "timedata": {
+                "state": "known",
+                "paths": [
+                  "transforms.timedata"
+                ],
+                "value": "CrudeSteel",
+                "origin": "global_data"
+              },
+              "balance_data.ironore_consumption.terms[2]": {
+                "state": "known",
+                "paths": [
+                  "transforms.ironore_consumption"
+                ],
+                "value": -1.5,
+                "origin": "make_assignment"
+              },
+              "balance_data.emissions.terms[2]": {
+                "state": "known",
+                "paths": [
+                  "transforms.emission_rate"
+                ],
+                "value": 0,
+                "origin": "make_assignment"
+              },
+              "balance_data.electricity_consumption.terms[2]": {
+                "state": "known",
+                "paths": [
+                  "transforms.electricity_consumption"
+                ],
+                "value": -0.7,
+                "origin": "make_assignment"
+              },
+              "balance_data.emissions.terms[1]": {
+                "state": "known",
+                "paths": [],
+                "value": 1,
+                "origin": "source_default"
+              },
+              "constraints.BalanceConstraint": {
+                "state": "known",
+                "paths": [
+                  "transforms.constraints.BalanceConstraint"
+                ],
+                "value": true,
+                "origin": "global_data"
+              },
+              "balance_data.electricity_consumption.terms[1]": {
+                "state": "known",
+                "paths": [],
+                "value": 1,
+                "origin": "source_default"
+              },
+              "balance_data.reductant_consumption.terms[1]": {
+                "state": "known",
+                "paths": [],
+                "value": 1,
+                "origin": "source_default"
+              },
+              "balance_data.ironore_consumption.terms[1]": {
+                "state": "known",
+                "paths": [],
+                "value": 1,
+                "origin": "source_default"
+              },
+              "balance_data.carbonsource_consumption.terms[1]": {
+                "state": "known",
+                "paths": [],
+                "value": 1,
+                "origin": "source_default"
+              },
+              "balance_data.reductant_consumption.terms[2]": {
+                "state": "known",
+                "paths": [
+                  "transforms.reductant_consumption"
+                ],
+                "value": -2,
+                "origin": "make_assignment"
+              },
+              "balance_data.carbonsource_consumption.terms[2]": {
+                "state": "known",
+                "paths": [
+                  "transforms.carbonsource_consumption"
+                ],
+                "value": 0,
+                "origin": "make_assignment"
+              }
+            },
+            "balances": [
+              "carbonsource_consumption",
+              "electricity_consumption",
+              "emissions",
+              "ironore_consumption",
+              "reductant_consumption"
+            ],
+            "automatic_constraints": [],
+            "commodity": "CrudeSteel",
+            "selected_constraints": [
+              "BalanceConstraint"
+            ],
+            "path": "transforms",
+            "state": "confirmed"
+          }
+        ],
+        "source": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\assets\\assets_2021\\steel_h2_dri_eaf_retrofit_option.json",
+        "period": 1,
+        "input_path": "assets.steel_h2_dri_eaf[1].instance_data[1]",
+        "consumers_reviewed": true,
+        "type": "DirectReductionElectricArcFurnace",
+        "source_file": "C:\\Users\\hl8692\\Github\\MacroEnergy\\NZK\\Ref_IS\\auxiliary\\.runtime\\MacroEnergy_rc1\\src\\model\\assets\\integrateddirectreductionelectricarcfurnace.jl",
+        "state": "confirmed"
+      }
+    }
+  },
+  "comparison": {
+    "baseline_warning_error_count": 979,
+    "added_asset_missing_inventory_records": [],
+    "method": "Warning/error multiset comparison plus public assessment coverage; only case-root paths normalized.",
+    "candidate_warning_error_count": 979,
+    "passed": true,
+    "optimization_performed": false,
+    "added_asset_outcomes": {
+      "no_finding": 35275,
+      "finding": 0,
+      "unknown": 0,
+      "not_applicable": 164254
+    },
+    "added_asset_incomplete_check_count": 0,
+    "added_asset_coverage_resolved": true,
+    "removed_findings": {},
+    "source_confirmed": true,
+    "added_findings": {},
+    "unmapped_asset_check_records": [],
+    "no_new_warning_error_findings": true,
+    "added_asset_coverage": {
+      "partial": 0,
+      "blocked": 0,
+      "not_applicable": 164254,
+      "not_evaluated": 0,
+      "complete": 35275
+    }
+  },
+  "frozen_candidate_unchanged": true,
+  "candidate_origin_src_changed_since_snapshot": [],
+  "protected_file_count": 423,
+  "protected_files_changed": [],
+  "transformation_issues": [],
+  "remaining_original_dependency_gap_records": [],
+  "report_sha256": {
+    "diagnostics_comparison.json": "9c3fed39f2958cf394a7e6ebbc1647795f56943eb8c0a28b9a6363da898970e5",
+    "Ref_assets-diagnostics.html": "659e97babe5985e087525c791344f63bb69f4d77788def75b6c6cadbe19c0067",
+    "Ref_IS_assets-diagnostics.html": "b99475479c4d02397ac2a308f41667f10a826a1d644349ac82d316b2322276bd",
+    "Ref_IS_nodes-diagnostics.html": "31371fec7cc8b964e2ff6da5217e1cc982d2c914c06542de50d5028b928e22fd",
+    "Ref_IS_scan_summary.json": "77e596515a780ddef478b3659eb5384e40cb8c90270da98558f8b2515af82541",
+    "Ref_IS_steel_components.json": "33017c3e791da66031e73ebb08a07fa8b6161ceed092c06397c04fd51af60804",
+    "Ref_IS_topology-diagnostics.html": "8d549d0ba604ad967ef5a5ba67a604c7511252103a67163dd6fc966736dd96fd",
+    "Ref_nodes-diagnostics.html": "37c63e2367121f8f8a047040ac09ab89075a9230b96084ebc0615c8daad607bb",
+    "Ref_scan_summary.json": "e98b4ad7954215c34db0c6eeda8f14951e7c6877b9286a7ddef15bdd6e462133",
+    "Ref_steel_components.json": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "Ref_topology-diagnostics.html": "a7bebea7f0dd1c376e4dfc2c3a4afa97183841ba64dc3cebe691a280876110f7",
+    "run_manifest.json": "7d777ff23f91518276bfd79a9b69ede14d034adccf0d53dc107aebc23da2f66c"
+  },
+  "model_inputs_modified": false,
+  "solver_executed": false,
+  "targeted_checks_passed": true
+}

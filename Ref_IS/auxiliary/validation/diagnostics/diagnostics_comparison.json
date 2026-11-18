@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "baseline_warning_error_count": 979,
+    "method": "Multiset difference of severity, code, source and message; only case-root paths normalized.",
+    "added_findings": {
+    },
+    "optimization_performed": false,
+    "candidate_warning_error_count": 979,
+    "removed_findings": {
+    },
+    "new_asset_check_states": {
+        "checked": 34493,
+        "not_applicable": 155057
+    },
+    "new_asset_blocked_count": 0
+}
